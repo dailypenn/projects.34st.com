@@ -7,7 +7,21 @@ module.exports = {
   plugins: [
     'gatsby-plugin-styled-components',
     'gatsby-plugin-react-helmet',
-    `gatsby-transformer-json`
+    `gatsby-transformer-json`,
     // images for 2021/love-issue
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/content/images/2021/love-issue`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/content/json/2021/love-issue`,
+      },
+    }
   ]
 }

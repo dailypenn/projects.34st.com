@@ -21,20 +21,27 @@ const FeatureHeading = s.div`
 `
 const FeatureHeadline = s.div`
   font-size: 3.6rem;
+  line-height: 4.5rem;
   color: white;
   padding: 20rem 0 1rem 0;
   width: 41%;
   ${FUNKTURM_REGULAR};
-  @media(max-width: 992px) {
+  @media(max-width: 768px) {
+    font-size: 3rem;
+    line-height: 3.8rem;
     width: 100%;
+    padding-top: 5rem;
   }
 `
 const FeatureSubHeading = s.div`
   font-size: 1.7rem;
+  line-height: 2.2rem;
   color: white;
   ${FUTURA_REGULAR};
   width: 41%;
-  @media(max-width: 992px) {
+  @media(max-width: 768px) {
+    font-size: 1.5rem;
+    line-height: 2rem;
     width: 100%;
   }
 `
@@ -46,6 +53,10 @@ const Author = s.div`
   text-align: center;
   padding-top: 1.5rem;
   ${FUNKTURM_REGULAR};
+  @media(max-width: 768px) {
+    font-size: 1.5rem;
+    width: 100%;
+  }
 `
 
 const Feature = () => (

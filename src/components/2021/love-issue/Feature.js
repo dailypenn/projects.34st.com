@@ -10,6 +10,9 @@ const Background = s.div`
 background-image: url(${sampleImg});
   width: 100%;
   padding: 3rem;
+  @media(max-width: 768px) {
+    padding: 3rem 2rem;
+  }
 `
 const FeatureHeading = s.div`
   font-size: 1.7rem;

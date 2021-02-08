@@ -7,7 +7,14 @@ module.exports = {
   plugins: [
     'gatsby-plugin-styled-components',
     'gatsby-plugin-react-helmet',
-    `gatsby-transformer-json`
+    `gatsby-transformer-json`,
+    // google analytics
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-707447-4',
+      },
+    },
     // images for 2021/love-issue
   ]
 }

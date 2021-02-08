@@ -5,9 +5,11 @@ import { Helmet } from 'react-helmet'
 
 import projectsJSON from '../content/json/projects.json'
 
+const { featured, articles } = projectsJSON
+
 const Wrapper = s.div`
   body {
-    font-family: 'pt-serif', serif;
+    font-family: 'PT Serif', serif;
     font-style: normal;
     margin: 0;
   }
@@ -181,7 +183,7 @@ const URL = ({ link, children }) => {
   )
 }
 
-const Article = ({
+const FeaturedArticle = ({
   image,
   alt,
   section,
@@ -193,28 +195,90 @@ const Article = ({
   title
 }) => (
   <>
-    <div className="row article-row">
-      <div className="col-md-4">
-        <img src={image} className="img img-responsive" alt={alt} />
+    <div className="col-md-7 featured">
+      <img src={image} className="img img-responsive" alt={alt} />
+    </div>
+    <div className="col-md-5 featureed">
+      <div className="row info">
+        <div className="col-xs-6 tag">{section}</div>
+        <div className="col-xs-6 date">{date}</div>
       </div>
-      <div className="col-md-8 article-info">
-        <div className="row info">
-          <div className="col-xs-6 tag">{section}</div>
-          <div className="col-xs-6 date">{date}</div>
-        </div>
-        <div className="row title">
-          <a href={link} target="_blank" rel="noreferrer">
-            {title}
-          </a>
-        </div>
-        <div className="row description">{description}</div>
-        <div className="row credits">
-          {sponsored ? `Sponsored by ${author}` : author}
-        </div>
+      <div className="row title featured-title">
+        <a href={link} target="_blank" rel="noreferrer">
+          {title}
+        </a>
+      </div>
+      <div className="row description">{description}</div>
+      <div className="row credits">
+        {sponsored ? `Sponsored by ${author}` : author}
       </div>
     </div>
-    <hr />
   </>
+)
+
+const SecondaryFeaturedArticle = ({
+  image,
+  alt,
+  section,
+  date,
+  description,
+  sponsored,
+  author,
+  link,
+  title
+}) => (
+  <div class="col-md-6 top">
+    <div class="row">
+      <img src={image} class="img img-responsive" alt={alt} />
+    </div>
+    <div class="row info">
+      <div class="col-xs-6 tag top-tag">{section}</div>
+      <div class="col-xs-6 date top-date">{date}</div>
+    </div>
+    <div class="row title">
+      <a href={link} target="_blank" rel="noreferrer">
+        {title}
+      </a>
+    </div>
+    <div class="row description">{description}</div>
+    <div class="row credits">
+      {sponsored ? 'Sponsored by ' : ''}
+      {author}
+    </div>
+  </div>
+)
+
+const Article = ({
+  image,
+  alt,
+  section,
+  date,
+  description,
+  sponsored,
+  author,
+  link,
+  title
+}) => (
+  <div className="row article-row">
+    <div className="col-md-4">
+      <img src={image} className="img img-responsive" alt={alt} />
+    </div>
+    <div className="col-md-8 article-info">
+      <div className="row info">
+        <div className="col-xs-6 tag">{section}</div>
+        <div className="col-xs-6 date">{date}</div>
+      </div>
+      <div className="row title">
+        <a href={link} target="_blank" rel="noreferrer">
+          {title}
+        </a>
+      </div>
+      <div className="row description">{description}</div>
+      <div className="row credits">
+        {sponsored ? `Sponsored by ${author}` : author}
+      </div>
+    </div>
+  </div>
 )
 
 const Index = () => (
@@ -246,26 +310,39 @@ const Index = () => (
     <div class="container">
       <h1>PROJECTS &amp; GUIDES</h1>
 
-      <div class="row article-row featured-row" id="featured-main"></div>
+      <div className="row article-row featured-row">
+        <FeaturedArticle {...featured[0]} />
+      </div>
 
       <hr />
 
-      <div class="row" id="featured-secondary"></div>
+      <div className="row">
+        {featured.slice(1).map(article => (
+          <SecondaryFeaturedArticle {...article} />
+        ))}
+      </div>
 
       <hr />
 
       <h2>All Projects</h2>
 
       <div id="articles">
-        {projectsJSON.articles.map(article => (
-          <Article {...article} />
+        {articles.map((article, idx) => (
+          <>
+            <Article {...article} />
+            {idx !== articles.length - 1 && <hr />}
+          </>
         ))}
       </div>
 
       <footer>
         <hr />
         <p>
-          Copyright &copy; 2018, The Daily Pennsylvanian. All Rights Reserved.
+          Made with <span role="img">💖</span> &nbsp;by&nbsp;
+          <a href="https://tech.thedp.com/" target="_blank" rel="noreferrer">
+          the DP Tech Department
+          </a>
+          &nbsp;&copy; The Daily Pennsylvanian 2021
         </p>
       </footer>
     </div>

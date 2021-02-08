@@ -1,15 +1,12 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
-import Img from "gatsby-image"
+import Img from 'gatsby-image'
 
 import Feature from '../../components/2021/love-issue/Feature.js'
 import Love from '../../components/2021/love-issue/Love.js'
-import GatsbyImage from 'gatsby-image'
 
 const Index = () => {
-
-
   return (
     <>
       <Helmet>
@@ -71,10 +68,10 @@ const Index = () => {
           crossOrigin="anonymous"
         ></script>
       </Helmet>
-      
+
       <h1> Love issue </h1>
       <Feature />
-      <Love/ >
+      <Love />
     </>
   )
 }

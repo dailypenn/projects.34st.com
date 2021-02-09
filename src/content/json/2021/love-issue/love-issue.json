@@ -4,19 +4,106 @@
     "author": "Peter Chen",
     "img": "../../../images/2021/love-issue/sample.png"
   },
-  {
-    "headline": "Peter is too handsome",
-    "author": "Peter Chen",
-    "img": "../../../images/2021/love-issue/sample.png"
-  },
-  {
-    "headline": "Peter is too handsome",
-    "author": "Peter Chen",
-    "img": "../../../images/2021/love-issue/sample.png"
-  },
-  {
-    "headline": "Peter is too handsome",
-    "author": "Peter Chen",
-    "img": "../../../images/2021/love-issue/sample.png"
+  { 
+    "cover_img": "../../../images/2021/love-issue/cover_image_love issue_21.png",
+    "essay_winner": [
+      {
+        "title": "Songs I Carry for My Dad",
+        "subhead": "When my own words were gone, I sang for him.",
+        "author": "Julia Mitchell",
+        "img": "../../../images/2021/love-issue/essay-winner-1.jpg",
+        "link": "https://www.34st.com/article/2021/02/love-issue-essay-contest-julia-mitchell-songs-i-carry-for-my-dad"
+      }
+    ],
+    "love_irl": [
+      {
+        "title": "On Tinder and Tarot Cards",
+        "subhead": "How I learned what it means to love during quarantine.",
+        "author": "Julia Esposito",
+        "img": "../../../images/2021/love-issue/love-irl-2.png",
+        "link": "https://www.34st.com/article/2021/02/dating-apps-quarantine-hinge-bumble-tinder-love-romance-online-tarot"
+      },
+      {
+        "title": "On Tinder and Tarot Cards",
+        "subhead": "How I learned what it means to love during quarantine.",
+        "author": "Julia Esposito",
+        "img": "../../../images/2021/love-issue/love-irl-2.png",
+        "link": "https://www.34st.com/article/2021/02/dating-apps-quarantine-hinge-bumble-tinder-love-romance-online-tarot"
+      },
+      {
+        "title": "On Tinder and Tarot Cards",
+        "subhead": "How I learned what it means to love during quarantine.",
+        "author": "Julia Esposito",
+        "img": "../../../images/2021/love-issue/love-irl-2.png",
+        "link": "https://www.34st.com/article/2021/02/dating-apps-quarantine-hinge-bumble-tinder-love-romance-online-tarot"
+      },
+      {
+        "title": "A Love Letter To My Quarantine Coping Mechanism",
+        "subhead": "Thank you, 'sanity walks.' You've helped make this year suck a little less. ",
+        "author": "Eva Ingber",
+        "img": "../../../images/2021/love-issue/love-irl-4.png",
+        "link": "https://www.34st.com/article/2021/02/love-issue-2021-walking-coping-mechanism-pandemic-covid-19-possibility"
+      }
+    ],
+    "love_4_u": [
+      {
+        "title": "Here Are Five Philly Restaurants Offering Valentine's Day Meal Kits",
+        "subhead": "With so many restaurants closed for Valentine’s Day, here are some at–home alternatives to a fancy dinner.",
+        "author": "Naomi Kim",
+        "img": "../../../images/2021/love-issue/love-4-u-1.jpg",
+        "link": "https://www.34st.com/article/2021/02/valentines-day-love-diy-meal-kits-comfort-home-dinner-date-restaurants-local-philly-cooking"
+      },
+      {
+        "title": "On Tinder and Tarot Cards",
+        "subhead": "How I learned what it means to love during quarantine.",
+        "author": "Julia Esposito",
+        "img": "../../../images/2021/love-issue/love-irl-2.png",
+        "link": "https://www.34st.com/article/2021/02/dating-apps-quarantine-hinge-bumble-tinder-love-romance-online-tarot"
+      },
+      {
+        "title": "On Tinder and Tarot Cards",
+        "subhead": "How I learned what it means to love during quarantine.",
+        "author": "Julia Esposito",
+        "img": "../../../images/2021/love-issue/love-irl-2.png",
+        "link": "https://www.34st.com/article/2021/02/dating-apps-quarantine-hinge-bumble-tinder-love-romance-online-tarot"
+      },
+      {
+        "title": "A Love Letter To My Quarantine Coping Mechanism",
+        "subhead": "Thank you, 'sanity walks.' You've helped make this year suck a little less. ",
+        "author": "Eva Ingber",
+        "img": "../../../images/2021/love-issue/love-irl-4.png",
+        "link": "https://www.34st.com/article/2021/02/love-issue-2021-walking-coping-mechanism-pandemic-covid-19-possibility"
+      }
+    ],
+    "love_online": [
+      {
+        "title": "Here Are Five Philly Restaurants Offering Valentine's Day Meal Kits",
+        "subhead": "With so many restaurants closed for Valentine’s Day, here are some at–home alternatives to a fancy dinner.",
+        "author": "Naomi Kim",
+        "img": "../../../images/2021/love-issue/love-4-u-1.jpg",
+        "link": "https://www.34st.com/article/2021/02/valentines-day-love-diy-meal-kits-comfort-home-dinner-date-restaurants-local-philly-cooking"
+      },
+      {
+        "title": "On Tinder and Tarot Cards",
+        "subhead": "How I learned what it means to love during quarantine.",
+        "author": "Julia Esposito",
+        "img": "../../../images/2021/love-issue/love-irl-2.png",
+        "link": "https://www.34st.com/article/2021/02/dating-apps-quarantine-hinge-bumble-tinder-love-romance-online-tarot"
+      },
+      {
+        "title": "On Tinder and Tarot Cards",
+        "subhead": "How I learned what it means to love during quarantine.",
+        "author": "Julia Esposito",
+        "img": "../../../images/2021/love-issue/love-irl-2.png",
+        "link": "https://www.34st.com/article/2021/02/dating-apps-quarantine-hinge-bumble-tinder-love-romance-online-tarot"
+      },
+      {
+        "title": "A Love Letter To My Quarantine Coping Mechanism",
+        "subhead": "Thank you, 'sanity walks.' You've helped make this year suck a little less. ",
+        "author": "Eva Ingber",
+        "img": "../../../images/2021/love-issue/love-irl-4.png",
+        "link": "https://www.34st.com/article/2021/02/love-issue-2021-walking-coping-mechanism-pandemic-covid-19-possibility"
+      }
+    ]
   }
 ]

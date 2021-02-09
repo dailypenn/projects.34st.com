@@ -8,6 +8,8 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-react-helmet',
     `gatsby-transformer-json`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     // images for 2021/love-issue
     {
       resolve: `gatsby-source-filesystem`,

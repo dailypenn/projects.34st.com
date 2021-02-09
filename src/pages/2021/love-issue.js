@@ -4,11 +4,116 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 
-import coverImg from "../../content/images/2021/love-issue/cover_image_love issue_21.png"
+import Footer from '../../components/shared/Footer.js'
+import NavBar from '../../components/shared/Navbar.js'
 import Feature from '../../components/2021/love-issue/Feature.js'
+import Video from '../../components/2021/love-issue/Video.js'
 import Love from '../../components/2021/love-issue/Love.js'
 
+const NAVBAR_TITLES = {
+  left: [
+    { text: 'FEATURE', link: 'feature' },
+    { text: 'ESSAY WINNERS', link: 'essay-winners' },
+    { text: 'MULTIMEDIA', link: 'multimedia' },
+  ],
+  right: [
+    { text: 'LOVE, IRL.', link: 'irl' },
+    { text: 'LOVE, 4 U.', link: 'for-you' },
+    { text: 'LOVE, ONLINE.', link: 'online' },
+  ],
+}
+
 const Index = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allFile(filter: { relativePath: { eq: "love-issue.json" } }) {
+        edges {
+          node {
+            childrenLoveIssueJson {
+              img {
+                childImageSharp {
+                  fluid(maxWidth: 1600, maxHeight: 900) {
+                    ...GatsbyImageSharpFluid
+                    src
+                  }
+                }
+              }
+              cover_img {
+                childImageSharp {
+                  fluid(maxWidth: 1000, maxHeight: 523) {
+                    ...GatsbyImageSharpFluid
+                    src
+                  }
+                }
+              }
+              essay_winner {
+                author
+                link
+                subhead
+                title
+                img {
+                  childImageSharp {
+                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
+              }
+              love_4_u {
+                author
+                link
+                subhead
+                title
+                img {
+                  childImageSharp {
+                    fluid(maxWidth: 1000, maxHeight: 650) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
+              }
+              love_irl {
+                author
+                link
+                subhead
+                title
+                img {
+                  childImageSharp {
+                    fluid(maxWidth: 1000, maxHeight: 650) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
+              }
+              love_online {
+                author
+                link
+                subhead
+                title
+                img {
+                  childImageSharp {
+                    fluid(maxWidth: 1000, maxHeight: 650) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  const {
+    node: { childrenLoveIssueJson: sections },
+  } = data.allFile.edges[0]
+
+  const { cover_img, love_irl, love_4_u, love_online } = sections[1]
   return (
     <>
       <Helmet>
@@ -71,10 +176,20 @@ const Index = () => {
         ></script>
       </Helmet>
 
-      <h1> Love issue </h1>
-      <img src={coverImg} style={{ width: '100%' }} />
+      <NavBar
+        titles={NAVBAR_TITLES}
+        bgColor="#FFFFFF"
+        fontColor="#000000"
+        img="/img/34st-navbar-logo-white.png"
+      />
+      <Img fluid={cover_img.childImageSharp.fluid} imgStyle={{ objectFit: 'contain' }}/>
       <Feature />
-      <Love />
+      <Video/>
+      <Love articles={love_irl} color="#73A992" section="LOVE, IRL."/>
+      <Love articles={love_4_u} color="#B7C4EB" section="LOVE, 4 U."/>
+      <Love articles={love_online} color="#FD9B7B" section="LOVE, ONLINE."/>
+
+      <Footer emoji="💖" bgColor="#000000" fontColor="#FFFFFF" year="2021" />
     </>
   )
 }

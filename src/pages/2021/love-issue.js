@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from "gatsby-image"
 
+
+import coverImg from "../../content/images/2021/love-issue/cover_image_love issue_21.png"
 import Feature from '../../components/2021/love-issue/Feature.js'
 import Love from '../../components/2021/love-issue/Love.js'
 import GatsbyImage from 'gatsby-image'
@@ -73,6 +75,7 @@ const Index = () => {
       </Helmet>
       
       <h1> Love issue </h1>
+      <img src={coverImg} style={{ width: '100%' }} />
       <Feature />
       <Love/ >
     </>

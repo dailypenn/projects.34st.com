@@ -20,6 +20,7 @@ const LoveHeading = s.div`
     line-height 3rem;
   }
 `
+
 const Articles = s.div`
   background-color: #73A992;
   padding: 2rem 4rem;
@@ -30,12 +31,14 @@ const Articles = s.div`
     padding: 0.5rem 1rem 1rem;
   }
 `
+
 const ArticleSpacing = s.div`
   padding: 2rem 0;
   @media(max-width: 768px) {
     padding: 1.5rem 0rem;
   }
 `
+
 const ArticleTitle = s.div`
   font-size: 2rem;
   color: white;
@@ -46,6 +49,7 @@ const ArticleTitle = s.div`
     padding: 1rem 0.5rem 0rem 0.5rem;
   }
 `
+
 const ArticleAuthor = s.div`
   font-size: 1rem;
   color: white;
@@ -64,9 +68,7 @@ const Article = () => (
         <img src={sampleImg} style={{ width: '100%' }} />
       </Col>
       <Col sm={7} md={7}>
-        <ArticleTitle>
-          Headline will go here
-        </ArticleTitle>
+        <ArticleTitle>Headline will go here</ArticleTitle>
         <ArticleAuthor>BY AUTHOR NAME</ArticleAuthor>
       </Col>
     </Row>

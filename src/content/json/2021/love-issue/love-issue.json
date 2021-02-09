@@ -1,7 +1,22 @@
 [
   {
-    "sampleImg": {
-      "src": "../../../images/2021/love-issue/sample.png"
-    }
+    "headline": "Peter is too handsome",
+    "author": "Peter Chen",
+    "img": "../../../images/2021/love-issue/sample.png"
+  },
+  {
+    "headline": "Peter is too handsome",
+    "author": "Peter Chen",
+    "img": "../../../images/2021/love-issue/sample.png"
+  },
+  {
+    "headline": "Peter is too handsome",
+    "author": "Peter Chen",
+    "img": "../../../images/2021/love-issue/sample.png"
+  },
+  {
+    "headline": "Peter is too handsome",
+    "author": "Peter Chen",
+    "img": "../../../images/2021/love-issue/sample.png"
   }
 ]

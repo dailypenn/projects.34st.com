@@ -185,8 +185,11 @@ const Index = () => {
       <Img fluid={cover_img.childImageSharp.fluid} imgStyle={{ objectFit: 'contain' }}/>
       <Feature />
       <Video/>
+      <div id='irl'/>
       <Love articles={love_irl} color="#73A992" section="LOVE, IRL."/>
+      <div id='for-you'/>
       <Love articles={love_4_u} color="#B7C4EB" section="LOVE, 4 U."/>
+      <div id='online'/>
       <Love articles={love_online} color="#FD9B7B" section="LOVE, ONLINE."/>
 
       <Footer emoji="💖" bgColor="#000000" fontColor="#FFFFFF" year="2021" />

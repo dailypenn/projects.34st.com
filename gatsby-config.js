@@ -8,13 +8,22 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-react-helmet',
     `gatsby-transformer-json`,
-    // google analytics
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    // images for 2021/love-issue
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        trackingId: 'UA-188534367-2',
+        name: `images`,
+        path: `${__dirname}/src/content/images/2021/love-issue`,
       },
     },
-    // images for 2021/love-issue
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/content/json/2021/love-issue`,
+      },
+    }
   ]
 }

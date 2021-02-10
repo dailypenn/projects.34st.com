@@ -1,34 +1,36 @@
 import React from 'react'
 import s from 'styled-components'
-import { Col, Row } from 'react-bootstrap'
-import Img from 'gatsby-image'
 
 import { FUNKTURM_REGULAR, FUTURA_REGULAR } from '../../../styles/font'
-import sampleImg from '../../../content/images/2021/love-issue/sample.png'
+import sampleImg from '../../../content/images/2021/love-issue/feature.jpeg'
+import { StyledAnchor } from '../../shared'
 
 const Background = s.div`
-background-image: url(${sampleImg});
+  background-image: url(${sampleImg});
   width: 100%;
   padding: 3rem;
+
   @media(max-width: 768px) {
     padding: 3rem 2rem;
   }
 `
+
 const FeatureHeading = s.div`
   font-size: 1.7rem;
   border: 2px solid white;
   width: fit-content;
   color: white;
   padding: 0 .4rem;
-  ${FUNKTURM_REGULAR};
+  ${FUNKTURM_REGULAR}
 `
 const FeatureHeadline = s.div`
   font-size: 3.6rem;
-  line-height: 4.5rem;
+  line-height: 4rem;
   color: white;
   padding: 20rem 0 1rem 0;
   width: 41%;
-  ${FUNKTURM_REGULAR};
+  ${FUNKTURM_REGULAR}
+
   @media(max-width: 768px) {
     font-size: 3rem;
     line-height: 3.8rem;
@@ -38,10 +40,12 @@ const FeatureHeadline = s.div`
 `
 const FeatureSubHeading = s.div`
   font-size: 1.7rem;
-  line-height: 2.2rem;
   color: white;
-  ${FUTURA_REGULAR};
+  line-height: 1.6rem;
+  ${FUTURA_REGULAR}
   width: 41%;
+  margin-top: 2rem;
+
   @media(max-width: 768px) {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -55,7 +59,8 @@ const Author = s.div`
   margin: auto;
   text-align: center;
   padding-top: 1.5rem;
-  ${FUNKTURM_REGULAR};
+  ${FUNKTURM_REGULAR}
+
   @media(max-width: 768px) {
     font-size: 1.5rem;
     width: 100%;
@@ -64,10 +69,17 @@ const Author = s.div`
 
 const Feature = () => (
   <Background>
-    <FeatureHeading>FEATURE</FeatureHeading>
-    <FeatureHeadline>FEATURE HEADLINE ABOUT LOVE WILL GO HERE</FeatureHeadline>
-    <FeatureSubHeading>Feature subhead about love will go here<br/>Feature subhead about love will go here</FeatureSubHeading>
-    <Author>BY BEA FORMAN</Author>
+    <StyledAnchor link="https://www.34st.com/article/2021/02/dating-covid-quarantine-coronavirus-romance-pawelski">
+      <FeatureHeading>FEATURE</FeatureHeading>
+      <FeatureHeadline>
+        It’s Not You, It’s COVID–19: Finding and Losing Love in Quarantine
+      </FeatureHeadline>
+      <FeatureSubHeading>
+        Penn couples and professors on the challenges of keeping love alive
+        during the pandemic.
+      </FeatureSubHeading>
+      <Author>BY ANGELA SHEN</Author>
+    </StyledAnchor>
   </Background>
 )
 

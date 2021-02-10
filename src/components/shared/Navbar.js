@@ -2,10 +2,10 @@ import React from 'react'
 import s from 'styled-components'
 import { Link } from 'gatsby'
 
-import { NavText } from './Typograph'
+import { NavText } from './Typography'
 
 const Image = s.img`
-  max-height: 90px;
+  max-height: 45px;
 
   @media (max-width: 768px) {
     max-height: 30px;
@@ -43,12 +43,12 @@ const URL = ({ link, children }) => {
 
 // titles: { left: [{ text, link }*], right: [{ text, link }*] }
 
-const NavBar = ({
+export const NavBar = ({
   titles,
   font,
   bgColor = '#FFFFFF',
   fontColor = '#283033',
-  img = '/img/DP-Logo-Full.png',
+  img = '/img/DP-Logo-Full.png'
 }) => {
   const { left, right } = titles
 
@@ -60,7 +60,7 @@ const NavBar = ({
         backgroundColor: bgColor,
         color: fontColor,
         boxShadow: '0px 5px 6px #00000029',
-        opacity: 1,
+        opacity: 1
       }}
     >
       <div className="navbar-collapse w-100 dual-collapse2 order-1 order-md-0 collapse">
@@ -69,8 +69,7 @@ const NavBar = ({
             <li className="nav-item">
               <URL link={link}>
                 <NavText font={font} color={fontColor}>
-                  {' '}
-                  {text}{' '}
+                  {text}
                 </NavText>
               </URL>
             </li>
@@ -81,7 +80,7 @@ const NavBar = ({
         className="mx-auto my-2 order-0 order-md-1 position-relative"
         style={{ textAlign: 'center' }}
       >
-        <a className="mx-auto" href="https://www.thedp.com/">
+        <a className="mx-auto" href="https://www.34st.com/">
           <Image src={img} className="img-fluid" />
         </a>
         <button
@@ -112,8 +111,7 @@ const NavBar = ({
             <li className="nav-item">
               <URL link={link}>
                 <NavText font={font} color={fontColor}>
-                  {' '}
-                  {text}{' '}
+                  {text}
                 </NavText>
               </URL>
             </li>
@@ -123,5 +121,3 @@ const NavBar = ({
     </nav>
   )
 }
-
-export default NavBar

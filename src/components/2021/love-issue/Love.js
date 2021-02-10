@@ -3,33 +3,34 @@ import s from 'styled-components'
 import { Col, Row } from 'react-bootstrap'
 import Img from 'gatsby-image'
 
-import { FUNKTURM_REGULAR, FUTURA_REGULAR } from '../../../styles/font'
-import { StyledAnchor } from '../../shared/Typograph'
+import { FUNKTURM_REGULAR, FUTURA_MEDIUM } from '../../../styles/font'
+import { StyledAnchor } from '../../shared/Typography'
 
 const LoveHeading = s.div`
   width: fit-content;
   padding: .5rem 1.2rem;
-  margin: 0 auto 2rem;
+  margin: 8rem auto 3rem;
   text-align: center;
   font-size: 4rem;
   line-height 4rem;
   border: 3px solid ${({ color = '#283033' }) => color};
   color: ${({ color = '#283033' }) => color};
-  ${FUNKTURM_REGULAR};
+  ${FUNKTURM_REGULAR}
+
   @media(max-width: 768px) {
     font-size: 3rem;
     line-height 3rem;
+    margin-top: 4rem;
   }
 `
-const LoveHeadingDoubleMargin = s.div`
-  margin: 0 1rem;
-`
+
 const Articles = s.div`
   background-color: ${({ color = '#283033' }) => color};
-  padding: 2rem 4rem;
+  padding: 1.5rem 4rem;
   margin: auto;
   margin-bottom: 6rem;
   width: 75%;
+
   @media(max-width: 768px) {
     width: 90%;
     padding: 0.5rem 1rem 1rem;
@@ -38,17 +39,19 @@ const Articles = s.div`
 `
 
 const ArticleSpacing = s.div`
-  padding: 2rem 0;
+  margin: 3rem 0;
+
   @media(max-width: 768px) {
-    padding: 1.5rem 0rem;
+    margin: 2rem 0;
   }
 `
 
 const ArticleTitle = s.div`
   font-size: 2rem;
   color: white;
-  ${FUTURA_REGULAR};
-  padding: 2rem 0 2rem 2rem;
+  ${FUTURA_MEDIUM}
+  padding: 1rem 0 1rem 2rem;
+
   @media(max-width: 768px) {
     font-size: 1.5rem;
     padding: 1rem 0.5rem 0;
@@ -59,17 +62,18 @@ const ArticleTitle = s.div`
 const ArticleAuthor = s.div`
   font-size: 1rem;
   color: white;
-  ${FUTURA_REGULAR};
-  padding: 0 0 2rem 2rem;
+  ${FUTURA_MEDIUM}
+  padding-left: 2rem;
+
   @media(max-width: 768px) {
     font-size: 0.8rem;
     padding: 0.5rem;
   }
 `
 
-const Article = ({article: { title, subhead, author, img, link }}) => (
+const Article = ({ article: { title, author, img, link } }) => (
   <ArticleSpacing>
-    <StyledAnchor href={link} target="_blank">
+    <StyledAnchor link={link}>
       <Row>
         <Col sm={5} md={5}>
           <Img fluid={img.childImageSharp.fluid} />
@@ -83,16 +87,13 @@ const Article = ({article: { title, subhead, author, img, link }}) => (
   </ArticleSpacing>
 )
 
-const Love = ({ articles, color='#283033', section }) => (
+const Love = ({ articles, color = '#283033', section }) => (
   <>
-    <LoveHeadingDoubleMargin>
+    <div style={{ margin: '0 2rem' }}>
       <LoveHeading color={color}>{section}</LoveHeading>
-    </LoveHeadingDoubleMargin>
+    </div>
     <Articles color={color}>
-      {articles &&
-        articles.map(article => (
-          <Article article={article}/>
-        ))}
+      {articles && articles.map(article => <Article article={article} />)}
     </Articles>
   </>
 )

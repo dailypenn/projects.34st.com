@@ -1,3 +1,4 @@
+import React from 'react'
 import s from 'styled-components'
 
 export const StyledLink = s.a`
@@ -17,7 +18,14 @@ export const NavText = s.text`
     transition: 0.3s;
   }
 `
-export const StyledAnchor = s.a`
+
+const StyledAnchorWrapper = s.a`
   color: #000000 !important;
   text-decoration: none !important;
 `
+
+export const StyledAnchor = ({ link, children }) => (
+  <StyledAnchorWrapper href={link} target="_blank" rel="noreferrer">
+    {children}
+  </StyledAnchorWrapper>
+)

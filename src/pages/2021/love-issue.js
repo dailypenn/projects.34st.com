@@ -3,9 +3,7 @@ import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-
-import Footer from '../../components/shared/Footer.js'
-import NavBar from '../../components/shared/Navbar.js'
+import { Footer, NavBar } from '../../components/shared/'
 import Feature from '../../components/2021/love-issue/Feature.js'
 import Video from '../../components/2021/love-issue/Video.js'
 import Love from '../../components/2021/love-issue/Love.js'
@@ -14,13 +12,13 @@ const NAVBAR_TITLES = {
   left: [
     { text: 'FEATURE', link: 'feature' },
     { text: 'ESSAY WINNERS', link: 'essay-winners' },
-    { text: 'MULTIMEDIA', link: 'multimedia' },
+    { text: 'MULTIMEDIA', link: 'multimedia' }
   ],
   right: [
     { text: 'LOVE, IRL.', link: 'irl' },
     { text: 'LOVE, 4 U.', link: 'for-you' },
-    { text: 'LOVE, ONLINE.', link: 'online' },
-  ],
+    { text: 'LOVE, ONLINE.', link: 'online' }
+  ]
 }
 
 const Index = () => {
@@ -110,10 +108,11 @@ const Index = () => {
   `)
 
   const {
-    node: { childrenLoveIssueJson: sections },
+    node: { childrenLoveIssueJson: sections }
   } = data.allFile.edges[0]
 
   const { cover_img, love_irl, love_4_u, love_online } = sections[1]
+
   return (
     <>
       <Helmet>
@@ -121,7 +120,7 @@ const Index = () => {
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Best of Penn" />
-        <title>Best of Penn 2020 | The Daily Pennsylvanian</title>
+        <title>Love Issue | 34th Street</title>
         <link
           rel="stylesheet"
           type="text/css"
@@ -182,15 +181,22 @@ const Index = () => {
         fontColor="#000000"
         img="/img/34st-navbar-logo-white.png"
       />
-      <Img fluid={cover_img.childImageSharp.fluid} imgStyle={{ objectFit: 'contain' }}/>
+
+      <Img
+        fluid={cover_img.childImageSharp.fluid}
+        imgStyle={{ objectFit: 'contain' }}
+      />
+
       <Feature />
-      <Video/>
-      <div id='irl'/>
-      <Love articles={love_irl} color="#73A992" section="LOVE, IRL."/>
-      <div id='for-you'/>
-      <Love articles={love_4_u} color="#B7C4EB" section="LOVE, 4 U."/>
-      <div id='online'/>
-      <Love articles={love_online} color="#FD9B7B" section="LOVE, ONLINE."/>
+
+      <Video />
+
+      <div id="irl" />
+      <Love articles={love_irl} color="#73A992" section="LOVE, IRL." />
+      <div id="for-you" />
+      <Love articles={love_4_u} color="#B7C4EB" section="LOVE, 4 U." />
+      <div id="online" />
+      <Love articles={love_online} color="#FD9B7B" section="LOVE, ONLINE." />
 
       <Footer emoji="💖" bgColor="#000000" fontColor="#FFFFFF" year="2021" />
     </>

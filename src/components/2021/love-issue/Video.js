@@ -1,5 +1,6 @@
 import React from 'react'
 import s from 'styled-components'
+import InstagramEmbed from 'react-instagram-embed'
 
 import { FUTURA_BOLD, FUTURA_MEDIUM } from '../../../styles/font'
 
@@ -11,17 +12,18 @@ const VidFormat = s.div`
   width: 75%;
   margin: auto;
   padding-top: 2rem;
+  padding-left: 10rem;
+
+  iframe {
+    max-width: none;
+  }
+
+  align: center;
+
 
   @media (max-width: 768px) {
     width: 100%;
     padding: 1rem 1rem 4rem;
-  }
-`
-const Vid = s.iframe`
-  height: 700px;
-
-  @media (max-width: 768px) {
-    height: 200px;
   }
 `
 
@@ -58,18 +60,21 @@ const Video = () => (
   <Wrapper>
     <BoldText>VIDEO</BoldText>
     <RegularText>
-      Something cool about the photo essay will go here Something cool about the
-      photo essay will go here Something cool about the photo essay will go here
-      Something cool about the photo essay will go here
+      It's Not You, It's COVID–19: Meet the Couples
+      <br />
+      Street sat down with two couples to learn more about their relationships,
+      and how they had to change once Penn shut down last March.
     </RegularText>
-    <BoldText>By Kylie Cooper</BoldText>
+    <BoldText>By Jesse Zhang</BoldText>
     <VidFormat>
-      <Vid
-        width="100%"
-        src="https://www.youtube.com/embed/qxklB93jWhs"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
+      <InstagramEmbed
+        url="https://www.instagram.com/tv/CLFpqaej4jH/?utm_source=ig_web_copy_link"
+        clientAccessToken="947756802416627|a36b8dffc1596399ee685a4677ebc2a2"
+        maxWidth={1000}
+        hideCaption={false}
+        containerTagName="div"
+        protocol=""
+        injectScript
       />
     </VidFormat>
   </Wrapper>

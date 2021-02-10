@@ -44,6 +44,20 @@ const Index = () => {
                   }
                 }
               }
+              feature {
+                author
+                link
+                subhead
+                title
+                img {
+                  childImageSharp {
+                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
+              }
               essay_winner {
                 author
                 link
@@ -57,6 +71,26 @@ const Index = () => {
                     }
                   }
                 }
+              }
+              photo_essay {
+                author
+                link
+                subhead
+                title
+                img {
+                  childImageSharp {
+                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
+              }
+              video {
+                author
+                link
+                subhead
+                title
               }
               love_4_u {
                 author
@@ -111,7 +145,16 @@ const Index = () => {
     node: { childrenLoveIssueJson: sections }
   } = data.allFile.edges[0]
 
-  const { cover_img, love_irl, love_4_u, love_online } = sections[1]
+  const {
+    cover_img,
+    feature,
+    essay_winner,
+    photo_essay,
+    video,
+    love_irl,
+    love_4_u,
+    love_online
+  } = sections[1]
 
   return (
     <>

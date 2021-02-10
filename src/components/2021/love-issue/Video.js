@@ -10,16 +10,12 @@ const Wrapper = s.div`
 
 const VidFormat = s.div`
   width: 75%;
+  max-width: 658px;
   margin: auto;
   padding-top: 2rem;
-  padding-left: 10rem;
-
   iframe {
     max-width: none;
   }
-
-  align: center;
-
 
   @media (max-width: 768px) {
     width: 100%;
@@ -70,7 +66,7 @@ const Video = () => (
       <InstagramEmbed
         url="https://www.instagram.com/tv/CLFpqaej4jH/?utm_source=ig_web_copy_link"
         clientAccessToken="947756802416627|a36b8dffc1596399ee685a4677ebc2a2"
-        maxWidth={1000}
+        maxWidth={658}
         hideCaption={false}
         containerTagName="div"
         protocol=""

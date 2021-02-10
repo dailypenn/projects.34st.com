@@ -28,33 +28,11 @@ const Index = () => {
         edges {
           node {
             childrenLoveIssueJson {
-              img {
-                childImageSharp {
-                  fluid(maxWidth: 1600, maxHeight: 900) {
-                    ...GatsbyImageSharpFluid
-                    src
-                  }
-                }
-              }
               cover_img {
                 childImageSharp {
                   fluid(maxWidth: 1000, maxHeight: 523) {
                     ...GatsbyImageSharpFluid
                     src
-                  }
-                }
-              }
-              feature {
-                author
-                link
-                subhead
-                title
-                img {
-                  childImageSharp {
-                    fluid(maxWidth: 1000, maxHeight: 1000) {
-                      ...GatsbyImageSharpFluid
-                      src
-                    }
                   }
                 }
               }
@@ -85,12 +63,6 @@ const Index = () => {
                     }
                   }
                 }
-              }
-              video {
-                author
-                link
-                subhead
-                title
               }
               love_4_u {
                 author
@@ -147,14 +119,12 @@ const Index = () => {
 
   const {
     cover_img,
-    feature,
     essay_winner,
     photo_essay,
-    video,
     love_irl,
     love_4_u,
     love_online
-  } = sections[1]
+  } = sections[0]
 
   return (
     <>
@@ -162,7 +132,7 @@ const Index = () => {
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Best of Penn" />
+        <meta name="description" content="Love Issue" />
         <title>Love Issue | 34th Street</title>
         <link
           rel="stylesheet"
@@ -176,7 +146,7 @@ const Index = () => {
         />
         <meta
           property="og:image"
-          content="https://snworksceo.imgix.net/dpn/911a0997-d5e4-44f9-a21c-b4641280f6fe.sized-1000x1000.png"
+          content="https://snworksceo.imgix.net/dpn-34s/8cf07f0e-d79c-445a-994d-da4dae0b1c9b.sized-1000x1000.png"
         />
         <meta property="og:description" content="Best of Penn" />
         <meta property="og:type" content="article" />
@@ -192,7 +162,7 @@ const Index = () => {
         />
         <meta
           name="twitter:image"
-          content="https://snworksceo.imgix.net/dpn/911a0997-d5e4-44f9-a21c-b4641280f6fe.sized-1000x1000.png"
+          content="https://snworksceo.imgix.net/dpn-34s/8cf07f0e-d79c-445a-994d-da4dae0b1c9b.sized-1000x1000.png"
         />
         <meta name="twitter:description" content="Best of Penn" />
         <meta

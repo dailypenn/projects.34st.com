@@ -2,13 +2,14 @@ import React from 'react'
 import s from 'styled-components'
 
 import { FUNKTURM_REGULAR, FUTURA_REGULAR } from '../../../styles/font'
-import sampleImg from '../../../content/images/2021/love-issue/feature.jpeg'
+import sampleImg from '../../../content/images/2021/love-issue/feature.png'
 import { StyledAnchor } from '../../shared'
 
 const Background = s.div`
   background-image: url(${sampleImg});
   width: 100%;
   padding: 3rem;
+  background-size: cover;
 
   @media(max-width: 768px) {
     padding: 3rem 2rem;
@@ -58,7 +59,7 @@ const Author = s.div`
   width: fit-content;
   margin: auto;
   text-align: center;
-  padding-top: 1.5rem;
+  margin-top: 2.5rem;
   ${FUNKTURM_REGULAR}
 
   @media(max-width: 768px) {

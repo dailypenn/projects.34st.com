@@ -1,18 +1,6 @@
 [
-  {
-    "headline": "Peter is too handsome",
-    "author": "Peter Chen",
-    "img": "../../../images/2021/love-issue/sample.png"
-  },
   { 
-    "cover_img": "../../../images/2021/love-issue/cover_image_love issue_21.png",
-    "feature": {
-      "title": "It’s Not You, It’s COVID–19: Finding and Losing Love in Quarantine",
-      "subhead": "Penn couples and professors on the challenges of keeping love alive during the pandemic.",
-      "author": "Angela Shen",
-      "img": "../../../images/2021/love-issue/feature.jpg",
-      "link": "https://www.34st.com/article/2021/02/dating-covid-quarantine-coronavirus-romance-pawelski"
-    },
+    "cover_img": "../../../images/2021/love-issue/cover_img.png",
     "essay_winner": [
       {
         "title": "Day 62: A Love Letter",
@@ -42,12 +30,6 @@
       "author": "34th Street Magazine",
       "img": "../../../images/2021/love-issue/photo-essay-1.jpg",
       "link": "https://www.34st.com/article/2021/02/love-issue-photo-essay-painting-dogs-coffee-focaccia-quarantine-trends-lockdown"
-    },
-    "video":{
-      "title": "It's Not You, It's COVID–19: Meet the Couples",
-      "subhead": "Street sat down with two couples to learn more about their relationships, and how they had to change once Penn shut down last March.",
-      "author": "Jesse Zhang",
-      "link": "https://www.instagram.com/p/CLFpqaej4jH/"
     },
     "love_irl": [
       {

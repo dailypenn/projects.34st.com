@@ -1,47 +1,86 @@
-import React from 'react'
-import s from 'styled-components'
+import React, {Component} from 'react'
 import Img from 'gatsby-image'
-import Carousel from 'react-bootstrap/Carousel'
-import { FUNKTURM_REGULAR, FUTURA_REGULAR } from '../../../styles/font'
+//import Carousel from 'react-bootstrap/Carousel'
+import {Container, Tag, Author, LoveHeading} from '../../shared/index.js'
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 
-const EssayHeading = s.div`
-  width: fit-content;
-  padding: .5rem 1.2rem;
-  margin: 2rem auto 2rem;
-  text-align: center;
-  font-size: 4rem;
-  line-height 4rem;
-  border: 3px solid #FDB6B0;
-  color: #FDB6B0;
-  ${FUNKTURM_REGULAR};
-  @media(max-width: 768px) {
-    font-size: 3rem;
-    line-height 3rem;
+
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+    slidesToSlide: 3 // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+    slidesToSlide: 2 // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1 // optional, default to 1.
   }
-`
+};
 
-const EssayCarousel = ({articles}) => (
-	<>
-		<EssayHeading>ESSAY WINNERS</EssayHeading>
-		<Carousel style={{width: "1000px", margin: "auto"}}>
-			{articles &&
-				articles.map(article => (  
-					<Carousel.Item interval={3500}>
-					<Img
-						className="d-block w-100"
-						fluid={article.img.childImageSharp.fluid}
-						alt="First slide"
-					/>
-					<Carousel.Caption style={{background: "rgba(0, 0, 0, 0.7)", paddingLeft: "50px", paddingRight: "50px"}}>
-						<h3>{article.title}</h3>
-						<p style={{marginBottom: "5px"}}>{article.subhead}</p>
-						<p>{article.author}</p>
-					</Carousel.Caption>
-				</Carousel.Item>
-				))}
-		</Carousel>
-	</>
-)
+
+class EssayCarousel extends Component {
+  constructor(props) {
+    super(props);
+ 
+    this.state = {
+      isShow: true,
+		};
+
+  }
+ 
+  toggleShow = () => {
+    this.setState(state => ({ isShow: !state.isShow }));
+	};
+	
+  render() {
+    return (
+			<>
+				<div style={{ margin: '0 2rem' }}>
+					<LoveHeading color='#FDB6B0'>{'ESSAY WINNERS'}</LoveHeading>
+				</div>
+				<Carousel
+					swipeable={false}
+					draggable={false}
+					showDots={true}
+					responsive={responsive}
+					ssr={true} // means to render carousel on server-side.
+					infinite={true}
+					autoPlay={this.props.deviceType !== "mobile" ? true : false}
+					autoPlaySpeed={3500}
+					keyBoardControl={true}
+					customTransition="all .5"
+					transitionDuration={500}
+					containerClass="carousel-container"
+					removeArrowOnDeviceType={["tablet", "mobile"]}
+					deviceType={this.props.deviceType}
+					dotListClass="custom-dot-list-style"
+					itemClass="carousel-item-padding-40-px"
+				>
+					{this.props.articles &&
+					this.props.articles.map(article => (  
+					<Container>
+						<Tag>
+							<p style={{marginBottom: "0.2rem"}}>{article.title}</p>
+							<Author>BY {article.author}</Author>
+						</Tag>
+						<Img fluid={article.img.childImageSharp.fluid}/>
+					</Container>
+					))}
+					
+			</Carousel>
+		</>
+    );
+  }
+}
+
+
 
 export default EssayCarousel

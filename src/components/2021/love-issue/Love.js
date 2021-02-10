@@ -2,27 +2,12 @@ import React from 'react'
 import s from 'styled-components'
 import { Col, Row } from 'react-bootstrap'
 import Img from 'gatsby-image'
+import { LoveHeading } from '../../shared/index.js'
 
-import { FUNKTURM_REGULAR, FUTURA_MEDIUM } from '../../../styles/font'
+import { FUTURA_MEDIUM } from '../../../styles/font'
 import { StyledAnchor } from '../../shared/Typography'
 
-const LoveHeading = s.div`
-  width: fit-content;
-  padding: .5rem 1.2rem;
-  margin: 8rem auto 3rem;
-  text-align: center;
-  font-size: 4rem;
-  line-height 4rem;
-  border: 3px solid ${({ color = '#283033' }) => color};
-  color: ${({ color = '#283033' }) => color};
-  ${FUNKTURM_REGULAR}
 
-  @media(max-width: 768px) {
-    font-size: 3rem;
-    line-height 3rem;
-    margin-top: 4rem;
-  }
-`
 
 const Articles = s.div`
   background-color: ${({ color = '#283033' }) => color};

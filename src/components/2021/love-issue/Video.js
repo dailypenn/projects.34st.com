@@ -1,8 +1,8 @@
 import React from 'react'
 import s from 'styled-components'
 import InstagramEmbed from 'react-instagram-embed'
+import {BoldText, RegularText} from '../../shared/index.js'
 
-import { FUTURA_BOLD, FUTURA_MEDIUM } from '../../../styles/font'
 
 const Wrapper = s.div`
   margin: 3rem 0;
@@ -20,35 +20,6 @@ const VidFormat = s.div`
   @media (max-width: 768px) {
     width: 100%;
     padding: 1rem 1rem 4rem;
-  }
-`
-
-const BoldText = s.div`
-  font-size: 1.7rem;
-  ${FUTURA_BOLD}
-  text-align: center;
-  margin: auto;
-  max-width: 75%;
-
-  @media(max-width: 768px) {
-    font-size: 1rem;
-    max-width: 100%;
-    padding: 0 1rem;
-  }
-`
-
-const RegularText = s.div`
-  font-size: 1.2rem;
-  ${FUTURA_MEDIUM}
-  text-align: center;
-  max-width: 75%;
-  margin: auto;
-  padding: 1.5rem 0;
-
-  @media(max-width: 768px) {
-    font-size: 1rem;
-    max-width: 100%;
-    padding: 0.5rem 1rem;
   }
 `
 

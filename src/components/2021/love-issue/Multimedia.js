@@ -4,7 +4,6 @@ import { FUTURA_REGULAR } from '../../../styles/font'
 import { Col, Row } from 'react-bootstrap'
 import Img from 'gatsby-image'
 import {
-  Container,
   Tag,
   Author,
   LoveHeading,
@@ -14,16 +13,42 @@ import {
 import { useStaticQuery, graphql } from 'gatsby'
 
 const BoxedText = s.div`
-  width: fit-content;
-  padding: .5rem 1.2rem;
-  font-size: 1.1vw;
+  margin: 2rem 2rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 1.2vw;
   border: 3px solid #FDB6B0;
 	color: #FDB6B0;
 	${FUTURA_REGULAR}
   @media(max-width: 768px) {
     font-size: 1.1rem;
-    margin-top: 4rem;
+    margin: 0;
   }
+`
+const ImageContainer = s.div`
+  margin: auto;
+  width: 75%;
+  @media(max-width: 768px) {
+    width: 90%
+  }
+`
+
+const Container = s.div`
+  margin: 2rem 0;
+  position: relative;
+  @media(max-width: 768px) {
+  }
+`
+const MobileContainer = s.div`
+  margin: 2rem 0;
+  position: relative;
+  @media(max-width: 768px) {
+    margin: 0
+  }
+`
+
+const NoMarginRow = s(Row)`
+  margin-right: 0px;
+  margin-top: -2rem;
 `
 // Nassim TODO:
 // 1. just put this entire graphql query inside love-issue.js and pass the content here
@@ -33,52 +58,15 @@ const BoxedText = s.div`
 // 4. the description for each photo can be a lil bit larger
 // 5. the pink text can be a lil bit larger
 // 6. change the text to the correct ones
-const Multimedia = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      allFile(filter: { relativePath: { eq: "love-issue.json" } }) {
-        edges {
-          node {
-            childrenLoveIssueJson {
-              multimedia {
-                author
-                link
-                title
-                img {
-                  childImageSharp {
-                    fluid(maxWidth: 1000) {
-                      ...GatsbyImageSharpFluid
-                      src
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
-
-  const {
-    node: { childrenLoveIssueJson: articles }
-  } = data.allFile.edges[0]
-  const { multimedia } = articles[1]
-  return (
-    <>
+const Multimedia = ({ multimedia }) => (
+    <ImageContainer>
       <LoveHeading color="#FDB6B0">{'MULTIMEDIA'}</LoveHeading>
-      <BoldText>VIDEO</BoldText>
+      <BoldText>{"Photo essay: Redefining Love In Lockdown".toUpperCase()}</BoldText>
       <RegularText style={{ marginBottom: '1rem' }}>
-        It's Not You, It's COVID–19: Meet the Couples
-        <br />
-        Street sat down with two couples to learn more about their
-        relationships, and how they had to change once Penn shut down last
-        March.
+        From puppies to coffee cups, here’s how Street survived life under lockdown.
       </RegularText>
-      <Row>
-        <Col sm={12} md={{ span: 3, offset: 2 }}>
-          <Row style={{ marginBottom: '1.5rem' }}>
-            <Col sm={12} md={12}>
+      <NoMarginRow>
+        <Col sm={12} md={5}>
               <Container>
                 <Tag>
                   <p style={{ marginBottom: '0.2rem' }}>
@@ -88,10 +76,6 @@ const Multimedia = () => {
                 </Tag>
                 <Img fluid={multimedia[0].img.childImageSharp.fluid} />
               </Container>
-            </Col>
-          </Row>
-          <Row style={{ marginBottom: '1.5rem' }}>
-            <Col sm={12} md={12}>
               <Container>
                 <Tag>
                   <p style={{ marginBottom: '0.2rem' }}>
@@ -101,10 +85,6 @@ const Multimedia = () => {
                 </Tag>
                 <Img fluid={multimedia[1].img.childImageSharp.fluid} />
               </Container>
-            </Col>
-          </Row>
-          <Row style={{ marginBottom: '1.5rem' }}>
-            <Col sm={12} md={12}>
               <Container>
                 <Tag>
                   <p style={{ marginBottom: '0.2rem' }}>
@@ -114,13 +94,9 @@ const Multimedia = () => {
                 </Tag>
                 <Img fluid={multimedia[2].img.childImageSharp.fluid} />
               </Container>
-            </Col>
-          </Row>
         </Col>
-        <Col sm={12} md={5}>
-          <Row style={{ marginBottom: '1.5rem' }}>
-            <Col sm={12} md={12}>
-              <Container>
+        <Col sm={12} md={7}>
+              <MobileContainer>
                 <Tag>
                   <p style={{ marginBottom: '0.2rem' }}>
                     {multimedia[3].title}
@@ -128,11 +104,7 @@ const Multimedia = () => {
                   <Author>BY {multimedia[3].author}</Author>
                 </Tag>
                 <Img fluid={multimedia[3].img.childImageSharp.fluid} />
-              </Container>
-            </Col>
-          </Row>
-          <Row style={{ marginBottom: '1.5rem' }}>
-            <Col sm={12} md={12}>
+              </MobileContainer>
               <Container>
                 <Tag>
                   <p style={{ marginBottom: '0.2rem' }}>
@@ -142,10 +114,6 @@ const Multimedia = () => {
                 </Tag>
                 <Img fluid={multimedia[4].img.childImageSharp.fluid} />
               </Container>
-            </Col>
-          </Row>
-          <Row style={{ marginBottom: '1.5rem' }}>
-            <Col sm={12} md={12}>
               <Container>
                 <Tag>
                   <p style={{ marginBottom: '0.2rem' }}>
@@ -156,15 +124,9 @@ const Multimedia = () => {
                 <Img fluid={multimedia[5].img.childImageSharp.fluid} />
               </Container>
             </Col>
-          </Row>
-        </Col>
-      </Row>
-      <Row style={{ marginBottom: '1.5rem' }}>
-        <Col
-          md={2}
-          style={{ marginRight: '-4.2%', paddingRight: '5.5%' }}
-        ></Col>
-        <Col sm={12} md={3}>
+      </NoMarginRow>
+      <NoMarginRow>
+        <Col sm={12} md={4}>
           <Container>
             <Tag>
               <p style={{ marginBottom: '0.2rem' }}>{multimedia[6].title}</p>
@@ -176,8 +138,8 @@ const Multimedia = () => {
             />
           </Container>
         </Col>
-        <Col sm={12} md={3}>
-          <Container>
+        <Col sm={12} md={4}>
+          <MobileContainer>
             <Tag>
               <p style={{ marginBottom: '0.2rem' }}>{multimedia[7].title}</p>
               <Author>BY {multimedia[7].author}</Author>
@@ -186,9 +148,9 @@ const Multimedia = () => {
               fluid={multimedia[7].img.childImageSharp.fluid}
               style={{ height: '500px' }}
             />
-          </Container>
+          </MobileContainer>
         </Col>
-        <Col sm={12} md={3}>
+        <Col sm={12} md={4}>
           <Container>
             <Tag>
               <p style={{ marginBottom: '0.2rem' }}>{multimedia[8].title}</p>
@@ -200,13 +162,9 @@ const Multimedia = () => {
             />
           </Container>
         </Col>
-      </Row>
-      <Row>
-        <Col
-          md={2}
-          style={{ marginRight: '-4.2%', paddingRight: '5.5%' }}
-        ></Col>
-        <Col sm={12} md={4} style={{ marginBottom: '3rem' }}>
+      </NoMarginRow>
+      <NoMarginRow>
+        <Col sm={12} md={5}>
           <Container>
             <Tag>
               <p style={{ marginBottom: '0.2rem' }}>{multimedia[9].title}</p>
@@ -215,11 +173,7 @@ const Multimedia = () => {
             <Img fluid={multimedia[9].img.childImageSharp.fluid} />
           </Container>
         </Col>
-        <Col
-          sm={12}
-          md={5}
-          style={{ marginBottom: '3rem', paddingTop: '2.5%' }}
-        >
+        <Col sm={12} md={7} >
           <BoxedText>
             <p>
               While none of us could have anticipated the effects that the
@@ -237,9 +191,9 @@ const Multimedia = () => {
             </p>
           </BoxedText>
         </Col>
-      </Row>
-    </>
+      </NoMarginRow>
+    </ImageContainer>
   )
-}
+
 
 export default Multimedia

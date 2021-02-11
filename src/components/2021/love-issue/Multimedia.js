@@ -3,14 +3,8 @@ import s from 'styled-components'
 import { FUTURA_REGULAR } from '../../../styles/font'
 import { Col, Row } from 'react-bootstrap'
 import Img from 'gatsby-image'
-import {
-  Tag,
-  Author,
-  LoveHeading,
-  BoldText,
-  RegularText
-} from './shared.js'
-import { useStaticQuery, graphql } from 'gatsby'
+import { Tag, Author, LoveHeading, BoldText, RegularText } from './shared.js'
+import { StyledAnchor } from '../../shared/Typography'
 
 const BoxedText = s.div`
   margin: 2rem 2rem;
@@ -51,16 +45,13 @@ const NoMarginRow = s(Row)`
   margin-top: -2rem;
 `
 // Nassim TODO:
-// 1. just put this entire graphql query inside love-issue.js and pass the content here
-// 2. i want to see less hardcoding of multimedia[0], multimedia[1], if it's possible to
+// 1. i want to see less hardcoding of multimedia[0], multimedia[1], if it's possible to
 // do .map, just do that, u can get subarray through multimedia.slice(start index, end index)
-// 3. add a lil bit margin below the author name
-// 4. the description for each photo can be a lil bit larger
-// 5. the pink text can be a lil bit larger
-// 6. change the text to the correct ones
+// 2. Strings can be just typed directly, so u don't need {'Multimedia'}, u can just do MULTIMEDIA
+// 3. add links to all of the articles, search StyledAnchor for examples on how to use it
 const Multimedia = ({ multimedia }) => (
   <ImageContainer>
-    <LoveHeading color="#FDB6B0">{'MULTIMEDIA'}</LoveHeading>
+    <LoveHeading color="#FDB6B0">MULTIMEDIA</LoveHeading>
     <BoldText>
       {'Photo essay: Redefining Love In Lockdown'.toUpperCase()}
     </BoldText>
@@ -70,99 +61,73 @@ const Multimedia = ({ multimedia }) => (
     </RegularText>
     <NoMarginRow>
       <Col sm={12} md={5}>
-        <Container>
-          <Tag>
-            <p style={{ marginBottom: '0.2rem' }}>{multimedia[0].title}</p>
-            <Author>BY {multimedia[0].author}</Author>
-          </Tag>
-          <Img fluid={multimedia[0].img.childImageSharp.fluid} />
-        </Container>
-        <Container>
-          <Tag>
-            <p style={{ marginBottom: '0.2rem' }}>{multimedia[1].title}</p>
-            <Author>BY {multimedia[1].author}</Author>
-          </Tag>
-          <Img fluid={multimedia[1].img.childImageSharp.fluid} />
-        </Container>
-        <Container>
-          <Tag>
-            <p style={{ marginBottom: '0.2rem' }}>{multimedia[2].title}</p>
-            <Author>BY {multimedia[2].author}</Author>
-          </Tag>
-          <Img fluid={multimedia[2].img.childImageSharp.fluid} />
-        </Container>
+        {multimedia.slice(0, 3) &&
+          multimedia.slice(0, 3).map(article => (
+            <StyledAnchor link={article.link}>
+              <Container>
+                <Tag>
+                  <p style={{ marginBottom: '0.2rem' }}>{article.title}</p>
+                  <Author>BY {article.author}</Author>
+                </Tag>
+                <Img fluid={article.img.childImageSharp.fluid} />
+              </Container>
+            </StyledAnchor>
+          ))}
       </Col>
       <Col sm={12} md={7}>
-        <MobileContainer>
-          <Tag>
-            <p style={{ marginBottom: '0.2rem' }}>{multimedia[3].title}</p>
-            <Author>BY {multimedia[3].author}</Author>
-          </Tag>
-          <Img fluid={multimedia[3].img.childImageSharp.fluid} />
-        </MobileContainer>
-        <Container>
-          <Tag>
-            <p style={{ marginBottom: '0.2rem' }}>{multimedia[4].title}</p>
-            <Author>BY {multimedia[4].author}</Author>
-          </Tag>
-          <Img fluid={multimedia[4].img.childImageSharp.fluid} />
-        </Container>
-        <Container>
-          <Tag>
-            <p style={{ marginBottom: '0.2rem' }}>{multimedia[5].title}</p>
-            <Author>BY {multimedia[5].author}</Author>
-          </Tag>
-          <Img fluid={multimedia[5].img.childImageSharp.fluid} />
-        </Container>
+        <StyledAnchor link={multimedia[3].link}>
+          <MobileContainer>
+            <Tag>
+              <p style={{ marginBottom: '0.2rem' }}>{multimedia[3].title}</p>
+              <Author>BY {multimedia[3].author}</Author>
+            </Tag>
+            <Img fluid={multimedia[3].img.childImageSharp.fluid} />
+          </MobileContainer>
+        </StyledAnchor>
+        {multimedia.slice(4, 6) &&
+          multimedia.slice(4, 6).map(article => (
+            <StyledAnchor link={article.link}>
+              <Container>
+                <Tag>
+                  <p style={{ marginBottom: '0.2rem' }}>{article.title}</p>
+                  <Author>BY {article.author}</Author>
+                </Tag>
+                <Img fluid={article.img.childImageSharp.fluid} />
+              </Container>
+            </StyledAnchor>
+          ))}
       </Col>
     </NoMarginRow>
     <NoMarginRow>
-      <Col sm={12} md={4}>
-        <Container>
-          <Tag>
-            <p style={{ marginBottom: '0.2rem' }}>{multimedia[6].title}</p>
-            <Author>BY {multimedia[6].author}</Author>
-          </Tag>
-          <Img
-            fluid={multimedia[6].img.childImageSharp.fluid}
-            style={{ height: '500px' }}
-          />
-        </Container>
-      </Col>
-      <Col sm={12} md={4}>
-        <MobileContainer>
-          <Tag>
-            <p style={{ marginBottom: '0.2rem' }}>{multimedia[7].title}</p>
-            <Author>BY {multimedia[7].author}</Author>
-          </Tag>
-          <Img
-            fluid={multimedia[7].img.childImageSharp.fluid}
-            style={{ height: '500px' }}
-          />
-        </MobileContainer>
-      </Col>
-      <Col sm={12} md={4}>
-        <Container>
-          <Tag>
-            <p style={{ marginBottom: '0.2rem' }}>{multimedia[8].title}</p>
-            <Author>BY {multimedia[8].author}</Author>
-          </Tag>
-          <Img
-            fluid={multimedia[8].img.childImageSharp.fluid}
-            style={{ height: '500px' }}
-          />
-        </Container>
-      </Col>
+      {multimedia.slice(6, 9) &&
+        multimedia.slice(6, 9).map(article => (
+          <Col sm={12} md={4}>
+            <StyledAnchor link={article.link}>
+              <Container>
+                <Tag>
+                  <p style={{ marginBottom: '0.2rem' }}>{article.title}</p>
+                  <Author>BY {article.author}</Author>
+                </Tag>
+                <Img
+                  fluid={article.img.childImageSharp.fluid}
+                  style={{ height: '500px' }}
+                />
+              </Container>
+            </StyledAnchor>
+          </Col>
+        ))}
     </NoMarginRow>
     <NoMarginRow>
       <Col sm={12} md={5}>
-        <Container>
-          <Tag>
-            <p style={{ marginBottom: '0.2rem' }}>{multimedia[9].title}</p>
-            <Author>BY {multimedia[9].author}</Author>
-          </Tag>
-          <Img fluid={multimedia[9].img.childImageSharp.fluid} />
-        </Container>
+        <StyledAnchor link={multimedia[9].link}>
+          <Container>
+            <Tag>
+              <p style={{ marginBottom: '0.2rem' }}>{multimedia[9].title}</p>
+              <Author>BY {multimedia[9].author}</Author>
+            </Tag>
+            <Img fluid={multimedia[9].img.childImageSharp.fluid} />
+          </Container>
+        </StyledAnchor>
       </Col>
       <Col sm={12} md={7}>
         <BoxedText>

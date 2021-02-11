@@ -3,6 +3,8 @@
     "cover_img": "../../../images/2021/love-issue/cover_img.png",
     "essay_winner": [
       {
+        "place": "2nd",
+        "color": "white",
         "title": "Day 62: A Love Letter",
         "subhead": "Finding pleasure in seven–minute walks, pancakes, and number theory.",
         "author": "Anonymous",
@@ -10,6 +12,8 @@
         "link": "https://www.34st.com/article/2021/02/love-issue-essay-contest-anonymous-day-62-a-love-letter"
       },
       {
+        "place": "1st",
+        "color": "#FFB193",
         "title": "Songs I Carry for My Dad",
         "subhead": "When my own words were gone, I sang for him.",
         "author": "Julia Mitchell",
@@ -17,6 +21,8 @@
         "link": "https://www.34st.com/article/2021/02/love-issue-essay-contest-julia-mitchell-songs-i-carry-for-my-dad"
       },
       {
+        "place": "3rd",
+        "color": "white",
         "title": "Spencer",
         "subhead": "Learning to be still with the help of man's best friend",
         "author": "Eliana Doft",

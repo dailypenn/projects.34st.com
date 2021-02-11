@@ -1,8 +1,7 @@
 import React from 'react'
 import s from 'styled-components'
 import InstagramEmbed from 'react-instagram-embed'
-import {BoldText, RegularText} from './shared.js'
-
+import { BoldText, RegularText } from './shared.js'
 
 const Wrapper = s.div`
   margin: 3rem 0;

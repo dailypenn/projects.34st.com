@@ -39,6 +39,8 @@ const Index = () => {
                 }
               }
               essay_winner {
+                place
+                color
                 author
                 link
                 subhead

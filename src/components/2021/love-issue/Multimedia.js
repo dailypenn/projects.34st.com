@@ -8,7 +8,7 @@ import {
   Author,
   LoveHeading,
   BoldText,
-  RegularText
+  RegularText,
 } from '../../shared/index.js'
 import { useStaticQuery, graphql } from 'gatsby'
 
@@ -61,141 +61,131 @@ const NoMarginRow = s(Row)`
 // 5. the pink text can be a lil bit larger
 // 6. change the text to the correct ones
 const Multimedia = ({ multimedia }) => (
-    <ImageContainer>
-      <LoveHeading color="#FDB6B0">{'MULTIMEDIA'}</LoveHeading>
-      <BoldText>{"Photo essay: Redefining Love In Lockdown".toUpperCase()}</BoldText>
-      <RegularText style={{ marginBottom: '1rem' }}>
-        From puppies to coffee cups, here’s how Street survived life under lockdown.
-      </RegularText>
-      <NoMarginRow>
-        <Col sm={12} md={5}>
-              <Container>
-                <Tag>
-                  <p style={{ marginBottom: '0.2rem' }}>
-                    {multimedia[0].title}
-                  </p>
-                  <Author>BY {multimedia[0].author}</Author>
-                </Tag>
-                <Img fluid={multimedia[0].img.childImageSharp.fluid} />
-              </Container>
-              <Container>
-                <Tag>
-                  <p style={{ marginBottom: '0.2rem' }}>
-                    {multimedia[1].title}
-                  </p>
-                  <Author>BY {multimedia[1].author}</Author>
-                </Tag>
-                <Img fluid={multimedia[1].img.childImageSharp.fluid} />
-              </Container>
-              <Container>
-                <Tag>
-                  <p style={{ marginBottom: '0.2rem' }}>
-                    {multimedia[2].title}
-                  </p>
-                  <Author>BY {multimedia[2].author}</Author>
-                </Tag>
-                <Img fluid={multimedia[2].img.childImageSharp.fluid} />
-              </Container>
-        </Col>
-        <Col sm={12} md={7}>
-              <MobileContainer>
-                <Tag>
-                  <p style={{ marginBottom: '0.2rem' }}>
-                    {multimedia[3].title}
-                  </p>
-                  <Author>BY {multimedia[3].author}</Author>
-                </Tag>
-                <Img fluid={multimedia[3].img.childImageSharp.fluid} />
-              </MobileContainer>
-              <Container>
-                <Tag>
-                  <p style={{ marginBottom: '0.2rem' }}>
-                    {multimedia[4].title}
-                  </p>
-                  <Author>BY {multimedia[4].author}</Author>
-                </Tag>
-                <Img fluid={multimedia[4].img.childImageSharp.fluid} />
-              </Container>
-              <Container>
-                <Tag>
-                  <p style={{ marginBottom: '0.2rem' }}>
-                    {multimedia[5].title}
-                  </p>
-                  <Author>BY {multimedia[5].author}</Author>
-                </Tag>
-                <Img fluid={multimedia[5].img.childImageSharp.fluid} />
-              </Container>
-            </Col>
-      </NoMarginRow>
-      <NoMarginRow>
-        <Col sm={12} md={4}>
-          <Container>
-            <Tag>
-              <p style={{ marginBottom: '0.2rem' }}>{multimedia[6].title}</p>
-              <Author>BY {multimedia[6].author}</Author>
-            </Tag>
-            <Img
-              fluid={multimedia[6].img.childImageSharp.fluid}
-              style={{ height: '500px' }}
-            />
-          </Container>
-        </Col>
-        <Col sm={12} md={4}>
-          <MobileContainer>
-            <Tag>
-              <p style={{ marginBottom: '0.2rem' }}>{multimedia[7].title}</p>
-              <Author>BY {multimedia[7].author}</Author>
-            </Tag>
-            <Img
-              fluid={multimedia[7].img.childImageSharp.fluid}
-              style={{ height: '500px' }}
-            />
-          </MobileContainer>
-        </Col>
-        <Col sm={12} md={4}>
-          <Container>
-            <Tag>
-              <p style={{ marginBottom: '0.2rem' }}>{multimedia[8].title}</p>
-              <Author>BY {multimedia[8].author}</Author>
-            </Tag>
-            <Img
-              fluid={multimedia[8].img.childImageSharp.fluid}
-              style={{ height: '500px' }}
-            />
-          </Container>
-        </Col>
-      </NoMarginRow>
-      <NoMarginRow>
-        <Col sm={12} md={5}>
-          <Container>
-            <Tag>
-              <p style={{ marginBottom: '0.2rem' }}>{multimedia[9].title}</p>
-              <Author>BY {multimedia[9].author}</Author>
-            </Tag>
-            <Img fluid={multimedia[9].img.childImageSharp.fluid} />
-          </Container>
-        </Col>
-        <Col sm={12} md={7} >
-          <BoxedText>
-            <p>
-              While none of us could have anticipated the effects that the
-              advent of COVID-19 would have on our society, the hardships and
-              grief of life under lockdown have certainly been felt by all of
-              us. Seperated from our loved ones and facing a future full of
-              uncertainty, quarantine has pushed us to find new ways to cope
-              with our so-called "new normal".
-            </p>
-            <p>
-              Street welcomed staffers to submtit photos of the things that
-              brought them a sense of peace during this time. From snuggling
-              with pets to exploring a new hobby, here are a few tidbits of
-              positivity that helped our staff survive the past year.
-            </p>
-          </BoxedText>
-        </Col>
-      </NoMarginRow>
-    </ImageContainer>
-  )
-
+  <ImageContainer>
+    <LoveHeading color="#FDB6B0">{'MULTIMEDIA'}</LoveHeading>
+    <BoldText>
+      {'Photo essay: Redefining Love In Lockdown'.toUpperCase()}
+    </BoldText>
+    <RegularText style={{ marginBottom: '1rem' }}>
+      From puppies to coffee cups, here’s how Street survived life under
+      lockdown.
+    </RegularText>
+    <NoMarginRow>
+      <Col sm={12} md={5}>
+        <Container>
+          <Tag>
+            <p style={{ marginBottom: '0.2rem' }}>{multimedia[0].title}</p>
+            <Author>BY {multimedia[0].author}</Author>
+          </Tag>
+          <Img fluid={multimedia[0].img.childImageSharp.fluid} />
+        </Container>
+        <Container>
+          <Tag>
+            <p style={{ marginBottom: '0.2rem' }}>{multimedia[1].title}</p>
+            <Author>BY {multimedia[1].author}</Author>
+          </Tag>
+          <Img fluid={multimedia[1].img.childImageSharp.fluid} />
+        </Container>
+        <Container>
+          <Tag>
+            <p style={{ marginBottom: '0.2rem' }}>{multimedia[2].title}</p>
+            <Author>BY {multimedia[2].author}</Author>
+          </Tag>
+          <Img fluid={multimedia[2].img.childImageSharp.fluid} />
+        </Container>
+      </Col>
+      <Col sm={12} md={7}>
+        <MobileContainer>
+          <Tag>
+            <p style={{ marginBottom: '0.2rem' }}>{multimedia[3].title}</p>
+            <Author>BY {multimedia[3].author}</Author>
+          </Tag>
+          <Img fluid={multimedia[3].img.childImageSharp.fluid} />
+        </MobileContainer>
+        <Container>
+          <Tag>
+            <p style={{ marginBottom: '0.2rem' }}>{multimedia[4].title}</p>
+            <Author>BY {multimedia[4].author}</Author>
+          </Tag>
+          <Img fluid={multimedia[4].img.childImageSharp.fluid} />
+        </Container>
+        <Container>
+          <Tag>
+            <p style={{ marginBottom: '0.2rem' }}>{multimedia[5].title}</p>
+            <Author>BY {multimedia[5].author}</Author>
+          </Tag>
+          <Img fluid={multimedia[5].img.childImageSharp.fluid} />
+        </Container>
+      </Col>
+    </NoMarginRow>
+    <NoMarginRow>
+      <Col sm={12} md={4}>
+        <Container>
+          <Tag>
+            <p style={{ marginBottom: '0.2rem' }}>{multimedia[6].title}</p>
+            <Author>BY {multimedia[6].author}</Author>
+          </Tag>
+          <Img
+            fluid={multimedia[6].img.childImageSharp.fluid}
+            style={{ height: '500px' }}
+          />
+        </Container>
+      </Col>
+      <Col sm={12} md={4}>
+        <MobileContainer>
+          <Tag>
+            <p style={{ marginBottom: '0.2rem' }}>{multimedia[7].title}</p>
+            <Author>BY {multimedia[7].author}</Author>
+          </Tag>
+          <Img
+            fluid={multimedia[7].img.childImageSharp.fluid}
+            style={{ height: '500px' }}
+          />
+        </MobileContainer>
+      </Col>
+      <Col sm={12} md={4}>
+        <Container>
+          <Tag>
+            <p style={{ marginBottom: '0.2rem' }}>{multimedia[8].title}</p>
+            <Author>BY {multimedia[8].author}</Author>
+          </Tag>
+          <Img
+            fluid={multimedia[8].img.childImageSharp.fluid}
+            style={{ height: '500px' }}
+          />
+        </Container>
+      </Col>
+    </NoMarginRow>
+    <NoMarginRow>
+      <Col sm={12} md={5}>
+        <Container>
+          <Tag>
+            <p style={{ marginBottom: '0.2rem' }}>{multimedia[9].title}</p>
+            <Author>BY {multimedia[9].author}</Author>
+          </Tag>
+          <Img fluid={multimedia[9].img.childImageSharp.fluid} />
+        </Container>
+      </Col>
+      <Col sm={12} md={7}>
+        <BoxedText>
+          <p>
+            While none of us could have anticipated the effects that the advent
+            of COVID-19 would have on our society, the hardships and grief of
+            life under lockdown have certainly been felt by all of us. Seperated
+            from our loved ones and facing a future full of uncertainty,
+            quarantine has pushed us to find new ways to cope with our so-called
+            "new normal".
+          </p>
+          <p>
+            Street welcomed staffers to submtit photos of the things that
+            brought them a sense of peace during this time. From snuggling with
+            pets to exploring a new hobby, here are a few tidbits of positivity
+            that helped our staff survive the past year.
+          </p>
+        </BoxedText>
+      </Col>
+    </NoMarginRow>
+  </ImageContainer>
+)
 
 export default Multimedia

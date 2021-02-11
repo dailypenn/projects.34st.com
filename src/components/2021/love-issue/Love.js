@@ -7,8 +7,6 @@ import { LoveHeading } from '../../shared/index.js'
 import { FUTURA_MEDIUM } from '../../../styles/font'
 import { StyledAnchor } from '../../shared/Typography'
 
-
-
 const Articles = s.div`
   background-color: ${({ color = '#283033' }) => color};
   padding: 1.5rem 4rem;

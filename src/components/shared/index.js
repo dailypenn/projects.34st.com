@@ -1,9 +1,13 @@
 import s from 'styled-components'
-import { FUNKTURM_REGULAR, FUTURA_REGULAR, FUTURA_BOLD, FUTURA_MEDIUM } from '../../styles/font'
+import {
+  FUNKTURM_REGULAR,
+  FUTURA_REGULAR,
+  FUTURA_BOLD,
+  FUTURA_MEDIUM,
+} from '../../styles/font'
 export * from './Footer'
 export * from './Navbar'
 export * from './Typography'
-
 
 export const LoveHeading = s.div`
   width: fit-content;
@@ -52,7 +56,6 @@ export const Author = s.p`
     margin-top: 0.75rem;
 	margin-bottom: 0.25rem;
 `
-
 
 export const BoldText = s.div`
   font-size: 1.7rem;

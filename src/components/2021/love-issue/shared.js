@@ -3,7 +3,7 @@ import {
   FUNKTURM_REGULAR,
   FUTURA_REGULAR,
   FUTURA_BOLD,
-  FUTURA_MEDIUM,
+  FUTURA_MEDIUM
 } from '../../../styles/font'
 
 export const LoveHeading = s.div`

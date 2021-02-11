@@ -10,7 +10,14 @@ module.exports = {
     `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    // images for 2021/love-issue
+    // google analytics
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-188534367-2',
+      },
+    },
+    // images and JSONs for 2021/love-issue
     {
       resolve: `gatsby-source-filesystem`,
       options: {

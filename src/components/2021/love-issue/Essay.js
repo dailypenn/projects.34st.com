@@ -1,15 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 import s from 'styled-components'
 import Img from 'gatsby-image'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
+
 import { FUTURA_BOLD } from '../../../styles/font'
 import { StyledAnchor } from '../../shared/Typography'
-
 import { Container, Tag, Author, LoveHeading } from './shared.js'
 
 export const Badge = s.span`
-  background-color: ${({ backgroundColor = '#283033' }) => backgroundColor};;
+  background-color: ${({ backgroundColor = '#283033' }) => backgroundColor};
   ${FUTURA_BOLD}
   border-radius: 10px;
   width: 3rem;
@@ -25,24 +25,24 @@ const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
     items: 3,
-    slidesToSlide: 3, // optional, default to 1.
+    slidesToSlide: 3 // optional, default to 1.
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
     items: 2,
-    slidesToSlide: 2, // optional, default to 1.
+    slidesToSlide: 2 // optional, default to 1.
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
     items: 1,
-    slidesToSlide: 1, // optional, default to 1.
-  },
+    slidesToSlide: 1 // optional, default to 1.
+  }
 }
 
 const EssayCarousel = ({ articles, deviceType }) => (
   <>
     <div style={{ margin: '0 2rem' }}>
-      <LoveHeading color="#FDB6B0">{'ESSAY WINNERS'}</LoveHeading>
+      <LoveHeading color="#FDB6B0">ESSAY WINNERS</LoveHeading>
     </div>
     <Carousel
       draggable={false}

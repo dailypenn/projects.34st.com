@@ -1,8 +1,9 @@
 import React from 'react'
 import s from 'styled-components'
-import { FUTURA_REGULAR } from '../../../styles/font'
 import { Col, Row } from 'react-bootstrap'
 import Img from 'gatsby-image'
+
+import { FUTURA_REGULAR } from '../../../styles/font'
 import { Tag, Author, LoveHeading, BoldText, RegularText } from './shared.js'
 import { StyledAnchor } from '../../shared/Typography'
 
@@ -18,6 +19,7 @@ const BoxedText = s.div`
     margin: 0;
   }
 `
+
 const ImageContainer = s.div`
   margin: auto;
   width: 75%;

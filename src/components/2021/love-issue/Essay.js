@@ -3,14 +3,14 @@ import s from 'styled-components'
 import Img from 'gatsby-image'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
-import { FUTURA_REGULAR } from '../../../styles/font'
+import { FUTURA_BOLD } from '../../../styles/font'
 import { StyledAnchor } from '../../shared/Typography'
 
 import { Container, Tag, Author, LoveHeading } from './shared.js'
 
 export const Badge = s.span`
   background-color: ${({ backgroundColor = '#283033' }) => backgroundColor};;
-  ${FUTURA_REGULAR}
+  ${FUTURA_BOLD}
   border-radius: 10px;
   width: 3rem;
   color: black;
@@ -18,6 +18,7 @@ export const Badge = s.span`
   margin-right: 1rem;
   text-align: center;
   display: inline-block;
+  text-transform: uppercase;
 `
 
 const responsive = {

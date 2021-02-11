@@ -138,7 +138,7 @@ const Multimedia = ({ multimedia }) => (
             "new normal".
           </p>
           <p>
-            Street welcomed staffers to submtit photos of the things that
+            Street welcomed staffers to submit photos of the things that
             brought them a sense of peace during this time. From snuggling with
             pets to exploring a new hobby, here are a few tidbits of positivity
             that helped our staff survive the past year.

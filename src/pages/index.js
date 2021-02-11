@@ -13,14 +13,12 @@ const Wrapper = s.div`
     font-style: normal;
     margin: 0;
   }
-
   nav img {
     width: 125px;
     display: block;
     margin: auto;
     padding: 15px 0;
   }
-
   h1, h2 {
     margin: 85px 0 10px;
     font-family: 'futura-pt', sans-serif;
@@ -29,69 +27,54 @@ const Wrapper = s.div`
     font-size: 72px;
     text-align: center;
   }
-
   h1 {
     color: #4BBFBE;
   }
-
   h2 {
     margin: 20px 0 25px;
     font-size: 50px;
   }
-
   hr {
     margin: 35px 0;
   }
-
   a, a:visited {
     text-decoration: none;
     color: inherit;
   }
-
   a:hover, a:active, a:focus {
     text-decoration: none;
     color: #4BBFBE;
   }
-
   footer {
     margin: 20px auto;
     text-align: center;
   }
-
   footer hr {
     margin-bottom: 20px;
   }
-
   .container {
     margin: 0 auto;
   }
-
   .row {
     margin: 0;
   }
-
   .article-row {
     display: flex;
     align-items: flex-end;
   }
-
   .featured-row {
     padding: 0;
   }
-
   .featured {
     padding: 15px 15px 0;
   }
-
   .top:first-of-type {
     border-right: 1px solid #EEE;
     padding-right: 40px;
   }
-
   .top:last-of-type {
     padding-left: 40px;
   }
-
   .info {
     font-family: "futura-pt", sans-serif;
     text-transform: uppercase;
@@ -99,22 +82,18 @@ const Wrapper = s.div`
     font-size: 20px;
     padding-bottom: 0;
   }
-
   .tag {
     font-weight: 700;
     padding-left: 0;
   }
-
   .date {
     font-weight: 400;
     text-align: right;
     padding-right: 0;
   }
-
   .top-tag, .top-date {
     padding-top: 15px;
   }
-
   .title {
     font-family: "futura-pt", sans-serif;
     color: #000;
@@ -122,47 +101,38 @@ const Wrapper = s.div`
     font-size: 40px;
     line-height: 1.2;
   }
-
   .featured-title {
     font-weight: 700;
     font-size: 38px;
     padding-bottom: 15px;
   }
-
   .description {
     font-size: 20px;
   }
-
   .credits {
     color: #999;
     font-size: 15px;
     padding-top: 15px;
   }
-
   ::selection {
     background: #4BBFBE;
     color: #FFF;
   }
-
   @media screen and (max-width: 991px) {
     hr {
       margin: 30px 0;
     }
-
     .article-row {
       flex-direction: column;
     }
-
     .article-info {
       padding-top: 15px;
     }
-
     .top:first-of-type {
       border-right: none;
       border-bottom: 1px solid #EEE;
       padding: 0 15px 30px;
     }
-
     .top:last-of-type {
       padding: 30px 15px 0;
     }
@@ -204,9 +174,7 @@ const FeaturedArticle = ({
         <div className="col-xs-6 date">{date}</div>
       </div>
       <div className="row title featured-title">
-        <a href={link} target="_blank" rel="noreferrer">
-          {title}
-        </a>
+        <URL link={link}>{title}</URL>
       </div>
       <div className="row description">{description}</div>
       <div className="row credits">
@@ -236,9 +204,7 @@ const SecondaryFeaturedArticle = ({
       <div class="col-xs-6 date top-date">{date}</div>
     </div>
     <div class="row title">
-      <a href={link} target="_blank" rel="noreferrer">
-        {title}
-      </a>
+      <URL link={link}>{title}</URL>
     </div>
     <div class="row description">{description}</div>
     <div class="row credits">
@@ -269,9 +235,7 @@ const Article = ({
         <div className="col-xs-6 date">{date}</div>
       </div>
       <div className="row title">
-        <a href={link} target="_blank" rel="noreferrer">
-          {title}
-        </a>
+        <URL link={link}>{title}</URL>
       </div>
       <div className="row description">{description}</div>
       <div className="row credits">
@@ -340,7 +304,7 @@ const Index = () => (
         <p>
           Made with <span role="img">💖</span> &nbsp;by&nbsp;
           <a href="https://tech.thedp.com/" target="_blank" rel="noreferrer">
-          the DP Tech Department
+            the DP Tech Department
           </a>
           &nbsp;&copy; The Daily Pennsylvanian 2021
         </p>

@@ -1,6 +1,17 @@
 {
   "featured": [
     {
+      "title": "Love Issue",
+      "author": "Calvin Hu, Nassim Motya, Peter Chen",
+      "section": "projects",
+      "date": "February 2021",
+      "description": "From Zoom dates to long walks around our blocks, here’s how Penn found love under lockdown",
+      "sponsored": false,
+      "link": "/2021/love-issue",
+      "image": "https://snworksceo.imgix.net/dpn-34s/8cf07f0e-d79c-445a-994d-da4dae0b1c9b.sized-1000x1000.png",
+      "alt": "love issue 2021"
+    },
+    {
       "title": "Street Features",
       "author": "Calvin Hu, Nassim Motya, Peter Chen",
       "section": "features",
@@ -21,7 +32,9 @@
       "link": "https://projects.34st.com/2018/11/best-of-penn/",
       "image": "https://snworksceo.imgix.net/dpn/5ede73a3-3fc7-49ed-854d-4afa6d39c369.sized-1000x1000.png",
       "alt": "best of penn 2018"
-    },
+    }
+  ],
+  "articles": [
     {
       "title": "Dining Guide Fall 2018",
       "author": "Web Dev: Jess Peng, Alex Graves, Daniel Salib",
@@ -32,9 +45,7 @@
       "link": "https://projects.34st.com/2018/09/dining-guide/",
       "image": "https://snworksceo.imgix.net/dpn-34s/0129c4ee-d3e2-40f7-8b02-f9f4a5fb00b3.sized-1000x1000.png",
       "alt": "dining guide fall 2018"
-    }
-  ],
-  "articles": [
+    },
     {
       "title": "Entertainment Guide 2018: Philadelphia, Curated",
       "author": "Web Dev: Alex Graves, Jess Peng, Daniel Salib",

@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{YtPJ:function(n,e,t){"use strict";t.r(e);var u=t("q1tI"),o=t.n(u);e.default=function(){return o.a.createElement("h1",null," Love issue ")}}}]);
-//# sourceMappingURL=component---src-pages-2021-love-issue-js-ba04e27ff9aaf7ba1906.js.map

@@ -1,9 +1,26 @@
 import React, {Component, useState} from 'react'
+import s from 'styled-components'
 import Img from 'gatsby-image'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
+import {FUTURA_REGULAR } from '../../../styles/font'
 
 import { Container, Tag, Author, LoveHeading } from './shared.js'
+
+
+
+export const Badge = s.span`
+  background-color: red;
+  ${FUTURA_REGULAR}
+  border-radius: 10px;
+  width: 3rem;
+  padding: 0.1rem 0.1rem;
+  color: black;
+  font-size: 70%;
+  margin-right: 1rem;
+  text-align: center;
+  display: inline-block;
+`
 
 const responsive = {
   desktop: {
@@ -23,13 +40,13 @@ const responsive = {
   },
 }
 
+
 // Nassim TODO: 
 // follow the wireframe and add the 1st, 2nd, and 3rd badges
 // u can refer to this code https://github.com/dailypenn/tech.thedp.com/blob/master/src/components/badge.js
 
 function EssayCarousel(props) {
   const[isShow] = useState(true)
-
   return (
     <>
       <div style={{ margin: '0 2rem' }}>
@@ -55,6 +72,7 @@ function EssayCarousel(props) {
           props.articles.map(article => (
             <Container>
               <Tag>
+                <Badge color = {'red'}>1st</Badge>
                 <p style={{ marginBottom: '0.2rem' }}>{article.title}</p>
                 <Author>BY {article.author}</Author>
               </Tag>

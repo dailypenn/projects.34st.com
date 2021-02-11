@@ -44,11 +44,7 @@ const NoMarginRow = s(Row)`
   margin-right: 0px;
   margin-top: -2rem;
 `
-// Nassim TODO:
-// 1. i want to see less hardcoding of multimedia[0], multimedia[1], if it's possible to
-// do .map, just do that, u can get subarray through multimedia.slice(start index, end index)
-// 2. Strings can be just typed directly, so u don't need {'Multimedia'}, u can just do MULTIMEDIA
-// 3. add links to all of the articles, search StyledAnchor for examples on how to use it
+
 const Multimedia = ({ multimedia }) => (
   <ImageContainer>
     <LoveHeading color="#FDB6B0">MULTIMEDIA</LoveHeading>

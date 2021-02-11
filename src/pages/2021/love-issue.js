@@ -14,13 +14,13 @@ const NAVBAR_TITLES = {
   left: [
     { text: 'FEATURE', link: 'feature' },
     { text: 'ESSAY WINNERS', link: 'essay-winners' },
-    { text: 'MULTIMEDIA', link: 'multimedia' }
+    { text: 'MULTIMEDIA', link: 'multimedia' },
   ],
   right: [
     { text: 'LOVE, IRL.', link: 'irl' },
     { text: 'LOVE, 4 U.', link: 'for-you' },
-    { text: 'LOVE, ONLINE.', link: 'online' }
-  ]
+    { text: 'LOVE, ONLINE.', link: 'online' },
+  ],
 }
 
 const Index = () => {
@@ -115,7 +115,7 @@ const Index = () => {
   `)
 
   const {
-    node: { childrenLoveIssueJson: sections }
+    node: { childrenLoveIssueJson: sections },
   } = data.allFile.edges[0]
 
   const {
@@ -124,7 +124,7 @@ const Index = () => {
     multimedia,
     love_irl,
     love_4_u,
-    love_online
+    love_online,
   } = sections[0]
 
   return (
@@ -203,7 +203,7 @@ const Index = () => {
 
       <Feature />
       <EssayCarousel articles={essay_winner} />
-      <Multimedia multimedia={multimedia}/>
+      <Multimedia multimedia={multimedia} />
       <Video />
 
       <div id="irl" />

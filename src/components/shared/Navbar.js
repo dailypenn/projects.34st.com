@@ -48,7 +48,7 @@ export const NavBar = ({
   font,
   bgColor = '#FFFFFF',
   fontColor = '#283033',
-  img = '/img/DP-Logo-Full.png'
+  img = '/img/DP-Logo-Full.png',
 }) => {
   const { left, right } = titles
 
@@ -60,7 +60,7 @@ export const NavBar = ({
         backgroundColor: bgColor,
         color: fontColor,
         boxShadow: '0px 5px 6px #00000029',
-        opacity: 1
+        opacity: 1,
       }}
     >
       <div className="navbar-collapse w-100 dual-collapse2 order-1 order-md-0 collapse">

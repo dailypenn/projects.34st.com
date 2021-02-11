@@ -24,13 +24,6 @@
         "link": "https://www.34st.com/article/2021/02/love-issue-essay-contest-eliana-doft-spencer-dog"
       }
     ],
-    "photo_essay": {
-      "title": "Redefining Love In Lockdown",
-      "subhead": "Photo Essay | From puppies to coffee cups, here's how Street survived life under lockdown.",
-      "author": "34th Street Magazine",
-      "img": "../../../images/2021/love-issue/photo-essay-1.jpg",
-      "link": "https://www.34st.com/article/2021/02/love-issue-photo-essay-painting-dogs-coffee-focaccia-quarantine-trends-lockdown"
-    },
     "love_irl": [
       {
         "title": "69th Street: Stop Hating Yourself for Being Needy",
@@ -120,10 +113,8 @@
         "img": "../../../images/2021/love-issue/love-online-4.jpg",
         "link": "https://www.34st.com/article/2021/02/romantic-comedy-diversity-bipoc-hollywood-representation"
       }
-    ]
-  },
-  {
-    "multimedia" :[
+    ],
+    "multimedia": [
       {
         "title": "“During quarantine, I started baking a lot more and got really into baking homemade bread.”",
         "author": "Maddie Muldoon (C ’23)",

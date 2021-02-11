@@ -23,11 +23,6 @@ export const LoveHeading = s.div`
   }
 `
 
-export const Container = s.div`
-	border: 1px solid #DDDDDD;
-    position: relative;
-`
-
 export const Tag = s.div` 
 	float: left;
 	position: absolute;
@@ -74,7 +69,7 @@ export const BoldText = s.div`
 `
 
 export const RegularText = s.div`
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   ${FUTURA_MEDIUM}
   text-align: center;
   max-width: 75%;

@@ -52,20 +52,6 @@ const Index = () => {
                   }
                 }
               }
-              photo_essay {
-                author
-                link
-                subhead
-                title
-                img {
-                  childImageSharp {
-                    fluid(maxWidth: 1000, maxHeight: 1000) {
-                      ...GatsbyImageSharpFluid
-                      src
-                    }
-                  }
-                }
-              }
               love_4_u {
                 author
                 link
@@ -108,6 +94,19 @@ const Index = () => {
                   }
                 }
               }
+              multimedia {
+                author
+                link
+                title
+                img {
+                  childImageSharp {
+                    fluid(maxWidth: 1000) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -122,7 +121,7 @@ const Index = () => {
   const {
     cover_img,
     essay_winner,
-    photo_essay,
+    multimedia,
     love_irl,
     love_4_u,
     love_online
@@ -204,7 +203,7 @@ const Index = () => {
 
       <Feature />
       <EssayCarousel articles={essay_winner} />
-      <Multimedia/>
+      <Multimedia multimedia={multimedia}/>
       <Video />
 
       <div id="irl" />

@@ -2,8 +2,9 @@ import React, { Component } from 'react'
 import Img from 'gatsby-image'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
+import s from 'styled-components'
 
-import { Container, Tag, Author, LoveHeading } from '../../shared/index.js'
+import { Tag, Author, LoveHeading } from '../../shared/index.js'
 
 const responsive = {
   desktop: {
@@ -22,6 +23,11 @@ const responsive = {
     slidesToSlide: 1 // optional, default to 1.
   }
 }
+
+const Container = s.div`
+	border: 1px solid #DDDDDD;
+  position: relative;
+`
 
 // Nassim TODO: change this to functional component
 // follow the wireframe and add the 1st, 2nd, and 3rd badges

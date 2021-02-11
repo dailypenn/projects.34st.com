@@ -2,11 +2,10 @@ import React from 'react'
 import s from 'styled-components'
 import { Col, Row } from 'react-bootstrap'
 import Img from 'gatsby-image'
-import { LoveHeading } from '../../shared/index.js'
+import { LoveHeading } from './shared.js'
 
 import { FUTURA_MEDIUM } from '../../../styles/font'
 import { StyledAnchor } from '../../shared/Typography'
-
 
 
 const Articles = s.div`

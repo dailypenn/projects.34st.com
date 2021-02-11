@@ -10,11 +10,9 @@ import {
   LoveHeading,
   BoldText,
   RegularText
-} from '../../shared/index.js'
+} from './shared.js'
 import { useStaticQuery, graphql } from 'gatsby'
 
-// Nassim TODO: don't copy and paste the code everywhere, put
-// this into shared.js and pass in the colors
 const BoxedText = s.div`
   width: fit-content;
   padding: .5rem 1.2rem;

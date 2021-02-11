@@ -1,4 +1,4 @@
-import React, {Component, useState} from 'react'
+import React, { useState } from 'react'
 import Img from 'gatsby-image'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
@@ -9,26 +9,28 @@ const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
     items: 3,
-    slidesToSlide: 3, // optional, default to 1.
+    slidesToSlide: 3 // optional, default to 1.
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
     items: 2,
-    slidesToSlide: 2, // optional, default to 1.
+    slidesToSlide: 2 // optional, default to 1.
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
     items: 1,
-    slidesToSlide: 1, // optional, default to 1.
-  },
+    slidesToSlide: 1 // optional, default to 1.
+  }
 }
 
-// Nassim TODO: 
-// follow the wireframe and add the 1st, 2nd, and 3rd badges
+// Nassim TODO:
+// 1. follow the wireframe and add the 1st, 2nd, and 3rd badges
 // u can refer to this code https://github.com/dailypenn/tech.thedp.com/blob/master/src/components/badge.js
+// 2. change this to arrow function, u did it in Multimedia.js, it's the same thing. And if u don't need isShow, just delete it
+// 3. add links to all of the articles, search StyledAnchor for examples on how to use it
 
 function EssayCarousel(props) {
-  const[isShow] = useState(true)
+  const [isShow] = useState(true)
 
   return (
     <>

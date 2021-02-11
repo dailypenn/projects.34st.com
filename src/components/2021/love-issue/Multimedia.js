@@ -3,13 +3,7 @@ import s from 'styled-components'
 import { FUTURA_REGULAR } from '../../../styles/font'
 import { Col, Row } from 'react-bootstrap'
 import Img from 'gatsby-image'
-import {
-  Tag,
-  Author,
-  LoveHeading,
-  BoldText,
-  RegularText
-} from './shared.js'
+import { Tag, Author, LoveHeading, BoldText, RegularText } from './shared.js'
 import { useStaticQuery, graphql } from 'gatsby'
 
 const BoxedText = s.div`
@@ -51,13 +45,10 @@ const NoMarginRow = s(Row)`
   margin-top: -2rem;
 `
 // Nassim TODO:
-// 1. just put this entire graphql query inside love-issue.js and pass the content here
-// 2. i want to see less hardcoding of multimedia[0], multimedia[1], if it's possible to
+// 1. i want to see less hardcoding of multimedia[0], multimedia[1], if it's possible to
 // do .map, just do that, u can get subarray through multimedia.slice(start index, end index)
-// 3. add a lil bit margin below the author name
-// 4. the description for each photo can be a lil bit larger
-// 5. the pink text can be a lil bit larger
-// 6. change the text to the correct ones
+// 2. Strings can be just typed directly, so u don't need {'Multimedia'}, u can just do MULTIMEDIA
+// 3. add links to all of the articles, search StyledAnchor for examples on how to use it
 const Multimedia = ({ multimedia }) => (
   <ImageContainer>
     <LoveHeading color="#FDB6B0">{'MULTIMEDIA'}</LoveHeading>

@@ -5,13 +5,12 @@ import Img from 'gatsby-image'
 
 import { Footer, NavBar } from '../../components/shared/'
 import Section3 from '../../components/2021/parrot/section3.js'
-<<<<<<< HEAD
 import Section1 from '../../components/2021/parrot/section1.js'
 import DomSection from '../../components/2021/parrot/dom.js'
-=======
 import Section4 from '../../components/2021/parrot/section4.js'
 import Pic3 from '../../components/2021/parrot/pic3.js'
->>>>>>> c7df43328745c4ba97621a7500af1a2927fefb32
+import Pic1 from '../../components/2021/parrot/pic1.js'
+import Section2 from '../../components/2021/parrot/section2.js'
 
 
 const Index = () => {
@@ -109,7 +108,7 @@ const Index = () => {
                 content
                 img {
                   childImageSharp {
-                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                    fluid(maxWidth: 500, maxHeight: 500) {
                       ...GatsbyImageSharpFluid
                       src
                     }
@@ -158,7 +157,7 @@ const Index = () => {
                 credit
                 img {
                   childImageSharp {
-                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                    fluid(maxWidth: 1200, maxHeight: 600) {
                       ...GatsbyImageSharpFluid
                       src
                     }
@@ -168,7 +167,14 @@ const Index = () => {
               }
               dom {
                 subheader
-                img
+                img {
+                  childImageSharp {
+                    fluid(maxWidth: 900, maxHeight: 900) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
                 header
                 description
                 credit
@@ -264,6 +270,8 @@ const Index = () => {
       </Helmet>
       <DomSection section={dom}/>
       <Section1 section={section1}/>
+      <Pic1 section={pic1}/>
+      <Section2 section={section2}/>
       <Section3></Section3>
       <Section4 json={section4}></Section4>
       <Pic3 json={pic3}></Pic3>

@@ -5,6 +5,8 @@ import Img from 'gatsby-image'
 
 import { Footer, NavBar } from '../../components/shared/'
 import Section3 from '../../components/2021/parrot/section3.js'
+import Section4 from '../../components/2021/parrot/section4.js'
+import Pic3 from '../../components/2021/parrot/pic3.js'
 
 
 const Index = () => {
@@ -54,7 +56,7 @@ const Index = () => {
                 caption
                 img {
                   childImageSharp {
-                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                    fluid(maxWidth: 650, maxHeight: 800) {
                       ...GatsbyImageSharpFluid
                       src
                     }
@@ -125,7 +127,7 @@ const Index = () => {
                 author
                 img {
                   childImageSharp {
-                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                    fluid(maxWidth: 1000, maxHeight: 500) {
                       ...GatsbyImageSharpFluid
                       src
                     }
@@ -263,6 +265,8 @@ const Index = () => {
         ></script>
       </Helmet>
       <Section3></Section3>
+      <Section4 json={section4}></Section4>
+      <Pic3 json={pic3}></Pic3>
     </>
   )
 }

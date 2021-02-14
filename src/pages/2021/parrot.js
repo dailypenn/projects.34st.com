@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 import { Footer, NavBar } from '../../components/shared/'
-import Section4 from '../../components/2021/parrot/section4.js'
+import Section3 from '../../components/2021/parrot/section3.js'
 
 
 const Index = () => {
@@ -92,7 +92,7 @@ const Index = () => {
   `)
 
   const {
-    node: { childrenLoveIssueJson: sections },
+    node: { childrenParrotJson: sections },
   } = data.allFile.edges[0]
 
   const {
@@ -171,7 +171,7 @@ const Index = () => {
           crossOrigin="anonymous"
         ></script>
       </Helmet>
-      <Section4></Section4>
+      <Section3></Section3>
     </>
   )
 }

@@ -5,6 +5,8 @@ import Img from 'gatsby-image'
 
 import { Footer, NavBar } from '../../components/shared/'
 import Section3 from '../../components/2021/parrot/section3.js'
+import Section1 from '../../components/2021/parrot/section1.js'
+import DomSection from '../../components/2021/parrot/dom.js'
 
 
 const Index = () => {
@@ -161,14 +163,7 @@ const Index = () => {
               }
               dom {
                 subheader
-                img {
-                  childImageSharp {
-                    fluid(maxWidth: 1000, maxHeight: 1000) {
-                      ...GatsbyImageSharpFluid
-                      src
-                    }
-                  }
-                }
+                img
                 header
                 description
                 credit
@@ -262,6 +257,8 @@ const Index = () => {
           crossOrigin="anonymous"
         ></script>
       </Helmet>
+      <DomSection section={dom}/>
+      <Section1 section={section1}/>
       <Section3></Section3>
     </>
   )

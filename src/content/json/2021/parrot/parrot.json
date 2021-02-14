@@ -3,7 +3,7 @@
     "social": {
       "header": "",
       "subheader": "",
-      "img": ""
+      "img": "../../../images/2021/parrot/dom.jpg"
     },
     "dom": {
       "header": "Lasting Scars:",
@@ -12,7 +12,7 @@
       "author": "Denali Sagner & Max Cohen",
       "caption": "Original photos: Temple University Urban Archives via Chronicle of Higher Education, The Daily Pennsylvanian Archives, and Temple University Archives",
       "credit": "Isabel Liang",
-      "img": "../../../images/2021/parrot/dom.jpg"
+      "img": "/img/2021/parrot/dom.jpg"
     },
     "section1": {
       "img": "../../../images/2021/parrot/section1.jpg",

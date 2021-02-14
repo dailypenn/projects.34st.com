@@ -1,0 +1,73 @@
+[
+  {
+    "social": {
+      "header": "",
+      "subheader": "",
+      "img": ""
+    },
+    "dom": {
+      "header": "",
+      "subheader": "",
+      "author": "",
+      "caption": "",
+      "credit": "",
+      "img": ""
+    },
+    "section1": {
+      "img": "",
+      "caption": "",
+      "content": ["dropcap", "", "", ""]
+    },
+    "pic1": {
+      "img": "",
+      "quote": "",
+      "author": "",
+      "credit": ""
+    },
+    "section2": {
+      "img1": "",
+      "caption": "",
+      "img2": "",
+      "quote": "",
+      "img3": "",
+      "author": "",
+      "content": ["", "", "circle", ""]
+    },
+    "pic2": {
+      "img": "",
+      "caption": "",
+      "quote": "",
+      "author": ""
+    },
+    "section3": {
+      "quote": "",
+      "author": "",
+      "content": []
+    },
+    "section4": {
+      "content": [],
+      "img": "",
+      "caption": ""
+    },
+    "pic3": {
+      "img": "",
+      "quote": "",
+      "author": ""
+    },
+    "section5": {
+      "content": [],
+      "img1": "",
+      "caption1": "",
+      "img2": "",
+      "caption2": ""
+    },
+    "pic4": {
+      "img": "",
+      "caption": "",
+      "credit": ""
+    },
+    "section6": {
+      "content": []
+    }
+  }
+]

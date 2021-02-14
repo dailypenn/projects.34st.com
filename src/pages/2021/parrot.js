@@ -16,7 +16,14 @@ const Index = () => {
             childrenParrotJson {
               social {
                 subheader
-                img
+                img {
+                  childImageSharp {
+                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
                 header
               }
               section6 {
@@ -25,13 +32,34 @@ const Index = () => {
               section5 {
                 caption1
                 caption2
-                img1
-                img2
+                img1 {
+                  childImageSharp {
+                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
+                img2 {
+                  childImageSharp {
+                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
                 content
               }
               section4 {
                 caption
-                img
+                img {
+                  childImageSharp {
+                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
                 content
               }
               section3 {
@@ -43,41 +71,104 @@ const Index = () => {
                 author
                 caption
                 content
-                img1
-                img2
-                img3
+                img1 {
+                  childImageSharp {
+                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
+                img2 {
+                  childImageSharp {
+                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
+                img3 {
+                  childImageSharp {
+                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
                 quote
               }
               section1 {
                 caption
                 content
-                img
+                img {
+                  childImageSharp {
+                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
               }
               pic4 {
                 caption
                 credit
-                img
+                img {
+                  childImageSharp {
+                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
               }
               pic3 {
                 author
-                img
+                img {
+                  childImageSharp {
+                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
                 quote
               }
               pic2 {
                 author
                 caption
-                img
+                img {
+                  childImageSharp {
+                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
                 quote
               }
               pic1 {
                 author
                 credit
-                img
+                img {
+                  childImageSharp {
+                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
                 quote
               }
               dom {
                 subheader
-                img
+                img {
+                  childImageSharp {
+                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
                 header
                 description
                 credit
@@ -92,7 +183,7 @@ const Index = () => {
   `)
 
   const {
-    node: { childrenLoveIssueJson: sections },
+    node: { childrenParrotJson: sections },
   } = data.allFile.edges[0]
 
   const {

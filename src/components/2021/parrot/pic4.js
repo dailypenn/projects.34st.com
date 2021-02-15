@@ -8,11 +8,15 @@ const ImageText = s.p`
     color: white;
     text-align: right;
     margin-bottom: 0;
+    font-size: 0.5rem;
 `
 
 const ImageDiv = s.div`
-    padding-top: 30rem;
+    padding: 30rem 15px 15px 0;
     background-color: rgba(0, 0, 0, .66);
+    @media(max-width: 768px) {
+        padding-top: 15rem;
+    }
 `
 
 const Pic4 = ({json}) => (

@@ -11,11 +11,19 @@ const YusufImgCol = s.div`
     padding-left: 2.5rem;
 `
 
+const RowPlacement = s.div`
+	padding: 2rem 5rem 5rem;
+	background-color: #DFDDD0;
+	@media(max-width: 768px) {
+        padding: 0 2rem 2rem;
+    }
+`
+
 const Section5 = ({json}) => (
     <>
-        <Hornblum>
+        <RowPlacement>
             <CounterRowMargin>
-                <Row style={{padding: "5rem 4rem 5rem 4rem"}}>
+                <Row style={{paddingTop: "5rem"}}>
                     <Col md={7}>
                         <MainPara>For decades, the Holmesburg Prison experiments have been one of Penn's darkest open secrets.</MainPara>
                         <MainPara>In 1990, formerly incarcerated study participant Edward Farrington <a target="_blank" href="https://www.thedp.com/article/1990/11/citys-suit-response-points-finger-at-u">sued</a> the city of Philadelphia, Holmesburg, and Penn, claiming he developed leukemia from the radioactive injections that he received at the prison. Farrington claimed that University researchers "enticed" him into participating in the study, assuring him that there would be no long-term consequences. Two years later, the lawsuit was settled. The University denied Farrington's allegations and made no admission of guilt in the process of the settlement.</MainPara>
@@ -36,7 +44,7 @@ const Section5 = ({json}) => (
                     </Col>
                 </Row>
             </CounterRowMargin>
-        </Hornblum>
+        </RowPlacement>
     </>
 )
 

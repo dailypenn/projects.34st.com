@@ -2,7 +2,8 @@ import React from 'react'
 import s from 'styled-components'
 import { Col, Row } from 'react-bootstrap'
 import Img from "gatsby-image"
-import {MainPara} from './Shared.js'
+import {MainPara, Circle} from './Shared.js'
+import ReactMarkdown from 'react-markdown'
 
 
 const SectionWrapper = s.div`
@@ -13,11 +14,15 @@ const SectionWrapper = s.div`
     }
 `
 
-const Pic4 = ({json}) => (
+const Pic4 = ({json: {content}}) => (
     <>
         <SectionWrapper>
-            <MainPara>At the protest, former study <a target="_blank" href="https://www.thedp.com/article/2003/10/research_subjects_protest_prof">participant</a> Anthony Edwards told the <i>DP</i>, "They coerced us &#8211; 85% were Black and functional illiterate &#8211; to believe that tests were safe ... [Kligman] owes us a debt."</MainPara>
-            <MainPara>Marc Ackerman (D '98), Jim Ackerman's son, remembers the night vividly. It was the night he was inducted into the College of Physicians as a fellow. Marc says that the doctors at the ceremony were more annoyed by the inconvenience of the protest than appalled by the accusations weighted against Kligman, the evening's honoree.</MainPara>
+            {content &&
+                content.map(para => (
+                    (para == "circle") ? 
+                    <Circle>&#9899; &nbsp; &#9899; &nbsp; &#9899;</Circle> : <MainPara><ReactMarkdown>{para}</ReactMarkdown></MainPara>  
+                ))
+            }    
         </SectionWrapper>
     </>
 )

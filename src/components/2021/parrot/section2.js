@@ -8,7 +8,7 @@ const RowPlacement = s.div`
   background-color: #DFDDD0;
   padding: 5rem 5rem 0 15px;
   @media(max-width: 768px) {
-    padding: 2rem 2rem 1rem 15px;
+    padding: 0 2rem 1rem 15px;
   }
 `
 const ColCounterPad = s.div`
@@ -28,7 +28,7 @@ const Caption = s.div`
     padding: 0.5rem 1rem 1rem;
   }
 `
-const MainPara = s.p`
+const MainPara = s.div`
 	font-size: 1.5rem;
 	font-family: 'Libre Franklin', sans-serif;
   padding-left: 3rem;

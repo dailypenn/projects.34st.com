@@ -17,7 +17,7 @@ const RowPlacement = s.div`
     padding: 2rem;
   }
 `
-const MainPara = s.p`
+const MainPara = s.div`
 	font-size: 1.5rem;
 	font-family: 'Libre Franklin', sans-serif;
   @media(max-width: 768px) {
@@ -43,6 +43,10 @@ const StartLetter = s.div`
     margin-bottom: 1.1rem;
   }
 `
+const DropCap = s.span`
+  float: left;
+  font-size: 5.5rem;
+`
 
 const Section1 = ({ section: {img, caption, content}}) => (
   <RowPlacement>
@@ -51,7 +55,7 @@ const Section1 = ({ section: {img, caption, content}}) => (
         {content &&
           content.map((para, idx) => {
             if (idx == 0) {
-              return (<StartLetter>{para}</StartLetter>)
+              return (<MainPara><DropCap>{para}</DropCap></MainPara>)
             } else if (idx == 1) {
               return (<MainPara><ReactMarkdown>{"&nbsp; &nbsp; &nbsp; &nbsp; "+ para}</ReactMarkdown></MainPara>)
             } else {

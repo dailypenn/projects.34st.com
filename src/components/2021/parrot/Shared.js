@@ -26,3 +26,11 @@ export const ImgCaption = s.p`
     width: 100%;
     margin-top: 1rem;
 `
+
+export const CenterDiv = s.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    height: 100%;
+    flex: 5 1 3;
+`

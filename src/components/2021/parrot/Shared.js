@@ -26,4 +26,3 @@ export const CenterDiv = s.div`
 	align-items: center;
     height: 100%;
 `
-

@@ -1,7 +1,6 @@
 import React from 'react'
 import s from 'styled-components'
-import BackgroundImage from "gatsby-background-image"
-
+import BackgroundImage from 'gatsby-background-image'
 
 const Title = s.div`
   padding: 0 8rem;
@@ -15,7 +14,7 @@ const BlackBgShade = s.div`
   background-color: rgba(0, 0, 0, .66);
 `
 
-const Watermark = s.div `
+const Watermark = s.div`
   opacity: 75%;
   width: 20%;
   padding: 2rem 0 20rem;
@@ -78,21 +77,27 @@ const Caption = s.div`
   padding: 0 1rem 1rem;
 `
 
-const DomSection = ({ section: {header, subheader, description, author, caption, credit, img}}) => (
+const DomSection = ({
+  section: { header, subheader, description, author, caption, credit, img },
+}) => (
   <BackgroundImage fluid={img.childImageSharp.fluid}>
     <BlackBgShade>
-    <Watermark>
-      <img src="/img/2021/parrot/watermark.png" class="img-fluid"/>
-    </Watermark>
-    <Title>
-      <Header>{header}</Header>
-      <Subheader>{subheader}</Subheader>
-    </Title>
-    <CoverText>
-      <Description>{description}</Description>
-      <Author>BY {author.toUpperCase()}</Author>
-    </CoverText>
-    <Caption>{caption}<br/>Credit: {credit}</Caption>
+      <Watermark>
+        <img src="/img/2021/parrot/watermark.png" class="img-fluid" />
+      </Watermark>
+      <Title>
+        <Header>{header}</Header>
+        <Subheader>{subheader}</Subheader>
+      </Title>
+      <CoverText>
+        <Description>{description}</Description>
+        <Author>BY {author.toUpperCase()}</Author>
+      </CoverText>
+      <Caption>
+        {caption}
+        <br />
+        Credit: {credit}
+      </Caption>
     </BlackBgShade>
   </BackgroundImage>
 )

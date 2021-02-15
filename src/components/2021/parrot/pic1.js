@@ -1,7 +1,5 @@
 import React from 'react'
 import s from 'styled-components'
-import { Col, Row } from 'react-bootstrap'
-import Img from "gatsby-image"
 import BackgroundImage from 'gatsby-background-image'
 
 const ShadeBg = s.div`
@@ -44,12 +42,12 @@ const Credit = s.div`
   padding: 0 1rem 1rem;
 `
 
-const Pic1 = ({ section: {img, quote, author, credit}}) => (
+const Pic1 = ({ section: { img, quote, author, credit } }) => (
   <BackgroundImage fluid={img.childImageSharp.fluid}>
     <ShadeBg>
-        <Quote>{quote}</Quote>
-        <QuoteAuthor>&#8211; {author}</QuoteAuthor>
-        <Credit>{credit}</Credit>
+      <Quote>{quote}</Quote>
+      <QuoteAuthor>&#8211; {author}</QuoteAuthor>
+      <Credit>{credit}</Credit>
     </ShadeBg>
   </BackgroundImage>
 )

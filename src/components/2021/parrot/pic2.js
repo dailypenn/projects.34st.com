@@ -1,7 +1,6 @@
 import React from 'react'
 import s from 'styled-components'
 import { Col, Row } from 'react-bootstrap'
-import Img from "gatsby-image"
 import BackgroundImage from 'gatsby-background-image'
 
 const RowPlacement = s.div`
@@ -45,7 +44,7 @@ const QuoteAuthor = s.div`
     width: 100%;
   }
 `
-const Pic2 = ({ section: {img, quote, author, caption}}) => (
+const Pic2 = ({ section: { img, quote, author, caption } }) => (
   <RowPlacement>
     <Row>
       <Col md={6}>

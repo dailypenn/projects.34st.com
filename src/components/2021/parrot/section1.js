@@ -3,7 +3,7 @@ import s from 'styled-components'
 import { Col, Row } from 'react-bootstrap'
 import Img from 'gatsby-image'
 import ReactMarkdown from 'react-markdown'
-import {Circle, MainPara} from './Shared.js'
+import { Circle, MainPara } from './Shared.js'
 
 const Caption = s.div`
   font-size: .6rem;
@@ -37,28 +37,37 @@ const DropCap = s.span`
   }
 `
 
-const Section1 = ({ section: {img, caption, content}}) => (
+const Section1 = ({ section: { img, caption, content } }) => (
   <RowPlacement>
     <Row>
-      <Col md={7}>    
+      <Col md={7}>
         {content &&
           content.map((para, idx) => {
             if (idx == 0) {
-              return (<DropCap>{para}</DropCap>)
+              return <DropCap>{para}</DropCap>
             } else if (idx == 1) {
-              return (<MainPara><ReactMarkdown>{para}</ReactMarkdown></MainPara>)
+              return (
+                <MainPara>
+                  <ReactMarkdown>{para}</ReactMarkdown>
+                </MainPara>
+              )
             } else {
-              return ((para == "circle") ? 
-                <Circle>&#9899; &nbsp; &#9899; &nbsp; &#9899;</Circle> : <MainPara><ReactMarkdown>{para}</ReactMarkdown></MainPara>)
+              return para == 'circle' ? (
+                <Circle>&#9899; &nbsp; &#9899; &nbsp; &#9899;</Circle>
+              ) : (
+                <MainPara>
+                  <ReactMarkdown>{para}</ReactMarkdown>
+                </MainPara>
+              )
             }
           })}
       </Col>
-    <Col md={5}>
-      <ImageContainer>
-        <Img fluid={img.childImageSharp.fluid} />
-        <Caption>{caption}</Caption>
-      </ImageContainer>
-    </Col>
+      <Col md={5}>
+        <ImageContainer>
+          <Img fluid={img.childImageSharp.fluid} />
+          <Caption>{caption}</Caption>
+        </ImageContainer>
+      </Col>
     </Row>
   </RowPlacement>
 )

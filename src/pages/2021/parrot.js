@@ -26,14 +26,7 @@ const Index = () => {
             childrenParrotJson {
               social {
                 subheader
-                img {
-                  childImageSharp {
-                    fluid(maxWidth: 1000, maxHeight: 1000) {
-                      ...GatsbyImageSharpFluid
-                      src
-                    }
-                  }
-                }
+                img
                 header
               }
               section6 {
@@ -219,7 +212,7 @@ const Index = () => {
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Love Issue" />
-        <title>Love Issue | 34th Street</title>
+        <title>{header} | 34th Street</title>
         <link
           rel="stylesheet"
           type="text/css"
@@ -232,7 +225,7 @@ const Index = () => {
         />
         <meta
           property="og:image"
-          content={img.src}
+          content=""
         />
         <meta property="og:description" content={subheader} />
         <meta property="og:type" content="article" />
@@ -248,7 +241,7 @@ const Index = () => {
         />
         <meta
           name="twitter:image"
-          content={img.src}
+          content=""
         />
         <meta name="twitter:description" content={subheader} />
         <meta

@@ -3,7 +3,7 @@ import s from 'styled-components'
 import { Col, Row } from 'react-bootstrap'
 import Img from 'gatsby-image'
 import ReactMarkdown from 'react-markdown'
-import {Circle, MainPara} from './Shared.js'
+import { Circle, MainPara } from './Shared.js'
 
 const RowPlacement = s.div`
   background-color: #DFDDD0;
@@ -78,7 +78,9 @@ const Img3Container = s.div`
   }
 `
 
-const Section2 = ({ section: {img1, caption, img2, quote, img3, author, content}}) => (
+const Section2 = ({
+  section: { img1, caption, img2, quote, img3, author, content },
+}) => (
   <RowPlacement>
     <Row>
       <Col md={5}>
@@ -89,8 +91,8 @@ const Section2 = ({ section: {img1, caption, img2, quote, img3, author, content}
             <Img2Container>
               <Img fluid={img2.childImageSharp.fluid} />
             </Img2Container>
-              <Quote>{quote}</Quote>
-              <QuoteAuthor>&#8211; {author}</QuoteAuthor>
+            <Quote>{quote}</Quote>
+            <QuoteAuthor>&#8211; {author}</QuoteAuthor>
             <Img3Container>
               <Img fluid={img3.childImageSharp.fluid} />
             </Img3Container>
@@ -100,11 +102,15 @@ const Section2 = ({ section: {img1, caption, img2, quote, img3, author, content}
       <Col md={7}>
         <TextPad>
           {content &&
-            content.map(para => (
-              (para == "circle") ? 
-              <Circle>&#9899; &nbsp; &#9899; &nbsp; &#9899;</Circle> : <MainPara><ReactMarkdown>{para}</ReactMarkdown></MainPara>  
-            ))
-          }
+            content.map(para =>
+              para == 'circle' ? (
+                <Circle>&#9899; &nbsp; &#9899; &nbsp; &#9899;</Circle>
+              ) : (
+                <MainPara>
+                  <ReactMarkdown>{para}</ReactMarkdown>
+                </MainPara>
+              )
+            )}
         </TextPad>
       </Col>
     </Row>

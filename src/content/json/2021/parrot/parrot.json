@@ -3,7 +3,7 @@
     "social": {
       "header": "Feature",
       "subheader": "34th Street",
-      "img": "../../../images/2021/parrot/dom.jpg"
+      "img": "../../../static/img/2021/parrot/dom.jpg"
     },
     "dom": {
       "header": "Lasting Scars:",

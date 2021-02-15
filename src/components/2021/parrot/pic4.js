@@ -1,7 +1,5 @@
 import React from 'react'
 import s from 'styled-components'
-import { Col, Row } from 'react-bootstrap'
-import Img from "gatsby-image"
 import BackgroundImage from 'gatsby-background-image'
 
 const ImageText = s.p`
@@ -19,15 +17,15 @@ const ImageDiv = s.div`
     }
 `
 
-const Pic4 = ({json: {img, caption, credit}}) => (
-    <>
-        <BackgroundImage fluid={img.childImageSharp.fluid}>
-            <ImageDiv>
-                <ImageText>{caption}</ImageText>
-                <ImageText>{credit}</ImageText>
-            </ImageDiv>
-        </BackgroundImage>
-    </>
+const Pic4 = ({ json: { img, caption, credit } }) => (
+  <>
+    <BackgroundImage fluid={img.childImageSharp.fluid}>
+      <ImageDiv>
+        <ImageText>{caption}</ImageText>
+        <ImageText>{credit}</ImageText>
+      </ImageDiv>
+    </BackgroundImage>
+  </>
 )
 
 export default Pic4

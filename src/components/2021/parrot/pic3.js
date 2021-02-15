@@ -2,7 +2,6 @@ import React from 'react'
 import s from 'styled-components'
 import BackgroundImage from 'gatsby-background-image'
 
-
 const ShadeBg = s.div`
   width: 100%;
   background-size: cover;
@@ -35,13 +34,13 @@ const QuoteAuthor = s.div`
   }
 `
 
-const Pic3 = ({json: {img, quote, author}}) => (
-    <BackgroundImage fluid={img.childImageSharp.fluid}>
-        <ShadeBg>
-            <Quote>{quote}</Quote>
-            <QuoteAuthor>&#8211; {author}</QuoteAuthor>
-        </ShadeBg>
-    </BackgroundImage>
+const Pic3 = ({ json: { img, quote, author } }) => (
+  <BackgroundImage fluid={img.childImageSharp.fluid}>
+    <ShadeBg>
+      <Quote>{quote}</Quote>
+      <QuoteAuthor>&#8211; {author}</QuoteAuthor>
+    </ShadeBg>
+  </BackgroundImage>
 )
 
 export default Pic3

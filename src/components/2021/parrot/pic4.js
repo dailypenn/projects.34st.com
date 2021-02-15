@@ -19,12 +19,12 @@ const ImageDiv = s.div`
     }
 `
 
-const Pic4 = ({json}) => (
+const Pic4 = ({json: {img, caption, credit}}) => (
     <>
-        <BackgroundImage fluid={json.img.childImageSharp.fluid}>
+        <BackgroundImage fluid={img.childImageSharp.fluid}>
             <ImageDiv>
-                <ImageText>Original photos: Temple University Urban Archives via Chronicle of Higher Education, The Daily Pennsylvanian Archives, and Temple University Archives</ImageText>
-                <ImageText>Credit: Isabel Liang</ImageText>
+                <ImageText>{caption}</ImageText>
+                <ImageText>{credit}</ImageText>
             </ImageDiv>
         </BackgroundImage>
     </>

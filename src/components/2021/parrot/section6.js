@@ -9,7 +9,7 @@ const SectionWrapper = s.div`
     background-color: #DFDDD0;
     padding: 5rem 3.9rem 5rem 5.9rem;
     @media (max-width: 992px) {
-        padding: 3rem 3rem;
+        padding: 2rem 2rem;
     }
 `
 

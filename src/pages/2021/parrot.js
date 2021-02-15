@@ -277,7 +277,7 @@ const Index = () => {
       <Pic1 section={pic1}/>
       <Section2 section={section2}/>
       <Pic2 section={pic2}/>
-      <Section3></Section3>
+      <Section3 json={section3}/>
       <Section4 json={section4}></Section4>
       <Pic3 json={pic3}></Pic3>
       <Section5 json={section5}></Section5>

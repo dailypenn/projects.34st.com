@@ -3,6 +3,7 @@ import s from 'styled-components'
 import { Col, Row } from 'react-bootstrap'
 import Img from 'gatsby-image'
 import ReactMarkdown from 'react-markdown'
+import Circle from './Shared.js'
 
 const Caption = s.div`
   font-size: .6rem;
@@ -31,21 +32,16 @@ const ImageContainer = s.div`
   }
 `
 
-const StartLetter = s.div`
-  font-size: 5.5rem;
-  height: 0;
-  margin-top: -2rem;
-  margin-bottom: 4.55rem; 
-  color: #2B3C2E; 
-  @media(max-width: 768px) {
-    font-size: 2rem;
-    margin-top: -0.7rem;
-    margin-bottom: 1.1rem;
-  }
-`
 const DropCap = s.span`
   float: left;
-  font-size: 5.5rem;
+  margin-top: -3.3rem;
+  font-size: 4.5rem;
+  height: 5.7rem;
+  @media(max-width: 768px) {
+    font-size: 2rem;
+    margin-top: -1.2rem;
+    height: 2.6rem;
+  }
 `
 
 const Section1 = ({ section: {img, caption, content}}) => (
@@ -55,11 +51,12 @@ const Section1 = ({ section: {img, caption, content}}) => (
         {content &&
           content.map((para, idx) => {
             if (idx == 0) {
-              return (<MainPara><DropCap>{para}</DropCap></MainPara>)
+              return (<DropCap>{para}</DropCap>)
             } else if (idx == 1) {
-              return (<MainPara><ReactMarkdown>{"&nbsp; &nbsp; &nbsp; &nbsp; "+ para}</ReactMarkdown></MainPara>)
-            } else {
               return (<MainPara><ReactMarkdown>{para}</ReactMarkdown></MainPara>)
+            } else {
+              return ((para == "circle") ? 
+                <Circle>&#9899; &nbsp; &#9899; &nbsp; &#9899;</Circle> : <MainPara><ReactMarkdown>{para}</ReactMarkdown></MainPara>)
             }
           })}
       </Col>

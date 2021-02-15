@@ -8,6 +8,11 @@ export const Hornblum = s.div`
 		padding: 3rem 3rem;
 	}
 `
+export const Circle = s.div`
+  text-align: center;
+  font-size: 0.7rem;
+  padding-bottom: 1rem;
+`
 
 export const MainPara = s.p`
     font-size: 1.5rem;

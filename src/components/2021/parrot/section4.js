@@ -7,11 +7,9 @@ import {Hornblum, MainPara, ImgCaption} from './Shared.js'
 
 const BigImgRight = s.div`
 	@media (min-width: 992px) {
-		padding: 0rem 3.9rem 2rem 5.9rem;
+		padding: 0rem 4rem 2rem 4rem;
 	}
 `
-
-
 
 const Section4 = ({json}) => (
 	<>

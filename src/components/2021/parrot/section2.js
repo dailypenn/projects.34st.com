@@ -2,6 +2,7 @@ import React from 'react'
 import s from 'styled-components'
 import { Col, Row } from 'react-bootstrap'
 import Img from 'gatsby-image'
+import ReactMarkdown from 'react-markdown'
 
 const RowPlacement = s.div`
   background-color: #DFDDD0;
@@ -28,7 +29,7 @@ const Caption = s.div`
   }
 `
 const MainPara = s.p`
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	font-family: 'Libre Franklin', sans-serif;
   padding-left: 3rem;
   @media(max-width: 768px) {
@@ -78,6 +79,11 @@ const Img3Container = s.div`
     padding: 2rem 4rem 2rem 0;
   }
 `
+const Circle = s.div`
+  text-align: center;
+  font-size: 0.7rem;
+  padding-bottom: 1rem;
+`
 const Section2 = ({ section: {img1, caption, img2, quote, img3, author, content}}) => (
   <RowPlacement>
     <Row>
@@ -100,8 +106,10 @@ const Section2 = ({ section: {img1, caption, img2, quote, img3, author, content}
       <Col md={7}>
         {content &&
           content.map(para => (
-            <MainPara>{para}</MainPara>
-          ))}
+            (para == "circle") ? 
+            <Circle>&#9899; &nbsp; &#9899; &nbsp; &#9899;</Circle> : <MainPara><ReactMarkdown>{para}</ReactMarkdown></MainPara>  
+          ))
+        }
       </Col>
     </Row>
   </RowPlacement>

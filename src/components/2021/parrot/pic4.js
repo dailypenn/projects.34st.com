@@ -8,7 +8,6 @@ const ImageText = s.p`
     margin-bottom: 0;
     font-size: 0.5rem;
 `
-
 const ImageDiv = s.div`
     padding: 30rem 15px 15px 0;
     background-color: rgba(0, 0, 0, .66);
@@ -16,16 +15,13 @@ const ImageDiv = s.div`
         padding-top: 15rem;
     }
 `
-
 const Pic4 = ({ json: { img, caption, credit } }) => (
-  <>
-    <BackgroundImage fluid={img.childImageSharp.fluid}>
-      <ImageDiv>
-        <ImageText>{caption}</ImageText>
-        <ImageText>{credit}</ImageText>
-      </ImageDiv>
-    </BackgroundImage>
-  </>
+  <BackgroundImage fluid={img.childImageSharp.fluid}>
+    <ImageDiv>
+      <ImageText>{caption}</ImageText>
+      <ImageText>{credit}</ImageText>
+    </ImageDiv>
+  </BackgroundImage>
 )
 
 export default Pic4

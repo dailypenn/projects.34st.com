@@ -9,11 +9,9 @@ const Title = s.div`
     padding: 0 2rem;
   }
 `
-
 const BlackBgShade = s.div`
   background-color: rgba(0, 0, 0, .66);
 `
-
 const Watermark = s.div`
   opacity: 75%;
   width: 20%;
@@ -24,7 +22,6 @@ const Watermark = s.div`
     width: 40%;
   }
 `
-
 const Header = s.div`
   font-size: 10rem;
   color: white;
@@ -32,7 +29,6 @@ const Header = s.div`
     font-size: 2.5rem;
   }
 `
-
 const Subheader = s.div`
   font-size: 8rem;
   color: white;
@@ -40,7 +36,6 @@ const Subheader = s.div`
     font-size: 2rem;
   }
 `
-
 const CoverText = s.div`
   padding: 20rem 0 10rem;
   width: 38%;
@@ -52,7 +47,6 @@ const CoverText = s.div`
     width: 100%
   }
 `
-
 const Description = s.div`
   font-size: 3rem;
   font-family: 'Libre Franklin', sans-serif;
@@ -60,7 +54,6 @@ const Description = s.div`
     font-size: 1rem;
   }
 `
-
 const Author = s.div`
   font-size: 3rem;
   font-family: 'Libre Franklin', sans-serif;
@@ -70,13 +63,11 @@ const Author = s.div`
     padding-top: 1rem;
   }
 `
-
 const Caption = s.div`
   font-size: 0.5rem;
   color: white;
   padding: 0 1rem 1rem;
 `
-
 const DomSection = ({
   section: { header, subheader, description, author, caption, credit, img },
 }) => (

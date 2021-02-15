@@ -10,7 +10,6 @@ const Caption = s.div`
   padding-top 0.5rem;
   width: 100%
 `
-
 const RowPlacement = s.div`
   background-color: #DFDDD0;
   padding: 5rem;
@@ -18,13 +17,11 @@ const RowPlacement = s.div`
     padding: 2rem;
   }
 `
-
 const ImageContainer = s.div`
   @media(min-width: 768px) {
     padding-left: 2rem;
   }
 `
-
 const DropCap = s.span`
   float: left;
   margin-top: -3.3rem;
@@ -36,7 +33,6 @@ const DropCap = s.span`
     height: 2.6rem;
   }
 `
-
 const Section1 = ({ section: { img, caption, content } }) => (
   <RowPlacement>
     <Row>

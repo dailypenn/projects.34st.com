@@ -7,7 +7,6 @@ const ShadeBg = s.div`
   background-size: cover;
   background-color: rgba(0, 0, 0, .66);
 `
-
 const Quote = s.div`
   padding-top: 15rem;
   font-weight: bold;
@@ -41,7 +40,6 @@ const Credit = s.div`
   text-align: right;
   padding: 0 1rem 1rem;
 `
-
 const Pic1 = ({ section: { img, quote, author, credit } }) => (
   <BackgroundImage fluid={img.childImageSharp.fluid}>
     <ShadeBg>

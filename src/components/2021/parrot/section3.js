@@ -32,7 +32,6 @@ export const RowPlacement = s.div`
     padding: 2rem 2rem 0;
   }
 `
-
 const Section3 = ({ json: { quote, author, content } }) => (
   <RowPlacement>
     <Row>

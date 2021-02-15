@@ -33,7 +33,6 @@ const QuoteAuthor = s.div`
     width: 100%;
   }
 `
-
 const Pic3 = ({ json: { img, quote, author } }) => (
   <BackgroundImage fluid={img.childImageSharp.fluid}>
     <ShadeBg>

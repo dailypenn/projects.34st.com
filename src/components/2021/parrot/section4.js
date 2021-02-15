@@ -12,7 +12,6 @@ const RowPlacement = s.div`
     padding: 0 2rem 2rem;
   }
 `
-
 const Section4 = ({ json: { content, img, caption } }) => (
   <RowPlacement>
     <Row>

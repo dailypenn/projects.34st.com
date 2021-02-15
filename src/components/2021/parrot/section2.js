@@ -35,14 +35,12 @@ const TextPad = s.div`
     padding-left: calc(1rem + 1px);
   }
 `
-
 const BlackBg = s.div`
   background-color: black;
   @media(max-width: 768px) {
     margin-bottom: 2rem;
   }
 `
-
 const Img2Container = s.div`
   padding: 6rem 0 0 6rem;
   @media(max-width: 768px) {
@@ -69,7 +67,6 @@ const QuoteAuthor = s.div`
     font-size: 1rem;
   }
 `
-
 const Img3Container = s.div`
   padding: 4rem 8rem 4rem 0;
   @media(max-width: 768px) {
@@ -77,7 +74,6 @@ const Img3Container = s.div`
     padding: 2rem 4rem 2rem 0;
   }
 `
-
 const Section2 = ({
   section: { img1, caption, img2, quote, img3, author, content },
 }) => (

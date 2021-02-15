@@ -10,7 +10,6 @@ const SectionWrapper = s.div`
         padding: 2rem;
     }
 `
-
 const Pic4 = ({ json: { content } }) => (
   <SectionWrapper>
     {content &&

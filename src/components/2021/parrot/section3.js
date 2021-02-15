@@ -16,7 +16,6 @@ const QuoteAuthor = s.p`
 	color: #2B3C2E;
 `
 
-
 const Section3 = ({json}) => (
 	<>
 		<Hornblum>

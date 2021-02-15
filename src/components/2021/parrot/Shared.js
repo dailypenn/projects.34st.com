@@ -10,7 +10,7 @@ export const Hornblum = s.div`
 `
 
 export const MainPara = s.p`
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-family: 'Libre Franklin', sans-serif;
     @media(max-width: 768px) {
         font-size: 1rem;
@@ -18,7 +18,7 @@ export const MainPara = s.p`
 `
 
 export const CounterRowMargin = s.div`
-	padding: 0 15px;
+    padding: 0 15px;
 `
 
 export const ImgCaption = s.p`
@@ -32,5 +32,5 @@ export const CenterDiv = s.div`
 	justify-content: center;
 	align-items: center;
     height: 100%;
-    flex: 5 1 3;
 `
+

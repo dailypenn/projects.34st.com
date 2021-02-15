@@ -11,7 +11,6 @@ const YusufImgCol = s.div`
     padding-left: 2.5rem;
 `
 
-
 const Section5 = ({json}) => (
     <>
         <Hornblum>
@@ -27,7 +26,7 @@ const Section5 = ({json}) => (
                     </Col>
                     <Col md={5}>
                         <CenterDiv>
-                            <div>
+                            <div style={{width: "100%"}}>
                                 <Img fluid={json.img1.childImageSharp.fluid} />
                                 <ImgCaption>Photo courtesy of Jules Lipoff</ImgCaption>
                                 <Img fluid={json.img2.childImageSharp.fluid} />

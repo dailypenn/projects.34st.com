@@ -1,15 +1,13 @@
 import React from 'react'
 import s from 'styled-components'
-import { Col, Row } from 'react-bootstrap'
-import Img from "gatsby-image"
 import {MainPara} from './Shared.js'
 
 
 const SectionWrapper = s.div`
     background-color: #DFDDD0;
-    padding: 5rem 3.9rem 5rem 5.9rem;
-    @media (max-width: 992px) {
-        padding: 2rem 2rem;
+    padding: 5rem;
+    @media (max-width: 768px) {
+        padding: 2rem;
     }
 `
 

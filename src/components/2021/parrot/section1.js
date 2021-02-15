@@ -3,7 +3,7 @@ import s from 'styled-components'
 import { Col, Row } from 'react-bootstrap'
 import Img from 'gatsby-image'
 import ReactMarkdown from 'react-markdown'
-import Circle from './Shared.js'
+import {Circle, MainPara} from './Shared.js'
 
 const Caption = s.div`
   font-size: .6rem;
@@ -16,13 +16,6 @@ const RowPlacement = s.div`
   padding: 5rem;
   @media(max-width: 768px) {
     padding: 2rem;
-  }
-`
-const MainPara = s.div`
-	font-size: 1.5rem;
-	font-family: 'Libre Franklin', sans-serif;
-  @media(max-width: 768px) {
-    font-size: 1rem;
   }
 `
 

@@ -211,6 +211,7 @@ const Index = () => {
     pic4,
   } = sections[0]
 
+  const { header, subheader, img } = social
   return (
     <>
           <Helmet>
@@ -227,32 +228,32 @@ const Index = () => {
 
         <meta
           property="og:title"
-          content="TTYL, XOXO: Street’s Quarantined Love Issue"
+          content={header}
         />
         <meta
           property="og:image"
-          content="https://snworksceo.imgix.net/dpn-34s/8cf07f0e-d79c-445a-994d-da4dae0b1c9b.sized-1000x1000.png"
+          content={img.src}
         />
-        <meta property="og:description" content="From Zoom dates to long walks around our blocks, here’s how Penn found love under lockdown" />
+        <meta property="og:description" content={subheader} />
         <meta property="og:type" content="article" />
         <meta
           property="og:url"
-          content="https://projects.34st.com/2021/love-issue"
+          content="https://projects.34st.com/"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="TTYL, XOXO: Street’s Quarantined Love Issue"
+          content={header}
         />
         <meta
           name="twitter:image"
-          content="https://snworksceo.imgix.net/dpn-34s/8cf07f0e-d79c-445a-994d-da4dae0b1c9b.sized-1000x1000.png"
+          content={img.src}
         />
-        <meta name="twitter:description" content="From Zoom dates to long walks around our blocks, here’s how Penn found love under lockdown" />
+        <meta name="twitter:description" content={subheader} />
         <meta
           name="twitter:url"
-          content="https://projects.34st.com/2021/love-issue"
+          content="https://projects.34st.com/"
         />
         <meta name="twitter:site" content="@dailypenn"/>
 

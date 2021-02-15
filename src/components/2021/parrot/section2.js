@@ -3,7 +3,7 @@ import s from 'styled-components'
 import { Col, Row } from 'react-bootstrap'
 import Img from 'gatsby-image'
 import ReactMarkdown from 'react-markdown'
-import {Circle} from './Shared.js'
+import {Circle, MainPara} from './Shared.js'
 
 const RowPlacement = s.div`
   background-color: #DFDDD0;
@@ -29,12 +29,9 @@ const Caption = s.div`
     padding: 0.5rem 1rem 1rem;
   }
 `
-const MainPara = s.div`
-	font-size: 1.5rem;
-	font-family: 'Libre Franklin', sans-serif;
+const TextPad = s.div`
   padding-left: 3rem;
   @media(max-width: 768px) {
-    font-size: 1rem;
     padding-left: calc(1rem + 1px);
   }
 `
@@ -101,12 +98,14 @@ const Section2 = ({ section: {img1, caption, img2, quote, img3, author, content}
         </ColCounterPad>
       </Col>
       <Col md={7}>
-        {content &&
-          content.map(para => (
-            (para == "circle") ? 
-            <Circle>&#9899; &nbsp; &#9899; &nbsp; &#9899;</Circle> : <MainPara><ReactMarkdown>{para}</ReactMarkdown></MainPara>  
-          ))
-        }
+        <TextPad>
+          {content &&
+            content.map(para => (
+              (para == "circle") ? 
+              <Circle>&#9899; &nbsp; &#9899; &nbsp; &#9899;</Circle> : <MainPara><ReactMarkdown>{para}</ReactMarkdown></MainPara>  
+            ))
+          }
+        </TextPad>
       </Col>
     </Row>
   </RowPlacement>

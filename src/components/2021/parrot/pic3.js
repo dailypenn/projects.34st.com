@@ -10,17 +10,27 @@ const JulesBgImg = s.div`
     background-size: cover;
     padding: 12rem 9rem 7rem 9rem;
     background-color: rgba(0, 0, 0, .66);
+    @media(max-width: 768px) {
+        padding: 7rem 5rem 4rem 5rem;
+    }
 `
 
 const ShadeBgTitle = s.h3`
     color: white;
     font-size: 3.3rem;
+    @media(max-width: 768px) {
+        font-size: 1.5rem;
+    }
 `
 const QuoteAuthor = s.h5`
     color: white;
     font-size: 1.8rem;
     text-align: right;
     margin-top: 5rem;
+    @media(max-width: 768px) {
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
 `
 
 const Pic3 = ({json}) => (

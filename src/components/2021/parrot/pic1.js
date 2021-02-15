@@ -32,7 +32,7 @@ const QuoteAuthor = s.div`
   padding: 5rem 0 10rem;
   @media(max-width: 768px) {
     font-size: 1rem;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 2rem;
     width: 100%;
   }
 `
@@ -41,7 +41,7 @@ const Credit = s.div`
   font-size: 0.5rem;
   width: 100%;
   text-align: right;
-  padding: 1rem;
+  padding: 0 1rem 1rem;
 `
 
 const Pic1 = ({ section: {img, quote, author, credit}}) => (

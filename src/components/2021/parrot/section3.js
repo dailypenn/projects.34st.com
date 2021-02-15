@@ -15,7 +15,7 @@ const TextDGreen = s.h3`
   }
 `
 const QuoteAuthor = s.div`
-	padding: 0.5rem 2rem 2rem;
+	padding: 0.5rem 6rem 2rem;
 	font-size: 2.3rem;
 	line-height: 2.6rem;
 	text-align: right;
@@ -23,6 +23,7 @@ const QuoteAuthor = s.div`
 	@media(max-width: 768px) {
     font-size: 1.2rem;
 		line-height: 1.2rem;
+		padding: 0.5rem 2rem 2rem;
   }
 `
 export const RowPlacement = s.div`

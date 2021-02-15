@@ -2,27 +2,16 @@ import React from 'react'
 import s from 'styled-components'
 import { Col, Row } from 'react-bootstrap'
 import Img from "gatsby-image"
+import {Hornblum, MainPara, ImgCaption} from './Shared.js'
 
-
-const MainPara = s.p`
-	font-size: 1.3rem;
-	font-family: 'Libre Franklin', sans-serif;
-`
 
 const BigImgRight = s.div`
 	@media (min-width: 992px) {
 		padding: 0rem 3.9rem 2rem 5.9rem;
 	}
 `
-const Hornblum = s.div`
-	background-color: #DFDDD0;
-`
 
-const ImgCaption = s.p`
-	font-size: .6rem;
-	width: 100%;
-	margin-top: 1rem;
-`
+
 
 const Section4 = ({json}) => (
 	<>

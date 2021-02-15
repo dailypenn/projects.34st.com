@@ -11,6 +11,9 @@ import Section4 from '../../components/2021/parrot/section4.js'
 import Pic3 from '../../components/2021/parrot/pic3.js'
 import Pic1 from '../../components/2021/parrot/pic1.js'
 import Section2 from '../../components/2021/parrot/section2.js'
+import Section5 from '../../components/2021/parrot/section5.js'
+import Pic4 from '../../components/2021/parrot/pic4.js'
+import Section6 from '../../components/2021/parrot/section6.js'
 
 
 const Index = () => {
@@ -40,7 +43,7 @@ const Index = () => {
                 caption2
                 img1 {
                   childImageSharp {
-                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                    fluid(maxWidth: 1000, maxHeight: 900) {
                       ...GatsbyImageSharpFluid
                       src
                     }
@@ -48,7 +51,7 @@ const Index = () => {
                 }
                 img2 {
                   childImageSharp {
-                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                    fluid(maxWidth: 1000, maxHeight: 900) {
                       ...GatsbyImageSharpFluid
                       src
                     }
@@ -120,7 +123,7 @@ const Index = () => {
                 credit
                 img {
                   childImageSharp {
-                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                    fluid(maxWidth: 1000, maxHeight: 300) {
                       ...GatsbyImageSharpFluid
                       src
                     }
@@ -275,6 +278,9 @@ const Index = () => {
       <Section3></Section3>
       <Section4 json={section4}></Section4>
       <Pic3 json={pic3}></Pic3>
+      <Section5 json={section5}></Section5>
+      <Pic4 json={pic4}></Pic4>
+      <Section6 json={section6}></Section6>
     </>
   )
 }

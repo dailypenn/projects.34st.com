@@ -10,6 +10,7 @@ import DomSection from '../../components/2021/parrot/dom.js'
 import Section4 from '../../components/2021/parrot/section4.js'
 import Pic3 from '../../components/2021/parrot/pic3.js'
 import Pic1 from '../../components/2021/parrot/pic1.js'
+import Pic2 from '../../components/2021/parrot/pic2.js'
 import Section2 from '../../components/2021/parrot/section2.js'
 
 
@@ -79,7 +80,7 @@ const Index = () => {
                 content
                 img1 {
                   childImageSharp {
-                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                    fluid(maxWidth: 800, maxHeight: 800) {
                       ...GatsbyImageSharpFluid
                       src
                     }
@@ -87,7 +88,7 @@ const Index = () => {
                 }
                 img2 {
                   childImageSharp {
-                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                    fluid(maxWidth: 900, maxHeight: 300) {
                       ...GatsbyImageSharpFluid
                       src
                     }
@@ -95,7 +96,7 @@ const Index = () => {
                 }
                 img3 {
                   childImageSharp {
-                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                    fluid(maxWidth: 400, maxHeight: 350) {
                       ...GatsbyImageSharpFluid
                       src
                     }
@@ -144,7 +145,7 @@ const Index = () => {
                 caption
                 img {
                   childImageSharp {
-                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                    fluid(maxWidth: 500, maxHeight: 500) {
                       ...GatsbyImageSharpFluid
                       src
                     }
@@ -272,6 +273,7 @@ const Index = () => {
       <Section1 section={section1}/>
       <Pic1 section={pic1}/>
       <Section2 section={section2}/>
+      <Pic2 section={pic2}/>
       <Section3></Section3>
       <Section4 json={section4}></Section4>
       <Pic3 json={pic3}></Pic3>

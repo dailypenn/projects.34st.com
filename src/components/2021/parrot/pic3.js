@@ -1,7 +1,5 @@
 import React from 'react'
 import s from 'styled-components'
-import { Col, Row } from 'react-bootstrap'
-import Img from "gatsby-image"
 import BackgroundImage from 'gatsby-background-image'
 
 
@@ -10,8 +8,7 @@ const JulesBgImg = s.div`
     background-position: bottom center;
     background-repeat: repeat-y;
     background-size: cover;
-    padding-top: 15rem;
-    padding-bottom: 15rem;
+    padding: 12rem 9rem 7rem 9rem;
     background-color: rgba(0, 0, 0, .66);
 `
 
@@ -22,6 +19,8 @@ const ShadeBgTitle = s.h3`
 const QuoteAuthor = s.h5`
     color: white;
     font-size: 1.8rem;
+    text-align: right;
+    margin-top: 5rem;
 `
 
 const Pic3 = ({json}) => (

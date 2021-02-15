@@ -1,31 +1,24 @@
 import React from 'react'
 import s from 'styled-components'
 import { Col, Row } from 'react-bootstrap'
+import {Hornblum, MainPara, CounterRowMargin} from './Shared.js'
 
 
-const Hornblum = s.div`
-	background-color: #DFDDD0;
-	width: 100%;
-	@media (max-width: 992px) {
-		padding: 3rem 3rem;
-	}
-`
 const TextDGreen = s.h3`
 	color: #2B3C2E;
 	font-size: 3.3rem;
 `
+const TextDiv = s.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+`
+
 const QuoteAuthor = s.p`
 	font-size: 2.3rem;
 	line-height: 2.6rem;
 	color: #2B3C2E;
-`
-const MainPara = s.p`
-	font-size: 1.3rem;
-	font-family: 'Libre Franklin', sans-serif;
-`
-
-const CounterRowMargin = s.div`
-	padding: 0 15px;
 `
 
 
@@ -33,12 +26,14 @@ const Section3 = ({json}) => (
 	<>
 		<Hornblum>
 			<CounterRowMargin>
-				<Row>
-					<Col md={5} style={{padding: "0 6rem"}} s={12}>
-						<div>
-							<TextDGreen>"Holmesburg is the flip side of Tuskegee. At Tuskegee, you have sick men who were not treated. At Holmesburg, you have healthy men who were made ill."</TextDGreen>
-							<QuoteAuthor>&nbsp; &nbsp; &nbsp; &#8211; Allen Hornblum</QuoteAuthor>
-						</div>
+				<Row style={{paddingTop : "3.5rem"}}>
+					<Col md={5} s={12} style={{padding: "0 6rem"}}>
+						<TextDiv>
+							<div>
+								<TextDGreen>"Holmesburg is the flip side of Tuskegee. At Tuskegee, you have sick men who were not treated. At Holmesburg, you have healthy men who were made ill."</TextDGreen>
+								<QuoteAuthor>&nbsp; &nbsp; &nbsp; &#8211; Allen Hornblum</QuoteAuthor>
+							</div>
+						</TextDiv>
 					</Col>
 					<Col md={7} s={12}>
 						<div style={{padding: "0 4rem 2rem 2rem"}}>

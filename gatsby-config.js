@@ -46,6 +46,14 @@ module.exports = {
         name: `json`,
         path: `${__dirname}/src/content/json/2021/parrot`,
       },
+    },
+    // images and JSONs for 2021/special-issue
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/content/images/2021/special-issue`,
+      },
     }
   ]
 }

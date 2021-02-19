@@ -1,53 +1,76 @@
 import React from 'react'
 import s from 'styled-components'
+import { Col, Row } from 'react-bootstrap'
 import BackgroundImage from 'gatsby-background-image'
 
-const ShadeBg = s.div`
-  width: 100%;
-  background-size: cover;
-  background-color: rgba(0, 0, 0, .66);
+import { BN_CHESTER_REGULAR } from '../../../styles/font'
+
+const RowPlacement = s.div`
+  background-color: #67D072;
+  padding: 0 15px;
+
+  @media(max-width: 768px) {
+    margin-bottom: 2rem;
+  }
+`
+
+const ColCounterPad = s.div`
+  margin: 0 -15px;
+`
+const Caption = s.div`
+  color: white;
+  font-size: 0.5rem;
+  width: 60%;
+  text-align: right;
+  margin-right: 0;
+  margin-left: auto;
+  padding: calc(100% - 2rem) 1rem 1rem;
+  @media(max-width: 768px) {
+    width: 100%;
+    text-align: left;
+  }
 `
 const Quote = s.div`
-  padding-top: 15rem;
-  font-weight: bold;
-  width: 70%;
-  margin: auto;
+  padding: 20% 4rem 0;
   color: white;
-  font-size: 4.5rem;
+  font-size: 2.3rem;
+
+  ${BN_CHESTER_REGULAR}
   @media(max-width: 768px) {
     font-size: 1.5rem;
     padding: 4rem 2rem 0;
-    width: 100%;
   }
 `
+
 const QuoteAuthor = s.div`
-  width: 50%;
-  text-align: right;
-  margin: auto;
+  margin-top: 1rem;
+  text-align: center;
   color: white;
-  font-size: 2.5rem;
-  padding: 5rem 0 10rem;
+  font-size: 2.5vw;
+  ${BN_CHESTER_REGULAR}
+
   @media(max-width: 768px) {
-    font-size: 1rem;
-    padding: 1rem 2rem 2rem;
-    width: 100%;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
 `
-const Credit = s.div`
-  color: white;
-  font-size: 0.5rem;
-  width: 100%;
-  text-align: right;
-  padding: 0 1rem 1rem;
-`
-const Pic1 = ({ section: { img, quote, author, credit } }) => (
-  <BackgroundImage fluid={img.childImageSharp.fluid}>
-    <ShadeBg>
-      <Quote>{quote}</Quote>
-      <QuoteAuthor>&#8211; {author}</QuoteAuthor>
-      <Credit>{credit}</Credit>
-    </ShadeBg>
-  </BackgroundImage>
+
+const Pic1 = ({ section: { img, quote, author, caption } }) => (
+  <RowPlacement>
+    <Row>
+      <Col md={6}>
+        <Quote>{quote}</Quote>
+        <QuoteAuthor>&#8211; {author}</QuoteAuthor>
+      </Col>
+      <Col md={6}>
+        <ColCounterPad>
+          <BackgroundImage fluid={img.childImageSharp.fluid}>
+            <Caption>{caption}</Caption>
+          </BackgroundImage>
+        </ColCounterPad>
+      </Col>
+    </Row>
+  </RowPlacement>
 )
 
 export default Pic1

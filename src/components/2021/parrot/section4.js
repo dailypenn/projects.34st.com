@@ -7,7 +7,8 @@ import ReactMarkdown from 'react-markdown'
 
 const RowPlacement = s.div`
 	padding: 2rem 5rem 5rem;
-	background-color: #DFDDD0;
+  background-color: white;
+
 	@media(max-width: 768px) {
     padding: 0 2rem 2rem;
   }

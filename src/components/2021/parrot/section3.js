@@ -4,21 +4,28 @@ import { Col, Row } from 'react-bootstrap'
 import { Circle, MainPara, CenterDiv } from './Shared.js'
 import ReactMarkdown from 'react-markdown'
 
+import { BN_CHESTER_REGULAR } from '../../../styles/font'
+
 const TextDGreen = s.h3`
-	color: #2B3C2E;
+	color: #DB74D8;
 	font-size: 3.3rem;
-	padding: 0 1rem;
+  padding: 0 1rem;
+  ${BN_CHESTER_REGULAR}
+
 	@media(max-width: 768px) {
     font-size: 1.6rem;
 		line-height: 2rem;
   }
 `
 const QuoteAuthor = s.div`
-	padding: 0.5rem 6rem 2rem;
-	font-size: 2.3rem;
+	font-size: 1.5rem;
 	line-height: 2.6rem;
-	text-align: right;
-	color: #2B3C2E;
+	text-align: center;
+  color: #DB74D8;
+  ${BN_CHESTER_REGULAR}
+
+  margin-top: 2rem;
+
 	@media(max-width: 768px) {
     font-size: 1.2rem;
 		line-height: 1.2rem;
@@ -27,7 +34,9 @@ const QuoteAuthor = s.div`
 `
 export const RowPlacement = s.div`
 	padding: 5rem 5rem 0;
-	background-color: #DFDDD0;
+  background-color: white;
+  margin-bottom: 2rem;
+
 	@media(max-width: 768px) {
     padding: 2rem 2rem 0;
   }

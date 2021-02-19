@@ -3,8 +3,10 @@ import s from 'styled-components'
 import { Col, Row } from 'react-bootstrap'
 import BackgroundImage from 'gatsby-background-image'
 
+import { BN_CHESTER_REGULAR } from '../../../styles/font'
+
 const RowPlacement = s.div`
-  background-color: #2B3C2E;
+  background-color: #9BE0A2;
   padding: 0 15px;
 `
 const ColCounterPad = s.div`
@@ -28,6 +30,7 @@ const Quote = s.div`
   font-weight: bold;
   color: white;
   font-size: 2.5vw;
+  ${BN_CHESTER_REGULAR}
   @media(max-width: 768px) {
     font-size: 1.5rem;
     padding: 4rem 2rem 0;
@@ -38,6 +41,7 @@ const QuoteAuthor = s.div`
   text-align: right;
   color: white;
   font-size: 2.5vw;
+  ${BN_CHESTER_REGULAR}
   @media(max-width: 768px) {
     font-size: 1.5rem;
     padding: 1rem 2rem 10%;

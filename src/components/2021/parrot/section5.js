@@ -2,20 +2,17 @@ import React from 'react'
 import s from 'styled-components'
 import { Col, Row } from 'react-bootstrap'
 import Img from 'gatsby-image'
-import {
-  Circle,
-  MainPara,
-  ImgCaption,
-  CenterDiv,
-} from './Shared.js'
 import ReactMarkdown from 'react-markdown'
+
+import { Circle, MainPara, ImgCaption, CenterDiv } from './Shared.js'
 
 const RowPlacement = s.div`
 	padding: 5rem;
-	background-color: #DFDDD0;
+  background-color: white;
+
 	@media(max-width: 768px) {
-        padding: 2rem;
-    }
+    padding: 2rem;
+  }
 `
 const Section5 = ({ json: { content, img1, img2, caption1, caption2 } }) => (
   <RowPlacement>

@@ -3,10 +3,12 @@ import s from 'styled-components'
 import { Col, Row } from 'react-bootstrap'
 import Img from 'gatsby-image'
 import ReactMarkdown from 'react-markdown'
-import { Circle, MainPara } from './Shared.js'
+
+import { BN_CHESTER_REGULAR } from '../../../styles/font'
+import { Circle, MainPara } from './Shared'
 
 const RowPlacement = s.div`
-  background-color: #DFDDD0;
+  background-color: white;
   padding: 5rem 5rem 0 15px;
   @media(max-width: 768px) {
     padding: 0 2rem 1rem 15px;
@@ -36,7 +38,9 @@ const TextPad = s.div`
   }
 `
 const BlackBg = s.div`
-  background-color: black;
+  padding: 2rem 1rem;
+  background-color: #DB74D8;
+
   @media(max-width: 768px) {
     margin-bottom: 2rem;
   }
@@ -51,8 +55,9 @@ const Quote = s.div`
   font-weight: bold;
   color: white;
   font-size: 4.5rem;
-  padding: 2rem 4rem;
+
   text-align: center;
+  ${BN_CHESTER_REGULAR}
   @media(max-width: 768px) {
     font-size: 1.5rem;
     padding: 2rem 2rem 1rem;
@@ -60,38 +65,29 @@ const Quote = s.div`
 `
 const QuoteAuthor = s.div`
   text-align: center;
-  padding: 0 4rem;
   color: white;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
+  ${BN_CHESTER_REGULAR}
+  margin-top: 3rem;
+
   @media(max-width: 768px) {
     font-size: 1rem;
+    margin-top: 1rem;
   }
 `
-const Img3Container = s.div`
-  padding: 4rem 8rem 4rem 0;
-  @media(max-width: 768px) {
-    font-size: 1.5rem;
-    padding: 2rem 4rem 2rem 0;
-  }
-`
+
 const Section2 = ({
-  section: { img1, caption, img2, quote, img3, author, content },
+  section: { img, caption, quote, author, content },
 }) => (
   <RowPlacement>
     <Row>
       <Col md={5}>
         <ColCounterPad>
-          <Img fluid={img1.childImageSharp.fluid} />
+          <Img fluid={img.childImageSharp.fluid} />
           <Caption>{caption}</Caption>
           <BlackBg>
-            <Img2Container>
-              <Img fluid={img2.childImageSharp.fluid} />
-            </Img2Container>
             <Quote>{quote}</Quote>
             <QuoteAuthor>&#8211; {author}</QuoteAuthor>
-            <Img3Container>
-              <Img fluid={img3.childImageSharp.fluid} />
-            </Img3Container>
           </BlackBg>
         </ColCounterPad>
       </Col>

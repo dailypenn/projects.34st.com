@@ -22,7 +22,7 @@ const Credit = s.div`
   }
 `
 
-export const Footer = ({ font, emoji, bgColor, fontColor, year = '2020' }) => (
+export const Footer = ({ font, emoji = '💖', bgColor, fontColor, year = '2021' }) => (
   <Credit font={font} bgColor={bgColor} fontColor={fontColor}>
     Made with&nbsp;<span role="img">{emoji}</span>&nbsp;by&nbsp;
     <a href="https://tech.thedp.com/" target="_blank" rel="noreferrer">

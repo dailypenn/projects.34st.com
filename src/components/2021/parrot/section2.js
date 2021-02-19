@@ -4,7 +4,7 @@ import { Col, Row } from 'react-bootstrap'
 import Img from 'gatsby-image'
 import ReactMarkdown from 'react-markdown'
 
-import { BN_CHESTER_REGULAR } from '../../../styles/font'
+import { BN_CHESTER_REGULAR, LIBRE_FRANKLIN_MEDIUM } from '../../../styles/font'
 import { Circle, MainPara } from './Shared'
 
 const RowPlacement = s.div`
@@ -35,6 +35,15 @@ const TextPad = s.div`
   padding-left: 3rem;
   @media(max-width: 768px) {
     padding-left: calc(1rem + 1px);
+  }
+
+  p {
+    font-size: 1.1rem;
+    ${LIBRE_FRANKLIN_MEDIUM}
+
+    @media(max-width: 768px) {
+      font-size: 1rem;
+    }
   }
 `
 const BlackBg = s.div`
@@ -95,12 +104,10 @@ const Section2 = ({
         <TextPad>
           {content &&
             content.map(para =>
-              para == 'circle' ? (
+              para === 'circle' ? (
                 <Circle>&#9899; &nbsp; &#9899; &nbsp; &#9899;</Circle>
               ) : (
-                <MainPara>
-                  <ReactMarkdown>{para}</ReactMarkdown>
-                </MainPara>
+                <ReactMarkdown children={para} />
               )
             )}
         </TextPad>

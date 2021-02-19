@@ -5,6 +5,7 @@ import Img from 'gatsby-image'
 import ReactMarkdown from 'react-markdown'
 
 import { Circle, MainPara, ImgCaption, CenterDiv } from './Shared.js'
+import { LIBRE_FRANKLIN_MEDIUM } from '../../../styles/font'
 
 const RowPlacement = s.div`
 	padding: 5rem;
@@ -12,6 +13,15 @@ const RowPlacement = s.div`
 
 	@media(max-width: 768px) {
     padding: 2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    ${LIBRE_FRANKLIN_MEDIUM}
+
+    @media(max-width: 768px) {
+      font-size: 1rem;
+    }
   }
 `
 const Section5 = ({ json: { content, img1, img2, caption1, caption2 } }) => (
@@ -23,9 +33,7 @@ const Section5 = ({ json: { content, img1, img2, caption1, caption2 } }) => (
             para == 'circle' ? (
               <Circle>&#9899; &nbsp; &#9899; &nbsp; &#9899;</Circle>
             ) : (
-              <MainPara>
-                <ReactMarkdown>{para}</ReactMarkdown>
-              </MainPara>
+              <ReactMarkdown children={para} />
             )
           )}
       </Col>

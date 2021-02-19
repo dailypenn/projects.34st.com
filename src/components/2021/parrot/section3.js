@@ -1,10 +1,10 @@
 import React from 'react'
 import s from 'styled-components'
 import { Col, Row } from 'react-bootstrap'
-import { Circle, MainPara, CenterDiv } from './Shared.js'
+import { Circle, CenterDiv } from './Shared.js'
 import ReactMarkdown from 'react-markdown'
 
-import { BN_CHESTER_REGULAR } from '../../../styles/font'
+import { BN_CHESTER_REGULAR, LIBRE_FRANKLIN_MEDIUM } from '../../../styles/font'
 
 const TextDGreen = s.h3`
 	color: #DB74D8;
@@ -40,7 +40,17 @@ export const RowPlacement = s.div`
 	@media(max-width: 768px) {
     padding: 2rem 2rem 0;
   }
+
+  p {
+    font-size: 1.1rem;
+    ${LIBRE_FRANKLIN_MEDIUM}
+
+    @media(max-width: 768px) {
+      font-size: 1rem;
+    }
+  }
 `
+
 const Section3 = ({ json: { quote, author, content } }) => (
   <RowPlacement>
     <Row>
@@ -58,9 +68,7 @@ const Section3 = ({ json: { quote, author, content } }) => (
             para == 'circle' ? (
               <Circle>&#9899; &nbsp; &#9899; &nbsp; &#9899;</Circle>
             ) : (
-              <MainPara>
-                <ReactMarkdown>{para}</ReactMarkdown>
-              </MainPara>
+              <ReactMarkdown children={para} />
             )
           )}
       </Col>

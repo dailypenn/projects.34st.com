@@ -107,7 +107,7 @@ const Section2 = ({
               para === 'circle' ? (
                 <Circle>&#9899; &nbsp; &#9899; &nbsp; &#9899;</Circle>
               ) : (
-                <ReactMarkdown children={para} />
+                <ReactMarkdown children={para} linkTarget="_blank" />
               )
             )}
         </TextPad>

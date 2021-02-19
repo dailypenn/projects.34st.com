@@ -47,13 +47,13 @@ const Section1 = ({ section: { content } }) => (
           return <DropCap>{para}</DropCap>
         } else if (idx == 1) {
           return (
-              <ReactMarkdown children={para} />
+              <ReactMarkdown children={para} linkTarget="_blank" />
           )
         } else {
           return para == 'circle' ? (
             <Circle>&#9899; &nbsp; &#9899; &nbsp; &#9899;</Circle>
           ) : (
-            <ReactMarkdown children={para} />
+            <ReactMarkdown children={para} linkTarget="_blank" />
           )
         }
       })}

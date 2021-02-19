@@ -68,7 +68,7 @@ const Section3 = ({ json: { quote, author, content } }) => (
             para == 'circle' ? (
               <Circle>&#9899; &nbsp; &#9899; &nbsp; &#9899;</Circle>
             ) : (
-              <ReactMarkdown children={para} />
+              <ReactMarkdown children={para} linkTarget="_blank" />
             )
           )}
       </Col>

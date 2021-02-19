@@ -22,9 +22,9 @@ const Index = () => {
             childrenParrotJson {
               social {
                 header
-                subheader
                 img
                 slug
+                description
               }
               section5 {
                 img1 {
@@ -148,7 +148,7 @@ const Index = () => {
     pic3
   } = sections[0]
 
-  const { header, subheader, img } = social
+  const { header, subheader, img, description, slug } = social
 
   return (
     <>
@@ -156,7 +156,7 @@ const Index = () => {
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content={subheader} />
+        <meta name="description" content={description} />
         <title>{header} | 34th Street</title>
         <link
           rel="stylesheet"
@@ -166,14 +166,14 @@ const Index = () => {
 
         <meta property="og:title" content={header} />
         <meta property="og:image" content={img} />
-        <meta property="og:description" content={subheader} />
+        <meta property="og:description" content={description} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={`https://projects.34st.com${slug}`} />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={header} />
         <meta name="twitter:image" content={img} />
-        <meta name="twitter:description" content={subheader} />
+        <meta name="twitter:description" content={description} />
         <meta name="twitter:url" content={`https://projects.34st.com${slug}`} />
         <meta name="twitter:site" content="@dailypenn" />
 

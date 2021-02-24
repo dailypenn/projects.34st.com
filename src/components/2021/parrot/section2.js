@@ -48,7 +48,7 @@ const TextPad = s.div`
 `
 const BlackBg = s.div`
   padding: 2rem 1rem;
-  background-color: #DB74D8;
+  background-color: ${({ bgColor = 'white' }) => bgColor};
 
   @media(max-width: 768px) {
     margin-bottom: 2rem;
@@ -62,8 +62,8 @@ const Img2Container = s.div`
 `
 const Quote = s.div`
   font-weight: bold;
-  color: white;
-  font-size: 4.5rem;
+  color: ${({ color }) => color ? color : 'white'};
+  font-size: 4rem;
 
   text-align: center;
   ${BN_CHESTER_REGULAR}
@@ -74,7 +74,7 @@ const Quote = s.div`
 `
 const QuoteAuthor = s.div`
   text-align: center;
-  color: white;
+  color: ${({ color }) => color ? color : 'white'};
   font-size: 1.5rem;
   ${BN_CHESTER_REGULAR}
   margin-top: 3rem;
@@ -86,17 +86,17 @@ const QuoteAuthor = s.div`
 `
 
 const Section2 = ({
-  section: { img, caption, quote, author, content },
+  section: { author, bgColor, color, quote, content, credit, img },
 }) => (
   <RowPlacement>
     <Row>
       <Col md={5}>
         <ColCounterPad>
           <Img fluid={img.childImageSharp.fluid} />
-          <Caption>{caption}</Caption>
-          <BlackBg>
-            <Quote>{quote}</Quote>
-            <QuoteAuthor>&#8211; {author}</QuoteAuthor>
+          <Caption>{credit}</Caption>
+          <BlackBg bgColor={bgColor}>
+            <Quote color={color}>{quote}</Quote>
+            <QuoteAuthor color={color}>&#8211; {author}</QuoteAuthor>
           </BlackBg>
         </ColCounterPad>
       </Col>

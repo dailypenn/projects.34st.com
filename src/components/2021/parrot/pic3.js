@@ -39,7 +39,7 @@ const QuoteAuthor = s.div`
   }
 `
 
-const Pic3 = ({ bgColor, quote, author }) => (
+const Pic3 = ({ author, bgColor, color, quote }) => (
   <ShadeBg bgColor={bgColor}>
     <Quote>{quote}</Quote>
     <QuoteAuthor>&#8211; {author}</QuoteAuthor>

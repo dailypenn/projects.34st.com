@@ -6,7 +6,7 @@ import BackgroundImage from 'gatsby-background-image'
 import { BN_CHESTER_REGULAR } from '../../../styles/font'
 
 const RowPlacement = s.div`
-  background-color: #9BE0A2;
+  background-color: ${({ bgColor = 'white' }) => bgColor};
   padding: 0 15px;
 `
 const ColCounterPad = s.div`
@@ -28,7 +28,7 @@ const Caption = s.div`
 const Quote = s.div`
   padding: 20% 4rem 0;
   font-weight: bold;
-  color: white;
+  color: ${({ color }) => color ? color : 'white'};
   font-size: 2.5vw;
   ${BN_CHESTER_REGULAR}
   @media(max-width: 768px) {
@@ -39,7 +39,7 @@ const Quote = s.div`
 const QuoteAuthor = s.div`
   padding: 2rem 6rem 0%;
   text-align: right;
-  color: white;
+  color: ${({ color }) => color ? color : 'white'};
   font-size: 2.5vw;
   ${BN_CHESTER_REGULAR}
   @media(max-width: 768px) {
@@ -48,19 +48,19 @@ const QuoteAuthor = s.div`
     width: 100%;
   }
 `
-const Pic2 = ({ section: { img, quote, author, caption } }) => (
-  <RowPlacement>
+const Pic2 = ({ section: { author, bgColor, color, quote, credit, img } }) => (
+  <RowPlacement bgColor={bgColor}>
     <Row>
       <Col md={6}>
         <ColCounterPad>
           <BackgroundImage fluid={img.childImageSharp.fluid}>
-            <Caption>{caption}</Caption>
+            <Caption>{credit}</Caption>
           </BackgroundImage>
         </ColCounterPad>
       </Col>
       <Col md={6}>
-        <Quote>{quote}</Quote>
-        <QuoteAuthor>&#8211; {author}</QuoteAuthor>
+        <Quote color={color}>{quote}</Quote>
+        <QuoteAuthor color={color}>&#8211; {author}</QuoteAuthor>
       </Col>
     </Row>
   </RowPlacement>

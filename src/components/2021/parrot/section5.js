@@ -24,7 +24,8 @@ const RowPlacement = s.div`
     }
   }
 `
-const Section5 = ({ json: { content, img1, img2, caption1, caption2 } }) => (
+
+const Section5 = ({ json: { content, img1, img2, credit1, credit2 } }) => (
   <RowPlacement>
     <Row>
       <Col md={7}>
@@ -39,11 +40,11 @@ const Section5 = ({ json: { content, img1, img2, caption1, caption2 } }) => (
       </Col>
       <Col md={5}>
         <CenterDiv>
-          <div style={{ width: '100%' }}>
+          <div style={{ width: '100%', textAlign: 'center' }}>
             <Img fluid={img1.childImageSharp.fluid} />
-            <ImgCaption>{caption1}</ImgCaption>
+            <ImgCaption style={{ fontSize: '10px' }}>{credit1}</ImgCaption>
             <Img fluid={img2.childImageSharp.fluid} />
-            <ImgCaption>{caption2}</ImgCaption>
+            <ImgCaption style={{ fontSize: '10px' }}>{credit2}</ImgCaption>
           </div>
         </CenterDiv>
       </Col>

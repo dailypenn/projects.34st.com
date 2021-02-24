@@ -15,7 +15,7 @@ const RowPlacement = s.div`
   }
 
   p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     ${LIBRE_FRANKLIN_MEDIUM}
 
     @media(max-width: 768px) {
@@ -29,7 +29,7 @@ const DropCap = s.span`
   margin-top: -3.3rem;
   font-size: 4.5rem;
   height: 5.7rem;
-  color: #9BE0A2;
+  color: ${({ color = 'white' }) => color};
   ${BN_CHESTER_REGULAR}
 
   @media(max-width: 768px) {
@@ -39,16 +39,13 @@ const DropCap = s.span`
   }
 `
 
-const Section1 = ({ section: { content } }) => (
+const Section1 = ({ section: { color, content, dropCap } }) => (
   <RowPlacement>
+    <DropCap color={color}>{dropCap}</DropCap>
     {content &&
       content.map((para, idx) => {
-        if (idx == 0) {
-          return <DropCap>{para}</DropCap>
-        } else if (idx == 1) {
-          return (
-              <ReactMarkdown children={para} linkTarget="_blank" />
-          )
+        if (idx == 1) {
+          return <ReactMarkdown children={para} linkTarget="_blank" />
         } else {
           return para == 'circle' ? (
             <Circle>&#9899; &nbsp; &#9899; &nbsp; &#9899;</Circle>

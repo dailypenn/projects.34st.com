@@ -25,7 +25,7 @@ const RowPlacement = s.div`
   }
 `
 
-const Section4 = ({ json: { content, img, caption } }) => (
+const Section4 = ({ json: { content, img, credit } }) => (
   <RowPlacement>
     <Row>
       <Col md={7}>
@@ -40,7 +40,7 @@ const Section4 = ({ json: { content, img, caption } }) => (
       </Col>
       <Col md={5}>
         <Img fluid={img.childImageSharp.fluid} />
-        <ImgCaption>{caption}</ImgCaption>
+        <ImgCaption style={{ fontSize: '10px' }}>{credit}</ImgCaption>
       </Col>
     </Row>
   </RowPlacement>

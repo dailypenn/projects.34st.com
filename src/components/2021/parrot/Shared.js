@@ -15,9 +15,8 @@ export const MainPara = s.p`
     }
 `
 export const ImgCaption = s.p`
-    font-size: .6rem;
-    width: 100%;
-    margin-top: 1rem;
+  font-size: 20px;
+  width: 100%;
 `
 export const CenterDiv = s.div`
 	display: flex;

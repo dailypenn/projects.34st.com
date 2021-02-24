@@ -7,7 +7,7 @@ import ReactMarkdown from 'react-markdown'
 import { BN_CHESTER_REGULAR, LIBRE_FRANKLIN_MEDIUM } from '../../../styles/font'
 
 const TextDGreen = s.h3`
-	color: #DB74D8;
+	color: ${({ color = 'white'}) => color};
 	font-size: 3.3rem;
   padding: 0 1rem;
   ${BN_CHESTER_REGULAR}
@@ -21,7 +21,7 @@ const QuoteAuthor = s.div`
 	font-size: 1.5rem;
 	line-height: 2.6rem;
 	text-align: center;
-  color: #DB74D8;
+  color: ${({ color = 'white'}) => color};
   ${BN_CHESTER_REGULAR}
 
   margin-top: 2rem;
@@ -51,14 +51,14 @@ export const RowPlacement = s.div`
   }
 `
 
-const Section3 = ({ json: { quote, author, content } }) => (
+const Section3 = ({ json: { author, color, content, quote } }) => (
   <RowPlacement>
     <Row>
       <Col md={5}>
         <CenterDiv>
           <div>
-            <TextDGreen>{quote}</TextDGreen>
-            <QuoteAuthor>&#8211; {author}</QuoteAuthor>
+            <TextDGreen color={color}>{quote}</TextDGreen>
+            <QuoteAuthor color={color}>&#8211; {author}</QuoteAuthor>
           </div>
         </CenterDiv>
       </Col>

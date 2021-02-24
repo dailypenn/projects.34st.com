@@ -12,6 +12,7 @@ import Pic1 from '../../components/2021/parrot/pic1.js'
 import Pic2 from '../../components/2021/parrot/pic2.js'
 import Section2 from '../../components/2021/parrot/section2.js'
 import Section5 from '../../components/2021/parrot/section5.js'
+import Section6 from '../../components/2021/parrot/section6.js'
 
 const Index = () => {
   const data = useStaticQuery(graphql`
@@ -19,7 +20,7 @@ const Index = () => {
       allFile(
         filter: {
           relativePath: {
-            eq: "special-issues/pre-med-humanities-covid-19-pandemic-medicine-penn.json"
+            eq: "special-issues/pennsylvania-2020-election-philadelphia-democratic-republican.json"
           }
         }
       ) {
@@ -47,7 +48,7 @@ const Index = () => {
                 credit
                 img {
                   childImageSharp {
-                    fluid(maxWidth: 950, maxHeight: 600) {
+                    fluid(maxWidth: 550, maxHeight: 600) {
                       ...GatsbyImageSharpFluid
                       src
                     }
@@ -137,6 +138,18 @@ const Index = () => {
                 }
                 content
               }
+              section6 {
+                credit
+                content
+                img {
+                  childImageSharp {
+                    fluid(maxWidth: 1000, maxHeight: 900) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
+              }
               social {
                 img
                 slug
@@ -222,6 +235,7 @@ const Index = () => {
       <Section4 json={section4} />
       <Pic3 {...quote3} />
       <Section5 json={section5} />
+      <Section6 json={section6} />
       <Footer bgColor="black" fontColor="white" />
     </>
   )

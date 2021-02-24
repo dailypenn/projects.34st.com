@@ -73,7 +73,7 @@ const Caption = s.div`
 `
 
 const DomSection = ({
-  section: { header, subheader, description, author, caption, credit, img }
+  section: { header, subheader, author, credit, img }
 }) => (
   <BackgroundImage fluid={img.childImageSharp.fluid}>
     <BlackBgShade>
@@ -82,15 +82,12 @@ const DomSection = ({
       </Watermark>
       <Title>
         <Header>{header}</Header>
-        <Subheader>{subheader}</Subheader>
       </Title>
       <CoverText>
-        <Description>{description}</Description>
+        <Description>{subheader}</Description>
         <Author>{author.toUpperCase()}</Author>
       </CoverText>
       <Caption>
-        {caption}
-        <br />
         Credit: {credit}
       </Caption>
     </BlackBgShade>

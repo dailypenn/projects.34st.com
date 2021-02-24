@@ -38,7 +38,7 @@ const TextPad = s.div`
   }
 
   p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     ${LIBRE_FRANKLIN_MEDIUM}
 
     @media(max-width: 768px) {

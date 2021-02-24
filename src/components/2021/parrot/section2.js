@@ -5,7 +5,7 @@ import Img from 'gatsby-image'
 import ReactMarkdown from 'react-markdown'
 
 import { BN_CHESTER_REGULAR, LIBRE_FRANKLIN_MEDIUM } from '../../../styles/font'
-import { Circle, MainPara } from './Shared'
+import { Circle } from './Shared'
 
 const RowPlacement = s.div`
   background-color: white;
@@ -38,7 +38,7 @@ const TextPad = s.div`
   }
 
   p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     ${LIBRE_FRANKLIN_MEDIUM}
 
     @media(max-width: 768px) {
@@ -54,12 +54,7 @@ const BlackBg = s.div`
     margin-bottom: 2rem;
   }
 `
-const Img2Container = s.div`
-  padding: 6rem 0 0 6rem;
-  @media(max-width: 768px) {
-    padding: 2rem 0 0 2rem;
-  }
-`
+
 const Quote = s.div`
   font-weight: bold;
   color: ${({ color }) => color ? color : 'white'};

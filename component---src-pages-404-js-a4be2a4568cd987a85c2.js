@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{w2l6:function(n,t,o){"use strict";o.r(t);var i=o("q1tI"),c=o("Wbzz");t.default=function(){return Object(i.useEffect)((function(){var n=window.location.href.split("/",3).join("/").length,t=window.location.href.substring(n);Object(c.c)("https://dailypenn.github.io/old.projects.34st.com"+t)}),[]),null}}}]);
+//# sourceMappingURL=component---src-pages-404-js-a4be2a4568cd987a85c2.js.map

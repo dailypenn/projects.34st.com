@@ -62,6 +62,14 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/content/images/2021/pennsylvania-2020-election-philadelphia-democratic-republican`,
       },
+    }, 
+    // images for 2021/covid-19-philadelphia-public-schools-digital-divide
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/content/images/2021/covid-19-philadelphia-public-schools-digital-divide`,
+      },
     }
   ]
 }

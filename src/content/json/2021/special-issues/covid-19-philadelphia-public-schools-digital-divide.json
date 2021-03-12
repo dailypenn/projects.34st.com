@@ -1,129 +1,127 @@
-[
-    {
-        "social": {
-            "img": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/digital divide-01.png",
-            "slug": "/2021/covid-19-philadelphia-public-schools-digital-divide"
-        },
-        "dom": {
-            "header": "Long Division: How COVID–19 Exacerbates the Digital Divide in Public Schools",
-            "subheader": "Chronically underfunded, the School District of Philadelphia has long struggled to engage students. Now, teachers are feeling it the most.",
-            "author": "Lindsey Perlman",
-            "credit": "Photo by Isabel Liang",
-            "img": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/digital divide-01.png"
-        },
-        "section1": {
-            "color": "#58B195",
-            "dropCap": "S",
-            "content": [
-                "Sue Weber teaches class from her garage, surrounded by exhaust fumes, concrete walls, and towers of a pandemic staple: toilet paper rolls.",
-                "But you wouldn’t know it.",
-                "Weber positions herself in front of a shower curtain, her “green screen,” which depicts stacks of books nestled in a mahogany wood bookcase. As far as an observer on Zoom is concerned, Weber could be in a library. And the garage acoustics, she says, are wonderful.",
-                "The setup isn’t glamorous, but it’s convenient. Weber is a foster mom of three. Her house is flooded with the clatter of children attending virtual school and her husband’s voice, which cascades through the halls as he speaks on his Zoom calls. The garage, though freezing in the winter months, provides peace and quiet.",
-                "More importantly, her setup is a source of solidarity with her students at [Science Leadership Academy](https://scienceleadership.org/) (SLA), a high school within the School District of Philadelphia. It’s a testament to the power of resourcefulness—a quality that Weber, who’s from a low–income town in rural North Dakota, has spent her life developing throughout her ascent to college, graduate school, and now the Ivy League.",
-                "Weber is the associate director of Penn’s [Communication within the Curriculum](https://cwic.sas.upenn.edu/) program, which brings together Penn students and local public school students through service–based learning courses. For the second year in a row, Weber partnered with SLA for her public speaking course."
-            ]
-        },
-        "quote1": {
-            "quote": "“How do you see yourself as a worthy learner, with agency in this classroom, when you're trying to just find peace and focus on the teacher?”",
-            "author": "Sue Weber",
-            "color": "",
-            "bgColor": "#58B195",
-            "img": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/image 5.jpg",
-            "credit": "Photo courtesy of *The Daily Pennsylvanian*"
-        },
-        "section2": {
-            "img": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/image 1.jpeg",
-            "credit": "Photo courtesy of Maddie Luebbert",
-            "quote": "“The toughest thing about that is just not knowing why students are disengaged...We can't tell if we're reaching them in the right way.”",
-            "author": "Maddie Luebbert",
-            "color": "",
-            "bgColor": "#58B195",
-            "content": [
-                "“I try to make students feel more comfortable,” she says. “I show them that I'm not in a remarkable setting, either.”",
-                "But public school students fare worse, Weber and other teachers in the district say. Gone are the colorful bulletin boards, creaky plastic desks, and pungent smell of sweat that swirls through the building’s hectic hallways when the bell rings. The school building—closed for a year now due to COVID–19—is a fleeting memory. The classroom is now anywhere and everywhere, unpredictable because of the changing dynamics of a student's home life. Some days it’s a crowded one–bedroom apartment, with internet bandwidth strained by a tenuous balance of family members all speaking at once on their Zoom calls. Some days it’s at the kitchen table, where the teacher must battle for the attention of a teenage student bouncing her baby on her lap. Other days, the classroom is forsaken simply because students have to work.",
-                "COVID–19 exacerbates this '[digital divide](https://cs.stanford.edu/people/eroberts/cs181/projects/digital-divide/start.html),' which separates students who have digital or internet access from those who don’t. Just one of many problems with virtual learning, it amplifies all the others: truancy, poor grades, and cycles of poverty.",
-                "Those things are out of Weber’s control. In some ways, teaching is almost like standing on the side of a busy street, watching the problems compound like a slow–growing traffic jam of cars. Hardened by her upbringing, however, Weber maintains a sense of calm. She slowly coaxes her students into turning their cameras on, eventually having them deliver speeches in small groups. Learning right now is all about resilience, she says.",
-                "“How do you see yourself as a worthy learner, with agency in this classroom, when you're trying to just find peace and focus on the teacher?” Weber asks. One of her students, for example, chooses to lay on her stomach underneath her bed during class, just so she can escape the distractions of her home.",
-                "SLA is one of the ‘better’ schools in the district. It’s a [magnet school](https://www.publicschoolreview.com/blog/what-is-a-magnet-school), meaning all of the students were handpicked through a competitive admissions process. It’s also a one–to–one school, meaning that every student is given a Chromebook laptop to complete their work. That’s a huge feat in a district where just [58% of students](https://www.philasd.org/communications/2020/03/26/school-district-will-use-11-million-to-help-bridge-the-digital-divide-among-students/) in ninth through 12th grade have access to the internet from a computer at home.",
-                "In the broader scheme of things, though, it’s really a drop in the bucket. Getting computers into students’ hands doesn’t cure the systemic connectivity issues that plague Philadelphia, which is one of the [worst cities in the nation](https://www.inquirer.com/education/coronavirus-students-digital-divide-philadelphia-comcast-20200403.html) for household internet access.",
-                "Maddie Luebbert knows the struggle with connectivity all too well. An English teacher at the [Kensington Health Sciences Academy](https://khsa.philasd.org/) in North Philadelphia, Luebbert logs onto Zoom each day and teaches a wall of black squares—faceless students, usually with their cameras off, only distinguishable from one another by Zoom text boxes bearing their names. ",
-                "Luebbert’s classes are often filled with long, awkward silences, causing their eyes to flit across the screen in the hopes that someone—anyone, really—will chime in to answer a question. Their strategy isn’t always successful.",
-                "“We just don't know what's going on most of the time. We can't see the kids,” Luebbert says.",
-                "The black Zoom squares are a glaring reminder of what teaching is like right now: in the dark, out of sight, missing the bigger picture.",
-                "It’s not that Luebbert’s students don’t want to turn their cameras on and participate. Most of Luebbert’s students simply don’t have the internet bandwidth to do so. Nearly [30%](https://www.inquirer.com/news/comcast-digital-internet-access-philly-poor-people-20181210.html) of Kensington residents don’t have access to broadband Wi–Fi.",
-                "At a school where the entire student body [qualifies for free lunch](https://www.usnews.com/education/best-high-schools/pennsylvania/districts/philadelphia-public-schools/kensington-health-sciences-17208) and is economically disadvantaged, Wi–Fi is the least of families’ worries.",
-                "“If you're going to choose between a Wi–Fi connection and putting food on the table, you're going to put food on the table,” says Jill Ruck, executive director of [CHILD USA](https://childusa.org/), a Philly–based child protection nonprofit."
-            ]
-        },
-        "quote2": {
-            "quote": "“If you're going to choose between a Wi–Fi connection and putting food on the table, you're going to put food on the table.”",
-            "author": "Jill Ruck",
-            "color": "",
-            "bgColor": "#58B195",
-            "img": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/image 4.jpg",
-            "credit": "Photo by Chase Sutton"
-        },
-        "section3": {
-            "quote": "“You've got to have fun. If you can't have humor in this crazy thing, then you don't belong in this field.”",
-            "author": "Louis Lozzi",
-            "color": "#58B195",
-            "content": [
-                "In Luebbert’s case, many students who lack computer access tune into school from tiny smartphone screens, spending the day trying to decipher the garbled sound of voices that erupts from their devices. And that only includes the students who show up.",
-                "“When there's issues with Wi–Fi or a computer, that can derail a kid's whole day,” Luebbert says.",
-                "It’s a far cry from last year, when Luebbert’s classroom was filled with enthusiasm. The chorus of laughter that used to fill the room is now inaudible. Students usually mute themselves on Zoom. Without cameras turned on, Luebbert can’t even register a smile.",
-                "Teaching like this takes patience. Patience to swallow your pride, discard those weeks of meticulous lesson planning, and start afresh during those long pauses. Patience to find solace in the small victories, like a student participating with the chat function rather than doing so verbally.",
-                "Still, the lack of participation makes Luebbert wonder how much further behind their students will fall. In a typical year, [less than 10%](https://www.usnews.com/education/best-high-schools/pennsylvania/districts/philadelphia-public-schools/kensington-health-sciences-17208) of students at Kensington Academy are proficient in math and less than a quarter are proficient in reading. Virtual learning is bound to make those numbers worse.",
-                "Participation poses an even greater challenge for Luebbert and educators across Philadelphia. With poor connectivity, teachers can’t rely on their usual context clues—glimpses of a student nodding or a look of confusion—to tailor their lessons to students whose grades are slowly slipping. The usual mechanisms of intervention, like asking a truant student to stay after class or swinging by the cafeteria for a check–in, can’t be replicated.",
-                "“The toughest thing about that is just not knowing why students are disengaged,” Luebbert says. “We can't tell if we're reaching them in the right way. We can't tell if what we're providing is sufficient. We can't communicate in those informal ways.”"
-            ]
-        },
-        "section4": {
-            "img": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/image 2.jpg",
-            "caption": "Photo courtesy of Charlie McGeehan",
-            "content": [
-                "These issues are a district–wide phenomenon. ",
-                "Students are “dropping off [and] disappearing,” says Charlie McGeehan, a humanities teacher at [The U School](http://www.uschool.org/) in North Philadelphia.",
-                "Left with few other options, some teachers have relied on unconventional methods to keep tabs on their students. Louis Lozzi, who teaches math and science at [Paul Robeson High School](https://robeson.philasd.org/) in West Philadelphia, keeps his phone on late in the evening in case students want to check in with him. Many of his students miss class because they work day jobs, so they call Lozzi on their way home to catch up. In fact, the COVID–19–induced recession has forced students[ across the country](https://www.latimes.com/california/story/2021-02-05/la-students-take-on-jobs-help-families-amid-covid-19) to pick up extra work.",
-                "“I’m talking to kids at 7 or 8 o'clock at night. It's not in the contract, but you’ve got to do what you got to do,” Lozzi says.",
-                "Lozzi, a Philadelphia native with a thick, South Philly accent, understands the value of work. The son of a small business owner, Lozzi got his first job at 12 years old washing dishes and bussing tables at a local restaurant. He alternated between his restaurant job and his unofficial job of helping out at his dad’s auto repair shop.",
-                "Problem solving and hard work, he says, are “in my DNA.” ",
-                "But the hardships his students are facing extend far beyond what he ever experienced. ",
-                "“I've got 15– to 16–year–olds that need to pay bills. These kids are getting on buses and going down to the King of Prussia Mall and working in fast food restaurants to pick up $7.50 an hour right now to try and make a living,” Lozzi says. “A lot of these kids grow up faster than they needed to or wanted to.”",
-                "Lozzi adapts. He applies his background in business and economics—opportunity costs, tradeoffs, and all—to his teaching. A fierce advocate of hands–on learning, Lozzi insists that teaching isn't about memorizing facts. ",
-                "Instead, he focuses his STEM curriculum on basic knowledge that will benefit students who might not come to every class. How does a light switch work? Why does it snow in the winter? With the students in the driver’s seat, leading the conversation and asking the questions, everything is up for discussion—even the physics behind a zombie apocalypse. For Lozzi, it’s the only way to keep students wanting to come back to class each day.",
-                "“You've got to have fun. If you can't have humor in this crazy thing, then you don't belong in this field,” he says."
-            ]
-        },
-        "quote3": {
-            "quote": "“We are not social workers. We are not medical professionals. We are not counselors. But we're expected to do that job, and schools have been this bandaid on the gaping wound of institutional failure for decades.\"",
-            "author": "Maddie Luebbert",
-            "color": "",
-            "bgColor": "#58B195"
-        },
-        "section5": {
-            "img1": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/image 3.jpg",
-            "caption1": "Photo by Aaron Walker",
-            "img2": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/image 6.jpg",
-            "caption2": "Photo courtesy of *The Daily Pennsylvanian*",
-            "content": [
-                "“Great teachers can only go so far,” Ruck says.",
-                "Ruck teaches students who cannot participate on Zoom due to connectivity issues or focus in class because they don’t have enough food to eat. These are only a few of the ways she’s confronted with devastating manifestations of poverty in students’ lives.",
-                "Ruck has a word for this phenomenon: educational neglect. A term typically used to describe parents who fail to enroll their children in schools or provide adequate homeschooling, educational neglect has taken on a new meaning in the COVID–19 pandemic. Rather than being the fault of a parent or caregiver, educational neglect now describes when governments fail to provide adequate education to public school children.",
-                "“We are neglecting children's education right now simply because they don't have technology to log on if they're doing remote learning,” Ruck says.",
-                "It’s no secret that the School District of Philadelphia is chronically underfunded. Public schools in Philly are shortchanged by at least [$5,000 per student](https://www.inquirer.com/education/school-funding-pennsylvania-lawsuit-report-20201027.html) compared with public schools in the city’s wealthy suburbs, like Radnor and Abington.",
-                "“Who should make the most money in the world when I run it?” Weber wonders aloud. Her answer? K–12 teachers. And social workers.",
-                "Weber knows that school means more than lecturing students daily or doling out report cards. It’s the place where a child might get her only two meals of the day. It’s also the place where a child is surrounded by [mandatory reporters](https://www.cwla.org/child-maltreatment-2018-report-shows-an-increase-in-child-abuse/), ready to protect her should any suspicions of child abuse arise. The vital services that schools provide in addition to education are often overlooked during conversations about school funding.",
-                "It took the complete closure of school buildings, and the ensuing chaos, for these issues to begin to come to light.",
-                "“Why have we let it get to this point? Why are we acting like teachers are equipped to save lives every day?” Luebbert says.",
-                "“We are not social workers. We are not medical professionals. We are not counselors. But we're expected to do that job, and schools have been this bandaid on the gaping wound of institutional failure for decades.”"
-            ]
-        },
-        "section6": {
-            "img": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/",
-            "credit": "",
-            "content": [
-                ""
-            ]
-        }
+{
+    "social": {
+        "img": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/digital divide-01.png",
+        "slug": "/2021/covid-19-philadelphia-public-schools-digital-divide"
+    },
+    "dom": {
+        "header": "Long Division: How COVID–19 Exacerbates the Digital Divide in Public Schools",
+        "subheader": "Chronically underfunded, the School District of Philadelphia has long struggled to engage students. Now, teachers are feeling it the most.",
+        "author": "Lindsey Perlman",
+        "credit": "Photo by Isabel Liang",
+        "img": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/digital divide-01.png"
+    },
+    "section1": {
+        "color": "#58B195",
+        "dropCap": "S",
+        "content": [
+            "Sue Weber teaches class from her garage, surrounded by exhaust fumes, concrete walls, and towers of a pandemic staple: toilet paper rolls.",
+            "But you wouldn’t know it.",
+            "Weber positions herself in front of a shower curtain, her “green screen,” which depicts stacks of books nestled in a mahogany wood bookcase. As far as an observer on Zoom is concerned, Weber could be in a library. And the garage acoustics, she says, are wonderful.",
+            "The setup isn’t glamorous, but it’s convenient. Weber is a foster mom of three. Her house is flooded with the clatter of children attending virtual school and her husband’s voice, which cascades through the halls as he speaks on his Zoom calls. The garage, though freezing in the winter months, provides peace and quiet.",
+            "More importantly, her setup is a source of solidarity with her students at [Science Leadership Academy](https://scienceleadership.org/) (SLA), a high school within the School District of Philadelphia. It’s a testament to the power of resourcefulness—a quality that Weber, who’s from a low–income town in rural North Dakota, has spent her life developing throughout her ascent to college, graduate school, and now the Ivy League.",
+            "Weber is the associate director of Penn’s [Communication within the Curriculum](https://cwic.sas.upenn.edu/) program, which brings together Penn students and local public school students through service–based learning courses. For the second year in a row, Weber partnered with SLA for her public speaking course."
+        ]
+    },
+    "quote1": {
+        "quote": "“How do you see yourself as a worthy learner, with agency in this classroom, when you're trying to just find peace and focus on the teacher?”",
+        "author": "Sue Weber",
+        "color": "",
+        "bgColor": "#58B195",
+        "img": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/image 5.jpg",
+        "credit": "Photo courtesy of *The Daily Pennsylvanian*"
+    },
+    "section2": {
+        "img": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/image 1.jpeg",
+        "credit": "Photo courtesy of Maddie Luebbert",
+        "quote": "“The toughest thing about that is just not knowing why students are disengaged...We can't tell if we're reaching them in the right way.”",
+        "author": "Maddie Luebbert",
+        "color": "",
+        "bgColor": "#58B195",
+        "content": [
+            "“I try to make students feel more comfortable,” she says. “I show them that I'm not in a remarkable setting, either.”",
+            "But public school students fare worse, Weber and other teachers in the district say. Gone are the colorful bulletin boards, creaky plastic desks, and pungent smell of sweat that swirls through the building’s hectic hallways when the bell rings. The school building—closed for a year now due to COVID–19—is a fleeting memory. The classroom is now anywhere and everywhere, unpredictable because of the changing dynamics of a student's home life. Some days it’s a crowded one–bedroom apartment, with internet bandwidth strained by a tenuous balance of family members all speaking at once on their Zoom calls. Some days it’s at the kitchen table, where the teacher must battle for the attention of a teenage student bouncing her baby on her lap. Other days, the classroom is forsaken simply because students have to work.",
+            "COVID–19 exacerbates this '[digital divide](https://cs.stanford.edu/people/eroberts/cs181/projects/digital-divide/start.html),' which separates students who have digital or internet access from those who don’t. Just one of many problems with virtual learning, it amplifies all the others: truancy, poor grades, and cycles of poverty.",
+            "Those things are out of Weber’s control. In some ways, teaching is almost like standing on the side of a busy street, watching the problems compound like a slow–growing traffic jam of cars. Hardened by her upbringing, however, Weber maintains a sense of calm. She slowly coaxes her students into turning their cameras on, eventually having them deliver speeches in small groups. Learning right now is all about resilience, she says.",
+            "“How do you see yourself as a worthy learner, with agency in this classroom, when you're trying to just find peace and focus on the teacher?” Weber asks. One of her students, for example, chooses to lay on her stomach underneath her bed during class, just so she can escape the distractions of her home.",
+            "SLA is one of the ‘better’ schools in the district. It’s a [magnet school](https://www.publicschoolreview.com/blog/what-is-a-magnet-school), meaning all of the students were handpicked through a competitive admissions process. It’s also a one–to–one school, meaning that every student is given a Chromebook laptop to complete their work. That’s a huge feat in a district where just [58% of students](https://www.philasd.org/communications/2020/03/26/school-district-will-use-11-million-to-help-bridge-the-digital-divide-among-students/) in ninth through 12th grade have access to the internet from a computer at home.",
+            "In the broader scheme of things, though, it’s really a drop in the bucket. Getting computers into students’ hands doesn’t cure the systemic connectivity issues that plague Philadelphia, which is one of the [worst cities in the nation](https://www.inquirer.com/education/coronavirus-students-digital-divide-philadelphia-comcast-20200403.html) for household internet access.",
+            "Maddie Luebbert knows the struggle with connectivity all too well. An English teacher at the [Kensington Health Sciences Academy](https://khsa.philasd.org/) in North Philadelphia, Luebbert logs onto Zoom each day and teaches a wall of black squares—faceless students, usually with their cameras off, only distinguishable from one another by Zoom text boxes bearing their names. ",
+            "Luebbert’s classes are often filled with long, awkward silences, causing their eyes to flit across the screen in the hopes that someone—anyone, really—will chime in to answer a question. Their strategy isn’t always successful.",
+            "“We just don't know what's going on most of the time. We can't see the kids,” Luebbert says.",
+            "The black Zoom squares are a glaring reminder of what teaching is like right now: in the dark, out of sight, missing the bigger picture.",
+            "It’s not that Luebbert’s students don’t want to turn their cameras on and participate. Most of Luebbert’s students simply don’t have the internet bandwidth to do so. Nearly [30%](https://www.inquirer.com/news/comcast-digital-internet-access-philly-poor-people-20181210.html) of Kensington residents don’t have access to broadband Wi–Fi.",
+            "At a school where the entire student body [qualifies for free lunch](https://www.usnews.com/education/best-high-schools/pennsylvania/districts/philadelphia-public-schools/kensington-health-sciences-17208) and is economically disadvantaged, Wi–Fi is the least of families’ worries.",
+            "“If you're going to choose between a Wi–Fi connection and putting food on the table, you're going to put food on the table,” says Jill Ruck, executive director of [CHILD USA](https://childusa.org/), a Philly–based child protection nonprofit."
+        ]
+    },
+    "quote2": {
+        "quote": "“If you're going to choose between a Wi–Fi connection and putting food on the table, you're going to put food on the table.”",
+        "author": "Jill Ruck",
+        "color": "",
+        "bgColor": "#58B195",
+        "img": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/image 4.jpg",
+        "credit": "Photo by Chase Sutton"
+    },
+    "section3": {
+        "quote": "“You've got to have fun. If you can't have humor in this crazy thing, then you don't belong in this field.”",
+        "author": "Louis Lozzi",
+        "color": "#58B195",
+        "content": [
+            "In Luebbert’s case, many students who lack computer access tune into school from tiny smartphone screens, spending the day trying to decipher the garbled sound of voices that erupts from their devices. And that only includes the students who show up.",
+            "“When there's issues with Wi–Fi or a computer, that can derail a kid's whole day,” Luebbert says.",
+            "It’s a far cry from last year, when Luebbert’s classroom was filled with enthusiasm. The chorus of laughter that used to fill the room is now inaudible. Students usually mute themselves on Zoom. Without cameras turned on, Luebbert can’t even register a smile.",
+            "Teaching like this takes patience. Patience to swallow your pride, discard those weeks of meticulous lesson planning, and start afresh during those long pauses. Patience to find solace in the small victories, like a student participating with the chat function rather than doing so verbally.",
+            "Still, the lack of participation makes Luebbert wonder how much further behind their students will fall. In a typical year, [less than 10%](https://www.usnews.com/education/best-high-schools/pennsylvania/districts/philadelphia-public-schools/kensington-health-sciences-17208) of students at Kensington Academy are proficient in math and less than a quarter are proficient in reading. Virtual learning is bound to make those numbers worse.",
+            "Participation poses an even greater challenge for Luebbert and educators across Philadelphia. With poor connectivity, teachers can’t rely on their usual context clues—glimpses of a student nodding or a look of confusion—to tailor their lessons to students whose grades are slowly slipping. The usual mechanisms of intervention, like asking a truant student to stay after class or swinging by the cafeteria for a check–in, can’t be replicated.",
+            "“The toughest thing about that is just not knowing why students are disengaged,” Luebbert says. “We can't tell if we're reaching them in the right way. We can't tell if what we're providing is sufficient. We can't communicate in those informal ways.”"
+        ]
+    },
+    "section4": {
+        "img": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/image 2.jpg",
+        "caption": "Photo courtesy of Charlie McGeehan",
+        "content": [
+            "These issues are a district–wide phenomenon. ",
+            "Students are “dropping off [and] disappearing,” says Charlie McGeehan, a humanities teacher at [The U School](http://www.uschool.org/) in North Philadelphia.",
+            "Left with few other options, some teachers have relied on unconventional methods to keep tabs on their students. Louis Lozzi, who teaches math and science at [Paul Robeson High School](https://robeson.philasd.org/) in West Philadelphia, keeps his phone on late in the evening in case students want to check in with him. Many of his students miss class because they work day jobs, so they call Lozzi on their way home to catch up. In fact, the COVID–19–induced recession has forced students[ across the country](https://www.latimes.com/california/story/2021-02-05/la-students-take-on-jobs-help-families-amid-covid-19) to pick up extra work.",
+            "“I’m talking to kids at 7 or 8 o'clock at night. It's not in the contract, but you’ve got to do what you got to do,” Lozzi says.",
+            "Lozzi, a Philadelphia native with a thick, South Philly accent, understands the value of work. The son of a small business owner, Lozzi got his first job at 12 years old washing dishes and bussing tables at a local restaurant. He alternated between his restaurant job and his unofficial job of helping out at his dad’s auto repair shop.",
+            "Problem solving and hard work, he says, are “in my DNA.” ",
+            "But the hardships his students are facing extend far beyond what he ever experienced. ",
+            "“I've got 15– to 16–year–olds that need to pay bills. These kids are getting on buses and going down to the King of Prussia Mall and working in fast food restaurants to pick up $7.50 an hour right now to try and make a living,” Lozzi says. “A lot of these kids grow up faster than they needed to or wanted to.”",
+            "Lozzi adapts. He applies his background in business and economics—opportunity costs, tradeoffs, and all—to his teaching. A fierce advocate of hands–on learning, Lozzi insists that teaching isn't about memorizing facts. ",
+            "Instead, he focuses his STEM curriculum on basic knowledge that will benefit students who might not come to every class. How does a light switch work? Why does it snow in the winter? With the students in the driver’s seat, leading the conversation and asking the questions, everything is up for discussion—even the physics behind a zombie apocalypse. For Lozzi, it’s the only way to keep students wanting to come back to class each day.",
+            "“You've got to have fun. If you can't have humor in this crazy thing, then you don't belong in this field,” he says."
+        ]
+    },
+    "quote3": {
+        "quote": "“We are not social workers. We are not medical professionals. We are not counselors. But we're expected to do that job, and schools have been this bandaid on the gaping wound of institutional failure for decades.\"",
+        "author": "Maddie Luebbert",
+        "color": "",
+        "bgColor": "#58B195"
+    },
+    "section5": {
+        "img1": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/image 3.jpg",
+        "caption1": "Photo by Aaron Walker",
+        "img2": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/image 6.jpg",
+        "caption2": "Photo courtesy of *The Daily Pennsylvanian*",
+        "content": [
+            "“Great teachers can only go so far,” Ruck says.",
+            "Ruck teaches students who cannot participate on Zoom due to connectivity issues or focus in class because they don’t have enough food to eat. These are only a few of the ways she’s confronted with devastating manifestations of poverty in students’ lives.",
+            "Ruck has a word for this phenomenon: educational neglect. A term typically used to describe parents who fail to enroll their children in schools or provide adequate homeschooling, educational neglect has taken on a new meaning in the COVID–19 pandemic. Rather than being the fault of a parent or caregiver, educational neglect now describes when governments fail to provide adequate education to public school children.",
+            "“We are neglecting children's education right now simply because they don't have technology to log on if they're doing remote learning,” Ruck says.",
+            "It’s no secret that the School District of Philadelphia is chronically underfunded. Public schools in Philly are shortchanged by at least [$5,000 per student](https://www.inquirer.com/education/school-funding-pennsylvania-lawsuit-report-20201027.html) compared with public schools in the city’s wealthy suburbs, like Radnor and Abington.",
+            "“Who should make the most money in the world when I run it?” Weber wonders aloud. Her answer? K–12 teachers. And social workers.",
+            "Weber knows that school means more than lecturing students daily or doling out report cards. It’s the place where a child might get her only two meals of the day. It’s also the place where a child is surrounded by [mandatory reporters](https://www.cwla.org/child-maltreatment-2018-report-shows-an-increase-in-child-abuse/), ready to protect her should any suspicions of child abuse arise. The vital services that schools provide in addition to education are often overlooked during conversations about school funding.",
+            "It took the complete closure of school buildings, and the ensuing chaos, for these issues to begin to come to light.",
+            "“Why have we let it get to this point? Why are we acting like teachers are equipped to save lives every day?” Luebbert says.",
+            "“We are not social workers. We are not medical professionals. We are not counselors. But we're expected to do that job, and schools have been this bandaid on the gaping wound of institutional failure for decades.”"
+        ]
+    },
+    "section6": {
+        "img": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/",
+        "credit": "",
+        "content": [
+            ""
+        ]
     }
-]
+}

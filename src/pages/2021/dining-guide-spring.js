@@ -6,6 +6,7 @@ import Img from 'gatsby-image'
 import { Footer, NavBar } from '../../components/shared'
 import CoverImg from '../../content/images/2021/dining-guide-spring/cover_img.png'
 import Feature from '../../components/shared/Feature.js'
+import ResponsiveGrid from '../../components/2021/dining-guide/ResponsiveGrid'
 
 const NAVBAR_TITLES = {
   left: [
@@ -53,7 +54,7 @@ const Index = () => {
               title
               img {
                 childImageSharp {
-                  fluid(maxWidth: 1000, maxHeight: 650) {
+                  fluid(maxWidth: 800, maxHeight: 800) {
                     ...GatsbyImageSharpFluid
                     src
                   }
@@ -67,7 +68,7 @@ const Index = () => {
               title
               img {
                 childImageSharp {
-                  fluid(maxWidth: 1000, maxHeight: 650) {
+                  fluid(maxWidth: 800, maxHeight: 800) {
                     ...GatsbyImageSharpFluid
                     src
                   }
@@ -81,7 +82,7 @@ const Index = () => {
               title
               img {
                 childImageSharp {
-                  fluid(maxWidth: 1000, maxHeight: 650) {
+                  fluid(maxWidth: 800, maxHeight: 800) {
                     ...GatsbyImageSharpFluid
                     src
                   }
@@ -201,12 +202,16 @@ const Index = () => {
         author={photo_essay[0].author}
         img={photo_essay[0].img}
       />
-
+      
       <div id="in-the-kitchen" />
+      <ResponsiveGrid multimedia={in_the_kitchen} title={'In The Kitchen'}/>
 
       <div id="on-the-table" />
+      <ResponsiveGrid multimedia={on_the_table} title={'On The Table'}/>
+
       
       <div id="the-service-industry" />
+      <ResponsiveGrid multimedia={the_service_industry} title={'The Service Industry'}/>
 
       <Footer emoji="🍳" bgColor="#FFF" fontColor="#000" year="2021" />
     </>

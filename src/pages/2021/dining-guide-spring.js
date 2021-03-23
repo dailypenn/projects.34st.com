@@ -5,7 +5,7 @@ import Img from 'gatsby-image'
 
 import { Footer, NavBar } from '../../components/shared'
 import CoverImg from '../../content/images/2021/dining-guide-spring/cover_img.png'
-import Feature from '../../components/2021/love-issue/Feature.js'
+import Feature from '../../components/shared/Feature.js'
 
 const NAVBAR_TITLES = {
   left: [
@@ -21,32 +21,92 @@ const NAVBAR_TITLES = {
 }
 
 const Index = () => {
-//   const data = useStaticQuery(graphql`
-//   query {
-//     allFile(filter: { relativePath: { eq: "dinig-guide-spring-2021-content.json" } }) {
-//       edges {
-//         node {
-//           childrenDiningGuideContentJson {
-            
-//           }
-//         }
-//       }
-//     }
-//   }
-// `)
+  const data = useStaticQuery(graphql`
+  query {
+    allFile(filter: { relativePath: { eq: "dining-guide-spring-2021.json" } }) {
+      edges {
+        node {
+          childrenDiningGuideSpring2021Json {
+            feature {
+              link
+              headline
+              heading
+              subheading
+              author
+              img
+            }
+            instagram {
+              link
+            }
+            photo_essay {
+              link
+              headline
+              heading
+              subheading
+              author
+              img
+            }
+            in_the_kitchen {
+              author
+              link
+              subhead
+              title
+              img {
+                childImageSharp {
+                  fluid(maxWidth: 1000, maxHeight: 650) {
+                    ...GatsbyImageSharpFluid
+                    src
+                  }
+                }
+              }
+            }
+            on_the_table {
+              author
+              link
+              subhead
+              title
+              img {
+                childImageSharp {
+                  fluid(maxWidth: 1000, maxHeight: 650) {
+                    ...GatsbyImageSharpFluid
+                    src
+                  }
+                }
+              }
+            }
+            the_service_industry {
+              author
+              link
+              subhead
+              title
+              img {
+                childImageSharp {
+                  fluid(maxWidth: 1000, maxHeight: 650) {
+                    ...GatsbyImageSharpFluid
+                    src
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`)
 
-//   const {
-//     node: { childrenDiningGuideContentJson: sections },
-//   } = data.allFile.edges[0]
+  const {
+    node: { childrenDiningGuideSpring2021Json: sections },
+  } = data.allFile.edges[0]
 
-//   const {
-//     cover_img,
-//     essay_winner,
-//     multimedia,
-//     love_irl,
-//     love_4_u,
-//     love_online,
-//   } = sections[0]
+  const {
+    feature,
+    instagram,
+    photo_essay,
+    in_the_kitchen,
+    on_the_table,
+    the_service_industry,
+  } = sections[0]
 
   return (
     <>
@@ -121,11 +181,26 @@ const Index = () => {
       </div>
 
       <div id="feature" />
-      {/* <Feature /> */}
+      <Feature 
+        link={feature[0].link}
+        heading={feature[0].heading}
+        headline={feature[0].headline}
+        subheading={feature[0].subheading}
+        author={feature[0].author}
+        img={feature[0].img}
+      />
 
       <div id="multimedia" />
 
       <div id="photo-essay" />
+      <Feature 
+        link={photo_essay[0].link}
+        heading={photo_essay[0].heading}
+        headline={photo_essay[0].headline}
+        subheading={photo_essay[0].subheading}
+        author={photo_essay[0].author}
+        img={photo_essay[0].img}
+      />
 
       <div id="in-the-kitchen" />
 

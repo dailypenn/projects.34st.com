@@ -1,6 +1,6 @@
 {
     "social": {
-        "img": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/digital divide-01.png",
+        "img": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/digital divide-01.png",
         "slug": "/2021/covid-19-philadelphia-public-schools-digital-divide"
     },
     "dom": {
@@ -8,7 +8,7 @@
         "subheader": "Chronically underfunded, the School District of Philadelphia has long struggled to engage students. Now, teachers are feeling it the most.",
         "author": "Lindsey Perlman",
         "credit": "Photo by Isabel Liang",
-        "img": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/digital divide-01.png"
+        "img": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/digital divide-01.png"
     },
     "section1": {
         "color": "#58B195",
@@ -27,11 +27,11 @@
         "author": "Sue Weber",
         "color": "",
         "bgColor": "#58B195",
-        "img": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/image 5.jpg",
+        "img": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/image 5.jpg",
         "credit": "Photo courtesy of The Daily Pennsylvanian"
     },
     "section2": {
-        "img": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/image 1.jpeg",
+        "img": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/image 1.jpeg",
         "credit": "Photo courtesy of Maddie Luebbert",
         "quote": "“The toughest thing about that is just not knowing why students are disengaged ... We can't tell if we're reaching them in the right way.”",
         "author": "Maddie Luebbert",
@@ -59,7 +59,7 @@
         "author": "Jill Ruck",
         "color": "",
         "bgColor": "#58B195",
-        "img": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/image 4.jpg",
+        "img": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/image 4.jpg",
         "credit": "Photo by Chase Sutton"
     },
     "section3": {
@@ -77,7 +77,7 @@
         ]
     },
     "section4": {
-        "img": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/image 2.jpg",
+        "img": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/image 2.jpg",
         "credit": "Photo courtesy of Charlie McGeehan",
         "content": [
             "These issues are a district–wide phenomenon. ",
@@ -100,10 +100,10 @@
         "bgColor": "#58B195"
     },
     "section5": {
-        "img1": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/image 3.jpg",
+        "img1": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/image 3.jpg",
         "credit1": "Photo by Aaron Walker",
-        "img2": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/image 6.jpg",
-        "credit2": "Photo courtesy of *The Daily Pennsylvanian*",
+        "img2": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/image 6.jpg",
+        "credit2": "Photo courtesy of The Daily Pennsylvanian",
         "content": [
             "“Great teachers can only go so far,” Ruck says.",
             "Ruck teaches students who can't participate on Zoom due to connectivity issues or focus in class because they don’t have enough food to eat. These are only a few of the ways she’s confronted with devastating manifestations of poverty in students’ lives.",
@@ -118,7 +118,7 @@
         ]
     },
     "section6": {
-        "img": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/",
+        "img": "../../../images/2021/covid-19-philadelphia-public-schools-digital-divide/",
         "credit": "",
         "content": [
             ""

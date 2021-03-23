@@ -1,4 +1,7 @@
 import s from 'styled-components'
+import css from 'styled-components'
+import ReactMarkdown from 'react-markdown'
+import React from 'react'
 
 import { LIBRE_FRANKLIN_MEDIUM } from '../../../styles/font'
 
@@ -15,12 +18,24 @@ export const MainPara = s.p`
     }
 `
 export const ImgCaption = s.p`
-  font-size: 20px;
+  font-size: 10px;
   width: 100%;
 `
+
 export const CenterDiv = s.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    height: 100%;
+  height: 100%;
 `
+
+// const ImgCaptionWrapper = s.p`
+//   width: 100%;
+//   font-size: 10px;
+// `
+
+// export const ImgCaption = ({ credit }) => (
+  
+//     <ReactMarkdown children={credit} linkTarget="_blank" />
+  
+// )

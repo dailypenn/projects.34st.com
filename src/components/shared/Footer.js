@@ -24,10 +24,7 @@ const Credit = s.div`
 
 export const Footer = ({ font, emoji = '💖', bgColor, fontColor, year = '2021' }) => (
   <Credit font={font} bgColor={bgColor} fontColor={fontColor}>
-    Made with&nbsp;<span role="img">{emoji}</span>&nbsp;by&nbsp;
-    <a href="https://tech.thedp.com/" target="_blank" rel="noreferrer">
-      The Daily Pennsylvanian Tech Department
-    </a>
-    &nbsp;&copy; {year}. All rights reserved.
+    Made with <span role="img"> {emoji} </span> by The Daily Pennsylvanian Web
+    Department © {year}. All rights reserved.
   </Credit>
 )

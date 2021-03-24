@@ -6,6 +6,7 @@ import Img from 'gatsby-image'
 import { Footer, NavBar, BackgroundWrapper } from '../../components/shared'
 import CoverImg from '../../content/images/2021/dining-guide-spring/cover_img.png'
 import Feature from '../../components/shared/Feature.js'
+import InstagramSection from '../../components/2021/dining-guide/InstagramSection'
 import ArticleGrid from '../../components/2021/dining-guide-spring/ArticleGrid'
 
 const NAVBAR_TITLES = {
@@ -23,68 +24,71 @@ const NAVBAR_TITLES = {
 
 const Index = () => {
   const data = useStaticQuery(graphql`
-  query {
-    allFile(filter: { relativePath: { eq: "dining-guide-spring-2021.json" } }) {
-      edges {
-        node {
-          childrenDiningGuideSpring2021Json {
-            feature {
-              link
-              headline
-              heading
-              subheading
-              author
-              img
-            }
-            instagram {
-              link
-            }
-            photo_essay {
-              link
-              headline
-              heading
-              subheading
-              author
-              img
-            }
-            in_the_kitchen {
-              author
-              link
-              subhead
-              title
-              img {
-                childImageSharp {
-                  fluid(maxWidth: 800, maxHeight: 800) {
-                    ...GatsbyImageSharpFluid
-                    src
+    query {
+      allFile(
+        filter: { relativePath: { eq: "dining-guide-spring-2021.json" } }
+      ) {
+        edges {
+          node {
+            childrenDiningGuideSpring2021Json {
+              feature {
+                link
+                headline
+                heading
+                subheading
+                author
+                img
+              }
+              instagram {
+                link
+              }
+              photo_essay {
+                link
+                headline
+                heading
+                subheading
+                author
+                img
+              }
+              in_the_kitchen {
+                author
+                link
+                subhead
+                title
+                img {
+                  childImageSharp {
+                    fluid(maxWidth: 800, maxHeight: 800) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
                   }
                 }
               }
-            }
-            on_the_table {
-              author
-              link
-              subhead
-              title
-              img {
-                childImageSharp {
-                  fluid(maxWidth: 800, maxHeight: 800) {
-                    ...GatsbyImageSharpFluid
-                    src
+              on_the_table {
+                author
+                link
+                subhead
+                title
+                img {
+                  childImageSharp {
+                    fluid(maxWidth: 800, maxHeight: 800) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
                   }
                 }
               }
-            }
-            the_service_industry {
-              author
-              link
-              subhead
-              title
-              img {
-                childImageSharp {
-                  fluid(maxWidth: 800, maxHeight: 800) {
-                    ...GatsbyImageSharpFluid
-                    src
+              the_service_industry {
+                author
+                link
+                subhead
+                title
+                img {
+                  childImageSharp {
+                    fluid(maxWidth: 800, maxHeight: 800) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
                   }
                 }
               }
@@ -93,8 +97,7 @@ const Index = () => {
         }
       }
     }
-  }
-`)
+  `)
 
   const {
     node: { childrenDiningGuideSpring2021Json: sections },
@@ -131,7 +134,10 @@ const Index = () => {
           property="og:image"
           content="https://snworksceo.imgix.net/dpn/79644a53-b06e-4385-a294-969556c6c677.sized-1000x1000.png"
         />
-        <meta property="og:description" content="How COVID-19 shook up the food industry" />
+        <meta
+          property="og:description"
+          content="How COVID-19 shook up the food industry"
+        />
         <meta property="og:type" content="article" />
         <meta
           property="og:url"
@@ -147,12 +153,15 @@ const Index = () => {
           name="twitter:image"
           content="https://snworksceo.imgix.net/dpn/79644a53-b06e-4385-a294-969556c6c677.sized-1000x1000.png"
         />
-        <meta name="twitter:description" content="How COVID-19 shook up the food industry" />
+        <meta
+          name="twitter:description"
+          content="How COVID-19 shook up the food industry"
+        />
         <meta
           name="twitter:url"
           content="https://projects.34st.com/2021/dining-guide-spring"
         />
-        <meta name="twitter:site" content="@dailypenn"/>
+        <meta name="twitter:site" content="@dailypenn" />
 
         <script
           src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -180,11 +189,14 @@ const Index = () => {
         img="/img/34st-navbar-logo-white.png"
       />
       <div>
-        <img src={CoverImg} style={{ width: '100%', boxShadow: '0px 5px 6px #00000029', }} />
+        <img
+          src={CoverImg}
+          style={{ width: '100%', boxShadow: '0px 5px 6px #00000029' }}
+        />
       </div>
 
       <div id="feature" />
-      <Feature 
+      <Feature
         link={feature[0].link}
         heading={feature[0].heading}
         headline={feature[0].headline}
@@ -194,9 +206,10 @@ const Index = () => {
       />
 
       <div id="multimedia" />
+      <InstagramSection title="IG: @34stmag"></InstagramSection>
 
       <div id="photo-essay" />
-      <Feature 
+      <Feature
         link={photo_essay[0].link}
         heading={photo_essay[0].heading}
         headline={photo_essay[0].headline}

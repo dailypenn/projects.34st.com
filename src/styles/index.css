@@ -9,6 +9,26 @@
   src: url('./fonts/BNChester.otf');
 }
 
+@font-face {
+  font-family: 'Agrandir-GrandLight';
+  src: url('./fonts/Agrandir/Agrandir-GrandLight.otf');
+}
+
+@font-face {
+  font-family: 'Agrandir-GrandHeavy';
+  src: url('./fonts/Agrandir/Agrandir-GrandHeavy.otf');
+}
+
+@font-face {
+  font-family: 'Agrandir-Regular';
+  src: url('./fonts/Agrandir/Agrandir-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Agrandir-TextBold';
+  src: url('./fonts/Agrandir/Agrandir-TextBold.otf');
+}
+
 /* Futura PT font family */
 @import url("https://use.typekit.net/qmg7ofa.css");
 

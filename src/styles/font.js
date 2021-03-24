@@ -20,7 +20,7 @@ export const POPPINS_BOLD = `
 
 export const FUTURA_REGULAR = `
   font-family: 'Futura-PT', sans-serif;
-  font-weight: 400;
+  font-weight: 200;
 `
 
 export const FUTURA_MEDIUM = `
@@ -40,5 +40,25 @@ export const LIBRE_FRANKLIN_MEDIUM = `
 
 export const BN_CHESTER_REGULAR = `
   font-family: 'BN Chester', sans-serif;
+  font-weight: 400;
+`
+
+export const AGRANDIR_GRANDLIGHT = `
+  font-family: 'Agrandir-GrandLight', sans-serif;
+  font-weight: 400;
+`
+
+export const AGRANDIR_GRANDHEAVY = `
+  font-family: 'Agrandir-GrandHeavy', sans-serif;
+  font-weight: 400;
+`
+
+export const AGRANDIR_REGULAR = `
+  font-family: 'Agrandir-Regular', sans-serif;
+  font-weight: 400;
+`
+
+export const AGRANDIR_TEXTBOLD = `
+  font-family: 'Agrandir-TextBold', sans-serif;
   font-weight: 400;
 `

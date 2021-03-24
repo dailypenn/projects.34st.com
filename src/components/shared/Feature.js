@@ -1,7 +1,7 @@
 import React from 'react'
 import s from 'styled-components'
 
-import { FUNKTURM_REGULAR, FUTURA_REGULAR, FUTURA_MEDIUM } from '../../styles/font'
+import { AGRANDIR_TEXTBOLD, AGRANDIR_GRANDHEAVY, AGRANDIR_REGULAR, FUTURA_MEDIUM } from '../../styles/font'
 import { StyledAnchor } from '../shared'
 
 const Background = s.div`
@@ -23,16 +23,16 @@ const FeatureHeading = s.div`
   border: 2px solid white;
   width: fit-content;
   color: white;
-  padding: 0 .4rem;
-  ${FUTURA_MEDIUM}
+  padding: .4rem .4rem 0 .4rem;
+  ${AGRANDIR_TEXTBOLD}
 `
 const FeatureHeadline = s.div`
-  font-size: 5rem;
-  line-height: 4rem;
+  font-size: 4.3rem;
+  line-height: 4.4rem;
   color: white;
   padding: 20rem 0 1rem 0;
   width: 70%;
-  ${FUNKTURM_REGULAR}
+  ${AGRANDIR_GRANDHEAVY}
 
   @media(max-width: 768px) {
     font-size: 3rem;
@@ -42,10 +42,10 @@ const FeatureHeadline = s.div`
   }
 `
 const FeatureSubHeading = s.div`
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: white;
   line-height: 1.6rem;
-  ${FUTURA_REGULAR}
+  ${FUTURA_MEDIUM}
   width: 41%;
   margin-top: 2rem;
 
@@ -56,14 +56,14 @@ const FeatureSubHeading = s.div`
   }
 `
 const Author = s.div`
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   color: white;
   width: fit-content;
   margin: auto;
   text-align: center;
   margin-top: 2.5rem;
-  ${FUTURA_REGULAR}
+  ${AGRANDIR_TEXTBOLD}
 
   @media(max-width: 768px) {
     font-size: 1.5rem;

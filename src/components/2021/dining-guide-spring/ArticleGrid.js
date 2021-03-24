@@ -22,9 +22,9 @@ const Container = s.div`
 `
 
 
-const ResponsiveGrid = ({ multimedia, title }) => (
+const ArticleGrid = ({ multimedia, title }) => (
   <ImageContainer>
-    <Heading color="#FDB6B0">{title}</Heading>
+    <Heading color="#FFD1C0">{title}</Heading>
     <Row>
       <Col sm={8} md={6}>
         {multimedia.slice(0, 2) &&
@@ -68,4 +68,4 @@ const ResponsiveGrid = ({ multimedia, title }) => (
   </ImageContainer>
 )
 
-export default ResponsiveGrid;
+export default ArticleGrid;

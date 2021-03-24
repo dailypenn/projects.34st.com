@@ -3,7 +3,9 @@ import {
   FUNKTURM_REGULAR,
   FUTURA_REGULAR,
   FUTURA_BOLD,
-  FUTURA_MEDIUM
+  FUTURA_MEDIUM,
+  AGRANDIR_GRANDLIGHT,
+  AGRANDIR_GRANDHEAVY,
 } from '../../../styles/font'
 
 export const Heading = s.div`
@@ -11,10 +13,12 @@ export const Heading = s.div`
   padding: .5rem 1.2rem;
   margin: 4rem auto 0.2rem;
   text-align: center;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1.5px #573A78;
   font-size: 3rem;
   line-height 4rem;
   color: ${({ color = '#283033' }) => color};
-  ${FUNKTURM_REGULAR}
+  ${AGRANDIR_GRANDHEAVY}
 
   @media(max-width: 768px) {
     font-size: 3rem;
@@ -31,14 +35,14 @@ export const Container = s.div`
 export const Title = s.div` 
 	float: left;
 	position: absolute;
-	left: 0px;
-  top: 20px;
+	left: 10px;
+  top: 30px;
 	z-index: 1000;
-	width: 100%;
+	width: 95%;
 	height: auto;
 	color: #FFFFFF;
 	font-size: 1.5vw;
-	${FUTURA_REGULAR}
+	${AGRANDIR_GRANDLIGHT}
 	padding-left: 1rem;
 	padding-top: 0.5rem;
 	padding-right: 1rem;
@@ -50,13 +54,14 @@ export const Title = s.div`
 export const Tag = s.div` 
 	float: left;
 	position: absolute;
-	left: 0px;
-  bottom: 0px;
+	left: 10px;
+  bottom: 30px;
 	z-index: 1000;
 	width: 100%;
 	height: auto;
 	color: #FFFFFF;
-	font-size: 1.5vw;
+	font-size: 1.15vw;
+  line-height: 13px;
 	${FUTURA_REGULAR}
 	padding-left: 1rem;
 	padding-top: 0.5rem;
@@ -66,14 +71,14 @@ export const Tag = s.div`
 	}
 `
 export const Author = s.p`
-	${FUTURA_BOLD}
+	${FUTURA_REGULAR}
 	text-transform: uppercase;
-	font-size: 0.75vw;
+	font-size: 1.1vw;
 	@media (max-width: 768px) {
 		font-size: 1em;
     }
     margin-top: 2rem;
-	margin-bottom: 0.25rem;
+	margin-bottom: .25rem;
 `
 
 export const BoldText = s.div`

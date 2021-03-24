@@ -3,10 +3,10 @@ import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-import { Footer, NavBar } from '../../components/shared'
+import { Footer, NavBar, BackgroundWrapper } from '../../components/shared'
 import CoverImg from '../../content/images/2021/dining-guide-spring/cover_img.png'
 import Feature from '../../components/shared/Feature.js'
-import ResponsiveGrid from '../../components/2021/dining-guide/ResponsiveGrid'
+import ArticleGrid from '../../components/2021/dining-guide-spring/ArticleGrid'
 
 const NAVBAR_TITLES = {
   left: [
@@ -17,7 +17,7 @@ const NAVBAR_TITLES = {
   right: [
     { text: 'IN THE KITCHEN', link: 'in-the-kitchen' },
     { text: 'ON THE TABLE', link: 'on-the-table' },
-    { text: 'THE \'SERVICE INDUSTRY\'', link: 'the-service-industry' },
+    { text: 'THE \'SERVICE\' INDUSTRY', link: 'the-service-industry' },
   ],
 }
 
@@ -171,6 +171,8 @@ const Index = () => {
         ></script>
       </Helmet>
 
+      <BackgroundWrapper color="#D0FDF8">
+
       <NavBar
         titles={NAVBAR_TITLES}
         bgColor="#FFFFFF"
@@ -204,16 +206,17 @@ const Index = () => {
       />
       
       <div id="in-the-kitchen" />
-      <ResponsiveGrid multimedia={in_the_kitchen} title={'In The Kitchen'}/>
+      <ArticleGrid multimedia={in_the_kitchen} title={'In The Kitchen'}/>
 
       <div id="on-the-table" />
-      <ResponsiveGrid multimedia={on_the_table} title={'On The Table'}/>
+      <ArticleGrid multimedia={on_the_table} title={'On The Table'}/>
 
-      
       <div id="the-service-industry" />
-      <ResponsiveGrid multimedia={the_service_industry} title={'The Service Industry'}/>
+      <ArticleGrid multimedia={the_service_industry} title={'The \'Service\' Industry'}/>
 
       <Footer emoji="🍳" bgColor="#FFF" fontColor="#000" year="2021" />
+
+      </BackgroundWrapper>
     </>
   )
 }

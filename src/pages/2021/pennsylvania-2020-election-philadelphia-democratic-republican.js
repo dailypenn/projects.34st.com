@@ -141,6 +141,9 @@ const Index = () => {
               section6 {
                 credit
                 content
+                img
+              }
+              social {
                 img {
                   childImageSharp {
                     fluid(maxWidth: 1000, maxHeight: 900) {
@@ -149,9 +152,6 @@ const Index = () => {
                     }
                   }
                 }
-              }
-              social {
-                img
                 slug
               }
             }

@@ -2,12 +2,7 @@ import React from 'react'
 import s from 'styled-components'
 import { Col, Row } from 'react-bootstrap'
 import InstagramEmbed from 'react-instagram-embed'
-import {
-  FUNKTURM_REGULAR,
-  FUTURA_REGULAR,
-  FUTURA_BOLD,
-  FUTURA_MEDIUM,
-} from '../../../styles/font'
+import { FUNKTURM_REGULAR } from '../../../styles/font'
 
 const Heading = s.div`
   width: fit-content;

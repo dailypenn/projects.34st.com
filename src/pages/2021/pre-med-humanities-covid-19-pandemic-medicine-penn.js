@@ -138,7 +138,14 @@ const Index = () => {
                 content
               }
               social {
-                img
+                img {
+                  childImageSharp {
+                    fluid(maxWidth: 1000, maxHeight: 900) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
                 slug
               }
             }

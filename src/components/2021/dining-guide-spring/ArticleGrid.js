@@ -8,25 +8,25 @@ import { StyledAnchor } from '../../shared/Typography'
 
 const ImageContainer = s.div`
   margin: auto;
-  width: 75%;
+  width: 85%;
+  max-width: 768px;
   @media(max-width: 768px) {
     width: 90%
   }
 `
 
 const Container = s.div`
-  margin: 2rem 0;
+  margin: 2rem 0rem 0rem;
   position: relative;
   @media(max-width: 768px) {
   }
 `
 
-
 const ArticleGrid = ({ multimedia, title }) => (
   <ImageContainer>
     <Heading color="#FFD1C0">{title}</Heading>
     <Row>
-      <Col sm={8} md={6}>
+      <Col sm={12} md={6} lg={6}>
         {multimedia.slice(0, 2) &&
           multimedia.slice(0, 2).map(article => (
             <StyledAnchor link={article.link}>
@@ -49,7 +49,7 @@ const ArticleGrid = ({ multimedia, title }) => (
             </StyledAnchor>
           ))}
       </Col>
-      <Col sm={8} md={6}>
+      <Col sm={12} md={6} lg={6}>
         {multimedia.slice(2, 4) &&
           multimedia.slice(2, 4).map(article => (
             <StyledAnchor link={article.link}>

@@ -1,6 +1,17 @@
 {
   "featured": [
     {
+      "title": "Reality Bites: Street's Spring 2021 Dining Guide",
+      "author": "Dev: Raunaq Singh, Akshay Sharma, Andy Jiang; Design: Isabel Liang, Felicity Yick",
+      "section": "guides",
+      "date": "March 2021",
+      "description": "How COVID-19 shook up the food industry",
+      "sponsored": false,
+      "link": "/2021/dining-guide-spring",
+      "image": "https://snworksceo.imgix.net/dpn/79644a53-b06e-4385-a294-969556c6c677.sized-1000x1000.png",
+      "alt": "dining guide spring 2021"
+    },
+    {
       "title": "Love Issue",
       "author": "Calvin Hu, Nassim Motya, Peter Chen",
       "section": "projects",

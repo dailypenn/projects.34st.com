@@ -32,7 +32,7 @@ const Index = () => {
             childrenLoveIssueJson {
               cover_img {
                 childImageSharp {
-                  fluid(maxWidth: 1000, maxHeight: 523) {
+                  fluid(quality: 100,maxWidth: 1000, maxHeight: 523) {
                     ...GatsbyImageSharpFluid
                     src
                   }
@@ -47,7 +47,7 @@ const Index = () => {
                 title
                 img {
                   childImageSharp {
-                    fluid(maxWidth: 1000, maxHeight: 650) {
+                    fluid(quality: 100,maxWidth: 1000, maxHeight: 650) {
                       ...GatsbyImageSharpFluid
                       src
                     }
@@ -61,7 +61,7 @@ const Index = () => {
                 title
                 img {
                   childImageSharp {
-                    fluid(maxWidth: 1000, maxHeight: 650) {
+                    fluid(quality: 100,maxWidth: 1000, maxHeight: 650) {
                       ...GatsbyImageSharpFluid
                       src
                     }
@@ -75,7 +75,7 @@ const Index = () => {
                 title
                 img {
                   childImageSharp {
-                    fluid(maxWidth: 1000, maxHeight: 650) {
+                    fluid(quality: 100,maxWidth: 1000, maxHeight: 650) {
                       ...GatsbyImageSharpFluid
                       src
                     }
@@ -89,7 +89,7 @@ const Index = () => {
                 title
                 img {
                   childImageSharp {
-                    fluid(maxWidth: 1000, maxHeight: 650) {
+                    fluid(quality: 100,maxWidth: 1000, maxHeight: 650) {
                       ...GatsbyImageSharpFluid
                       src
                     }
@@ -102,7 +102,7 @@ const Index = () => {
                 title
                 img {
                   childImageSharp {
-                    fluid(maxWidth: 1000) {
+                    fluid(quality: 100, maxWidth: 1000) {
                       ...GatsbyImageSharpFluid
                       src
                     }

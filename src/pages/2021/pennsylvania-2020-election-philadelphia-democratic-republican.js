@@ -33,7 +33,7 @@ const Index = () => {
                 header
                 img {
                   childImageSharp {
-                    fluid(maxWidth: 900, maxHeight: 900) {
+                    fluid(quality: 100, maxWidth: 900, maxHeight: 900) {
                       ...GatsbyImageSharpFluid
                       src
                     }
@@ -48,7 +48,7 @@ const Index = () => {
                 credit
                 img {
                   childImageSharp {
-                    fluid(maxWidth: 550, maxHeight: 600) {
+                    fluid(quality: 100, maxWidth: 550, maxHeight: 600) {
                       ...GatsbyImageSharpFluid
                       src
                     }
@@ -63,7 +63,7 @@ const Index = () => {
                 credit
                 img {
                   childImageSharp {
-                    fluid(maxWidth: 950, maxHeight: 600) {
+                    fluid(quality: 100, maxWidth: 950, maxHeight: 600) {
                       ...GatsbyImageSharpFluid
                       src
                     }
@@ -90,7 +90,7 @@ const Index = () => {
                 credit
                 img {
                   childImageSharp {
-                    fluid(maxWidth: 800, maxHeight: 800) {
+                    fluid(quality: 100, maxWidth: 800, maxHeight: 800) {
                       ...GatsbyImageSharpFluid
                       src
                     }
@@ -109,7 +109,7 @@ const Index = () => {
                 credit
                 img {
                   childImageSharp {
-                    fluid(maxWidth: 650, maxHeight: 800) {
+                    fluid(quality: 100, maxWidth: 650, maxHeight: 800) {
                       ...GatsbyImageSharpFluid
                       src
                     }
@@ -122,7 +122,7 @@ const Index = () => {
                 content
                 img1 {
                   childImageSharp {
-                    fluid(maxWidth: 1300, maxHeight: 900) {
+                    fluid(quality: 100, maxWidth: 1300, maxHeight: 900) {
                       ...GatsbyImageSharpFluid
                       src
                     }
@@ -130,7 +130,7 @@ const Index = () => {
                 }
                 img2 {
                   childImageSharp {
-                    fluid(maxWidth: 1000, maxHeight: 900) {
+                    fluid(quality: 100, maxWidth: 1000, maxHeight: 900) {
                       ...GatsbyImageSharpFluid
                       src
                     }
@@ -143,7 +143,7 @@ const Index = () => {
                 content
                 img {
                   childImageSharp {
-                    fluid(maxWidth: 1300, maxHeight: 900) {
+                    fluid(quality: 100, maxWidth: 1300, maxHeight: 900) {
                       ...GatsbyImageSharpFluid
                       src
                     }

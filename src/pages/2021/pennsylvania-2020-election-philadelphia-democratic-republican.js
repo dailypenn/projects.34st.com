@@ -141,17 +141,17 @@ const Index = () => {
               section6 {
                 credit
                 content
-                img
-              }
-              social {
                 img {
                   childImageSharp {
-                    fluid(maxWidth: 1000, maxHeight: 900) {
+                    fluid(maxWidth: 1300, maxHeight: 900) {
                       ...GatsbyImageSharpFluid
                       src
                     }
                   }
                 }
+              }
+              social {
+                img
                 slug
               }
             }

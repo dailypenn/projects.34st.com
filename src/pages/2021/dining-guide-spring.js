@@ -3,10 +3,10 @@ import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-import { Footer, NavBar, BackgroundWrapper } from '../../components/shared'
+import { Footer, NavBar, BackgroundWrapper, Spacer } from '../../components/shared'
 import CoverImg from '../../content/images/2021/dining-guide-spring/cover_img.png'
 import Feature from '../../components/shared/Feature.js'
-import InstagramSection from '../../components/2021/dining-guide/InstagramSection'
+import InstagramSection from '../../components/2021/dining-guide-spring/InstagramSection'
 import ArticleGrid from '../../components/2021/dining-guide-spring/ArticleGrid'
 
 const NAVBAR_TITLES = {
@@ -227,7 +227,9 @@ const Index = () => {
       <div id="the-service-industry" />
       <ArticleGrid multimedia={the_service_industry} title={'The \'Service\' Industry'}/>
 
-      <Footer emoji="🍳" bgColor="#FFF" fontColor="#000" year="2021" />
+      <Spacer height="5rem"/>
+
+      <Footer emoji="🍳" bgColor="#FFF" fontColor="#000" year="2021"/>
 
       </BackgroundWrapper>
     </>

@@ -3,26 +3,11 @@ import s from 'styled-components'
 import { Col, Row } from 'react-bootstrap'
 import InstagramEmbed from 'react-instagram-embed'
 import { FUNKTURM_REGULAR } from '../../../styles/font'
+import { Heading } from './shared.js'
 
-const Heading = s.div`
-  width: fit-content;
-  padding: .5rem 1.2rem;
-  margin: 2rem auto 0.2rem;
-  text-align: center;
-  font-size: 3rem;
-  line-height 4rem;
-  color: ${({ color = '#283033' }) => color};
-  ${FUNKTURM_REGULAR}
-
-  @media(max-width: 768px) {
-    font-size: 3rem;
-    line-height 3rem;
-    margin-top: 2rem;
-  }
-`
 const Container = s.div`
   width: 100%;
-  padding: 3rem;
+  padding: 0.5rem 2rem 2rem 2rem;
   background-color: #DDFAF7;
   @media(max-width: 768px) {
     padding: 3rem 2rem;
@@ -30,10 +15,12 @@ const Container = s.div`
 `
 
 const VidFormat = s.div`
-  width: 75%;
-  max-width: 658px;
+  width: 100%;
   margin: auto;
   padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   iframe {
     max-width: none;
   }
@@ -46,14 +33,13 @@ const VidFormat = s.div`
 
 const InstagramSection = ({ title }) => (
   <Container>
-    {/* change heading font */}
     <Heading color="#FDB6B0">{title}</Heading>
     <Row
       style={{
         marginBottom: '3rem',
       }}
     >
-      <Col md={4}>
+      <Col sm={12} md={6} lg={4}>
         <VidFormat>
           <InstagramEmbed
             url="https://www.instagram.com/p/CLsRQd_Dux_/?igshid=1i2bom0ey9uqz"
@@ -66,7 +52,7 @@ const InstagramSection = ({ title }) => (
           />
         </VidFormat>
       </Col>
-      <Col md={4}>
+      <Col sm={12} md={6} lg={4}>
         <VidFormat>
           <InstagramEmbed
             url="https://www.instagram.com/p/CLsRQd_Dux_/?igshid=1i2bom0ey9uqz"
@@ -79,7 +65,7 @@ const InstagramSection = ({ title }) => (
           />
         </VidFormat>
       </Col>
-      <Col md={4}>
+      <Col sm={12} md={6} lg={4}>
         <VidFormat>
           <InstagramEmbed
             url="https://www.instagram.com/p/CLsRQd_Dux_/?igshid=1i2bom0ey9uqz"

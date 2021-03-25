@@ -9,7 +9,7 @@ import { StyledAnchor } from '../../shared/Typography'
 const ImageContainer = s.div`
   margin: auto;
   width: 85%;
-  max-width: 768px;
+  max-width: 900px;
   @media(max-width: 768px) {
     width: 90%
   }

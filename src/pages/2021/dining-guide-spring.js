@@ -206,7 +206,7 @@ const Index = () => {
       />
 
       <div id="multimedia" />
-      <InstagramSection title="IG: @34stmag"></InstagramSection>
+      <InstagramSection title="IG: @34stmag" links={instagram} ></InstagramSection>
 
       <div id="photo-essay" />
       <Feature

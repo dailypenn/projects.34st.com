@@ -31,7 +31,7 @@ const VidFormat = s.div`
   }
 `
 
-const InstagramSection = ({ title }) => (
+const InstagramSection = ({ title, links }) => (
   <Container>
     <Heading color="#FDB6B0">{title}</Heading>
     <Row
@@ -39,45 +39,22 @@ const InstagramSection = ({ title }) => (
         marginBottom: '3rem',
       }}
     >
-      <Col sm={12} md={6} lg={4}>
-        <VidFormat>
-          <InstagramEmbed
-            url="https://www.instagram.com/p/CLsRQd_Dux_/?igshid=1i2bom0ey9uqz"
-            clientAccessToken="947756802416627|a36b8dffc1596399ee685a4677ebc2a2"
-            maxWidth={400}
-            hideCaption={false}
-            containerTagName="div"
-            protocol=""
-            injectScript
-          />
-        </VidFormat>
-      </Col>
-      <Col sm={12} md={6} lg={4}>
-        <VidFormat>
-          <InstagramEmbed
-            url="https://www.instagram.com/p/CLsRQd_Dux_/?igshid=1i2bom0ey9uqz"
-            clientAccessToken="947756802416627|a36b8dffc1596399ee685a4677ebc2a2"
-            maxWidth={400}
-            hideCaption={false}
-            containerTagName="div"
-            protocol=""
-            injectScript
-          />
-        </VidFormat>
-      </Col>
-      <Col sm={12} md={6} lg={4}>
-        <VidFormat>
-          <InstagramEmbed
-            url="https://www.instagram.com/p/CLsRQd_Dux_/?igshid=1i2bom0ey9uqz"
-            clientAccessToken="947756802416627|a36b8dffc1596399ee685a4677ebc2a2"
-            maxWidth={400}
-            hideCaption={false}
-            containerTagName="div"
-            protocol=""
-            injectScript
-          />
-        </VidFormat>
-      </Col>
+      {links &&
+          links.map(item =>
+            <Col sm={12} md={6} lg={4}>
+              <VidFormat>
+                <InstagramEmbed
+                  url={item.link}
+                  clientAccessToken="947756802416627|a36b8dffc1596399ee685a4677ebc2a2"
+                  maxWidth={400}
+                  hideCaption={false}
+                  containerTagName="div"
+                  protocol=""
+                  injectScript
+                />
+              </VidFormat>
+            </Col>
+          )}
     </Row>
   </Container>
 )

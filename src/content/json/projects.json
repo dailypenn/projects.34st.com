@@ -1,6 +1,17 @@
 {
   "featured": [
     {
+      "title": "Penn 10: Class of 2021",
+      "author": "Dev: Raunaq Singh | Design: Isabel Liang",
+      "section": "penn 10",
+      "date": "May 2021",
+      "description": "From working on the frontlines of the pandemic to creating inclusive spaces on campus, this is the class of 2021 Penn 10.",
+      "sponsored": false,
+      "link": "/2021/penn-10",
+      "image": "https://snworksceo.imgix.net/dpn-34s/60e8675f-fdaa-4943-a678-3ad35b6a9afd.sized-1000x1000.jpeg?",
+      "alt": "penn 10 2021"
+    },
+    {
       "title": "Reality Bites: Street's Spring 2021 Dining Guide",
       "author": "Dev: Raunaq Singh, Akshay Sharma, Andy Jiang; Design: Isabel Liang, Felicity Yick",
       "section": "guides",

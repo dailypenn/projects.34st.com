@@ -137,18 +137,6 @@ const Index = () => {
                 }
                 content
               }
-              section6 {
-                content
-                credit
-                img {
-                  childImageSharp {
-                    fluid(quality: 100, maxWidth: 650, maxHeight: 800) {
-                      ...GatsbyImageSharpFluid
-                      src
-                    }
-                  }
-                }
-              }
               social {
                 img
                 slug
@@ -172,7 +160,6 @@ const Index = () => {
     section3,
     section4,
     section5,
-    section6,
     quote1,
     quote2,
     quote3

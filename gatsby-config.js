@@ -17,6 +17,21 @@ module.exports = {
         trackingId: 'UA-188534367-2',
       },
     },
+    // images and JSONs for 2021/penn-10
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/content/images/2021/penn-10`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/content/json/2021/penn-10`,
+      },
+    },
     // images and JSONs for 2021/dining-guide-spring
     {
       resolve: `gatsby-source-filesystem`,

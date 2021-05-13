@@ -82,11 +82,6 @@ const Info = ({ letter }) => (
             BY {letter.author}
         </InfoAuthor>
     </InfoContainer>
-    {/* <img src = "https://snworksceo.imgix.net/dpn-34s/60e8675f-fdaa-4943-a678-3ad35b6a9afd.sized-1000x1000.jpeg?"/> */}
-    <Img
-        fluid={letter.img.childImageSharp.fluid}
-        style={{ border: '0.1px solid #CCC', paddingTop: '45px', maxWidth: '430px' }}
-    />
   </Col>
 )
 

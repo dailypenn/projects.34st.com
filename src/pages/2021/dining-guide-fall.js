@@ -14,9 +14,10 @@ const NAVBAR_TITLES = {
     { text: 'FEATURE', link: 'feature' },
     // { text: 'INSTAGRAM', link: 'multimedia' },
     { text: 'GRABBING A BITE', link: 'grabbing-a-bite' },
+    { text: 'BREAKING BREAD', link: 'breaking-bread' },
   ],
   right: [
-    { text: 'BREAKING BREAD', link: 'breaking-bread' },
+    // { text: 'BREAKING BREAD', link: 'breaking-bread' },
     { text: 'SKIMMING THE MENU', link: 'skimming-the-menu' },
     { text: 'FOOD FOR THOUGHT', link: 'food-for-thought' },
   ],
@@ -109,7 +110,7 @@ const Index = () => {
         />
         <meta
           property="og:image"
-          content="https://snworksceo.imgix.net/dpn/79644a53-b06e-4385-a294-969556c6c677.sized-1000x1000.png"
+          content="https://snworksceo.imgix.net/dpn/aacde8d3-c7b2-4c05-9860-856d1cbe9c52.sized-1000x1000.png?"
         />
         <meta
           property="og:description"
@@ -118,7 +119,7 @@ const Index = () => {
         <meta property="og:type" content="article" />
         <meta
           property="og:url"
-          content="https://projects.34st.com/2021/dining-guide-spring"
+          content="https://projects.34st.com/2021/dining-guide-fall"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -128,7 +129,7 @@ const Index = () => {
         />
         <meta
           name="twitter:image"
-          content="https://snworksceo.imgix.net/dpn/79644a53-b06e-4385-a294-969556c6c677.sized-1000x1000.png"
+          content="https://snworksceo.imgix.net/dpn/aacde8d3-c7b2-4c05-9860-856d1cbe9c52.sized-1000x1000.png?"
         />
         <meta
           name="twitter:description"
@@ -136,7 +137,7 @@ const Index = () => {
         />
         <meta
           name="twitter:url"
-          content="https://projects.34st.com/2021/dining-guide-spring"
+          content="https://projects.34st.com/2021/dining-guide-fall"
         />
         <meta name="twitter:site" content="@dailypenn" />
 

@@ -1,6 +1,17 @@
 {
   "featured": [
     {
+      "title": "Dining Guide Fall 2021: Resetting the Table",
+      "author": "Dev: Raunaq Singh | Design: Isabel Liang",
+      "section": "guides",
+      "date": "September 2021",
+      "description": "COVID-19 shut down Philly’s restaurant scene for months. Now, our favorite eateries are back — but the menu looks different.",
+      "sponsored": false,
+      "link": "/2021/dining-guide-fall",
+      "image": "https://snworksceo.imgix.net/dpn/aacde8d3-c7b2-4c05-9860-856d1cbe9c52.sized-1000x1000.png?",
+      "alt": "dining guide fall 2021"
+    },
+    {
       "title": "Penn 10: Class of 2021",
       "author": "Dev: Raunaq Singh | Design: Isabel Liang",
       "section": "penn 10",

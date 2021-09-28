@@ -47,6 +47,21 @@ module.exports = {
         path: `${__dirname}/src/content/json/2021/dining-guide-spring`,
       },
     },
+    // images and JSONs for 2021/dining-guide-fall
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/content/images/2021/dining-guide-fall/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/content/json/2021/dining-guide-fall/`,
+      },
+    },
     // images and JSONs for 2021/love-issue
     {
       resolve: `gatsby-source-filesystem`,

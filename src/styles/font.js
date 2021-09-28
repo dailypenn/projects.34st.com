@@ -62,3 +62,8 @@ export const AGRANDIR_TEXTBOLD = `
   font-family: 'Agrandir-TextBold', sans-serif;
   font-weight: 400;
 `
+
+export const MAGILIO = `
+  font-family: 'Magilio-Regular', sans-serif;
+  font-weight: 400;
+`

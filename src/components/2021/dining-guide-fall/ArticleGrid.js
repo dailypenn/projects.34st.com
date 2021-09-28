@@ -62,7 +62,7 @@ const ArticleGrid = ({ multimedia, title }) => (
       <Col sm={12} md={6} lg={6}>
         {multimedia.slice(2, 4) &&
           multimedia.slice(2, 4).map(article => (
-            <StyledAnchor link={article.link}>
+            <StyledAnchor link={article.published_link}>
               <ArticleContainer>
                 <Title style={{ marginTop: '0.5rem' }}>
                   {article.title}

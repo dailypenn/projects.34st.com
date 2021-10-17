@@ -183,8 +183,8 @@ const Index = () => {
         img={feature[0].image_link}
       />
 
-      {/* <div id="multimedia" />
-      <InstagramSection title="IG: @34stmag" links={instagram} ></InstagramSection> */}
+      <div id="multimedia" />
+      <InstagramSection title="IG: @34stmag" links={instagram} ></InstagramSection>
       
       <div id="grabbing-a-bite" />
       <ArticleGrid multimedia={grabbing_a_bite} title={'Grabbing a Bite'}/>

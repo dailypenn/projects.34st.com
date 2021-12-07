@@ -1,6 +1,17 @@
 {
   "featured": [
     {
+      "title": "Penn, Interrupted",
+      "author": "Dev: Raunaq Singh | Design: Isabel Liang",
+      "section": "guides",
+      "date": "December 2021",
+      "description": "Pandemic, Protest, and Philly: Returning and Remembering in 2021.",
+      "sponsored": false,
+      "link": "/2021/penn-interrupted-2021",
+      "image": "https://snworksceo.imgix.net/dpn/1becac24-f565-447b-b482-a1a7c388fa45.sized-1000x1000.png?",
+      "alt": "penn interrupted 2021"
+    },
+    {
       "title": "Dining Guide Fall 2021: Resetting the Table",
       "author": "Dev: Raunaq Singh | Design: Isabel Liang",
       "section": "guides",

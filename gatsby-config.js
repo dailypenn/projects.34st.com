@@ -17,6 +17,14 @@ module.exports = {
         trackingId: 'UA-188534367-2',
       },
     },
+    // JSONs for 2021/penn-interrupted
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/content/json/2021/penn-interrupted`,
+      },
+    },
     // images and JSONs for 2021/penn-10
     {
       resolve: `gatsby-source-filesystem`,

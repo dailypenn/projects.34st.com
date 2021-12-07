@@ -4,21 +4,23 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 import { Footer, NavBar, BackgroundWrapper, Spacer } from '../../components/shared'
-import CoverImg from '../../content/images/2021/dining-guide-fall/cover_img.png'
-import Feature from '../../components/2021/dining-guide-fall/Feature'
-import InstagramSection from '../../components/2021/dining-guide-fall/InstagramSection'
-import ArticleGrid from '../../components/2021/dining-guide-fall/ArticleGrid'
+import CoverImg from '../../content/images/2021/penn-interrupted/webheader-01.png'
+import Feature from '../../components/2021/penn-interrupted/Feature'
+import InstagramSection from '../../components/2021/penn-interrupted/InstagramSection'
+import ArticleGrid from '../../components/2021/penn-interrupted/ArticleGrid'
+import ArticleGridMajorLeft from '../../components/2021/penn-interrupted/ArticleGridMajorLeft'
+import ArticleGridMajorRight from '../../components/2021/penn-interrupted/ArticleGridMajorRight'
 
 const NAVBAR_TITLES = {
   left: [
     { text: 'FEATURE', link: 'feature' },
-    { text: 'INSTAGRAM', link: 'grabbing-a-bite' },
-    { text: 'FINDING OUR VOICE', link: 'breaking-bread' },
+    { text: 'INSTAGRAM', link: 'instagram' },
+    { text: 'FINDING OUR VOICE', link: 'finding-our-voice' },
   ],
   right: [
-    { text: 'FINDING OUR PLACE', link: 'skimming-the-menu' },
-    { text: 'FINDING OUR POWER', link: 'food-for-thought' },
-    { text: 'FINDING OURSELVES', link: 'food-for-thought' },
+    { text: 'FINDING OUR PLACE', link: 'finding-our-place' },
+    { text: 'FINDING OUR POWER', link: 'finding-our-power' },
+    { text: 'FINDING OURSELVES', link: 'finding-ourselves' },
   ],
 }
 
@@ -26,12 +28,12 @@ const Index = () => {
   const data = useStaticQuery(graphql`
     query {
       allFile(
-        filter: { relativePath: { eq: "dining-guide-fall-2021.json" } }
+        filter: { relativePath: { eq: "penn-interrupted-2021.json" } }
       ) {
         edges {
           node {
-            childrenDiningGuideFall2021Json {
-              feature {
+            childrenPennInterrupted2021Json {
+              letter {
                 published_link
                 title
                 subhead
@@ -39,30 +41,35 @@ const Index = () => {
                 image_link
               }
               instagram {
-                link
+                published_link
+                subhead
               }
-              grabbing_a_bite {
+              finding_our_power {
+                section
                 author
                 published_link
                 subhead
                 title
                 image
               }
-              breaking_bread {
+              finding_our_place {
+                section
                 author
                 published_link
                 subhead
                 title
                 image
               }
-              skimming_the_menu {
+              finding_our_voice {
+                section
                 author
                 published_link
                 subhead
                 title
                 image
               }
-              food_for_thought {
+              finding_ourselves {
+                section
                 author
                 published_link
                 subhead
@@ -77,16 +84,16 @@ const Index = () => {
   `)
 
   const {
-    node: { childrenDiningGuideFall2021Json: sections },
+    node: { childrenPennInterrupted2021Json: sections },
   } = data.allFile.edges[0]
 
   const {
-    feature,
+    letter,
     instagram,
-    grabbing_a_bite,
-    breaking_bread,
-    skimming_the_menu,
-    food_for_thought,
+    finding_our_power,
+    finding_our_place,
+    finding_our_voice,
+    finding_ourselves,
   } = sections[0]
 
   return (
@@ -109,7 +116,7 @@ const Index = () => {
         />
         <meta
           property="og:image"
-          content="https://snworksceo.imgix.net/dpn/aacde8d3-c7b2-4c05-9860-856d1cbe9c52.sized-1000x1000.png?"
+          content="https://snworksceo.imgix.net/dpn/1becac24-f565-447b-b482-a1a7c388fa45.sized-1000x1000.png?"
         />
         <meta
           property="og:description"
@@ -128,7 +135,7 @@ const Index = () => {
         />
         <meta
           name="twitter:image"
-          content="https://snworksceo.imgix.net/dpn/aacde8d3-c7b2-4c05-9860-856d1cbe9c52.sized-1000x1000.png?"
+          content="https://snworksceo.imgix.net/dpn/1becac24-f565-447b-b482-a1a7c388fa45.sized-1000x1000.png?"
         />
         <meta
           name="twitter:description"
@@ -157,7 +164,7 @@ const Index = () => {
         ></script>
       </Helmet>
 
-      <BackgroundWrapper color="#FCFCE2">
+      <BackgroundWrapper color="#05260D">
 
       <NavBar
         titles={NAVBAR_TITLES}
@@ -165,6 +172,7 @@ const Index = () => {
         fontColor="#000000"
         img="/img/34st-navbar-logo-white.png"
       />
+      
       <div>
         <img
           src={CoverImg}
@@ -174,32 +182,32 @@ const Index = () => {
 
       <div id="feature" />
       <Feature
-        link={feature[0].published_link}
-        heading={"Feature"}
-        headline={feature[0].title}
-        subheading={feature[0].subhead}
-        author={feature[0].author}
-        img={feature[0].image_link}
+        link={letter[0].published_link}
+        headline={letter[0].title}
+        subheading={letter[0].subhead}
+        author={letter[0].author}
+        img={letter[0].image_link}
       />
 
-      <div id="multimedia" />
-      <InstagramSection title="IG: @34stmag" links={instagram} ></InstagramSection>
+      <div id="instagram" />
+      <InstagramSection title="IG @34stmag - IG @34stmag - IG @34stmag - IG @34stmag - IG @34stmag - IG @34stmag -  IG @34stmag - IG @34stmag - IG @34stmag - IG @34stmag - IG @34stmag - IG @34stmag - " 
+        link={instagram[0].published_link} subhead={instagram[0].subhead}></InstagramSection>
       
-      <div id="grabbing-a-bite" />
-      <ArticleGrid multimedia={grabbing_a_bite} title={'Grabbing a Bite'}/>
+      <div id="finding-our-voice" />
+      <ArticleGridMajorLeft multimedia={finding_our_voice} title={'Finding our Voice'}/>
 
-      <div id="breaking-bread" />
-      <ArticleGrid multimedia={breaking_bread} title={'Breaking Bread'}/>
+      <div id="finding-our-place" />
+      <ArticleGrid multimedia={finding_our_place} title={'Finding our Place'}/>
 
-      <div id="skimming-the-menu" />
-      <ArticleGrid multimedia={skimming_the_menu} title={'Skimming the Menu'}/>
+      <div id="finding-our-power" />
+      <ArticleGridMajorRight multimedia={finding_our_power} title={'Finding our Power'}/>
 
-      <div id="food-for-thought" />
-      <ArticleGrid multimedia={food_for_thought} title={'Food for Thought'}/>
+      <div id="finding-ourselves" />
+      <ArticleGrid multimedia={finding_ourselves} title={'Finding Ourselves'}/>
 
       <Spacer height="5rem"/>
 
-      <Footer emoji="🍳" bgColor="#FFF" fontColor="#000" year="2021"/>
+      <Footer emoji="✊" bgColor="#FFF" fontColor="#000" year="2021"/>
 
       </BackgroundWrapper>
     </>

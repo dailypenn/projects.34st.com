@@ -67,3 +67,8 @@ export const MAGILIO = `
   font-family: 'Magilio-Regular', sans-serif;
   font-weight: 400;
 `
+
+export const DERIVIA = `
+  font-family: 'Derivia-Regular', sans-serif;
+  font-weight: 400;
+`

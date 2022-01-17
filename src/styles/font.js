@@ -72,3 +72,28 @@ export const DERIVIA = `
   font-family: 'Derivia-Regular', sans-serif;
   font-weight: 400;
 `
+
+export const DM_SERIF_DISPLAY_BOLD = `
+  font-family: 'DM Serif Display', sans-serif;
+  font-weight: 700;
+`
+
+export const DM_SERIF_DISPLAY_REGULAR = `
+  font-family: 'DM Serif Display', sans-serif;
+  font-weight: 400;
+`
+
+export const LORA_REGULAR = `
+  font-family: 'Lora', sans-serif;
+  font-weight: 400;
+`
+
+export const LORA_MEDIUM = `
+  font-family: 'Lora', sans-serif;
+  font-weight: 500;
+`
+
+export const LORA_BOLD = `
+  font-family: 'Lora', sans-serif;
+  font-weight: 600;
+`

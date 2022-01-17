@@ -17,6 +17,21 @@ module.exports = {
         trackingId: 'UA-188534367-2',
       },
     },
+    // images and JSONs for 2022/isolation
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/content/images/2022/isolation`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/content/json/2022/isolation`,
+      },
+    },
     // JSONs for 2021/penn-interrupted
     {
       resolve: `gatsby-source-filesystem`,

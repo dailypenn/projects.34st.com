@@ -1,13 +1,24 @@
 {
   "featured": [
     {
+      "title": "Dispatches from Isolation",
+      "author": "Dev: Raunaq Singh | Design: Tyler Kliem",
+      "section": "article",
+      "date": "January 2022",
+      "description": "Confusion. Chaos. Miscommunication. When Penn students test positive for COVID–19, nothing about the isolation process is clear.",
+      "sponsored": false,
+      "link": "/2022/isolation",
+      "image": "https://snworksceo.imgix.net/dpn-34s/e61670eb-ff9b-4b62-ae64-cedf6774eaf1.sized-1000x1000.jpg?",
+      "alt": "dispatches from isolation"
+    },
+    {
       "title": "Penn, Interrupted",
       "author": "Dev: Raunaq Singh | Design: Isabel Liang",
       "section": "guides",
       "date": "December 2021",
       "description": "Pandemic, Protest, and Philly: Returning and Remembering in 2021.",
       "sponsored": false,
-      "link": "/2021/penn-interrupted-2021",
+      "link": "/2021/penn-interrupted",
       "image": "https://snworksceo.imgix.net/dpn/1becac24-f565-447b-b482-a1a7c388fa45.sized-1000x1000.png?",
       "alt": "penn interrupted 2021"
     },

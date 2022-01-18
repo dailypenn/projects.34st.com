@@ -123,7 +123,7 @@ const Index = () => {
         fontColor="#FFFFFF"
         img="/img/2021/parrot/watermark.png"
       />
-      
+
       <div>
         <img
           src={CoverImg}
@@ -148,7 +148,7 @@ const Index = () => {
 
       <TextSection content={content2.content} backgroundColor="#35354B"/>
 
-      <ContentSection1 items={quotes.items.slice(0,5)}></ContentSection1>
+      <ContentSection1 items={quotes.items.slice(0,3)}></ContentSection1>
 
       <TextSection content={content3.content} backgroundColor="#A38611"/>
 
@@ -156,7 +156,7 @@ const Index = () => {
 
       <TextSection content={content4.content} backgroundColor="#A38611"/>
 
-      <ContentSection2 items={quotes.items.slice(5,8)}></ContentSection2>
+      <ContentSection2 items={quotes.items.slice(3,6)}></ContentSection2>
 
       <TextSection content={content5.content} backgroundColor="#35354B"/>
 

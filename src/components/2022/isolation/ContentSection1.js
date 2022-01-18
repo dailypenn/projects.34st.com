@@ -43,8 +43,8 @@ const Caption = s.p`
 const ContentSection1 = ({ items }) => (
   <Container>
     <Image src={ContentImage}/>
-    <RightQuotes items={items.slice(0,2)} textColor="#fff" dashColor="#A38611"/>
-    <LeftQuotes items={items.slice(2,5)} textColor="#fff" dashColor="#A38611"/>
+    <RightQuotes items={items.slice(0,1)} textColor="#fff" dashColor="#A38611"/>
+    <LeftQuotes items={items.slice(1,3)} textColor="#fff" dashColor="#A38611"/>
     <Caption>Note: the quotes above have been edited and condensed.</Caption>
   </Container>
 )

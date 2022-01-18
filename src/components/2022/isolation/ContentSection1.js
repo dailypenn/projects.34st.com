@@ -14,7 +14,7 @@ import { LORA_REGULAR, LORA_MEDIUM, LORA_BOLD } from '../../../styles/font'
 
 const Container = s.div`
   width: 100vw;
-  padding: 0rem 0 1rem 0;
+  padding: 1rem 0 1rem 0;
   background-color: #35354B;
 `
 
@@ -28,52 +28,24 @@ const Image = s.img`
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 40px;
-  border-style: solid;
-  border-width: 3px;
-  border-color: white;
-`
-
-const Image2 = s.img`
-  width: 100%;
-  height: auto;
-  padding: 0;
-  border-radius: 30px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: white;
-  margin-bottom: 15px;
+  margin-bottom: 3rem;
 `
 
 const Caption = s.p`
   width: 100%; 
-  margin: 0 0 2rem 0;
-  text-align: right;
-  font-size: 0.8rem;
+  margin: 0 0 0.5rem 1rem;
+  font-size: 1rem;
+  font-style: italic;
   color: #FFF;
-  white-space: pre-line;
   ${LORA_REGULAR}
 `
 
 const ContentSection1 = ({ items }) => (
   <Container>
-    <RightQuotes items={items.slice(0,2)} textColor="#fff" dashColor="#A38611"/>
     <Image src={ContentImage}/>
+    <RightQuotes items={items.slice(0,2)} textColor="#fff" dashColor="#A38611"/>
     <LeftQuotes items={items.slice(2,5)} textColor="#fff" dashColor="#A38611"/>
-    <Row style={{maxWidth: '100%', margin: '3rem 0 3rem 0'}}>
-        <Col sm={12} md={1} lg={3}/>
-        <Col sm={6} md={5} lg={3}>
-            <Image2 src={DrawingImage}/>
-            <Caption>Photo courtesy of Sienna Robinson</Caption>
-        </Col>
-        <Col sm={6} md={5} lg={3}>
-            <video width="100%" height="auto" controls style={{marginBottom: '13px'}}>
-              <source src={Video} type="video/mp4"/>
-            </video>
-            <Caption>Video courtesy of Asger Thieden Maarbjerg</Caption>
-        </Col>
-    </Row>
+    <Caption>Note: the quotes above have been edited and condensed.</Caption>
   </Container>
 )
 

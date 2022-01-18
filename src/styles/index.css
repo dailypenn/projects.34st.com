@@ -57,6 +57,9 @@
 /* Lora font family */
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap');
 
+/* Martel font */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Martel:wght@200&display=swap');
+
 
 html {
   scroll-behavior: smooth;

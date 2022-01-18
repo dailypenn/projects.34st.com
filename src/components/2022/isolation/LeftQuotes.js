@@ -2,38 +2,39 @@ import React from 'react'
 import s from 'styled-components'
 import { Col, Row } from 'react-bootstrap'
 
-import { DM_SERIF_DISPLAY_BOLD } from '../../../styles/font'
+import { DM_SERIF_DISPLAY_BOLD, MARTEL_LIGHT } from '../../../styles/font'
 
 import {
   BackgroundWrapper,
 } from './shared'
 
 const LeftQuoteWrapper = s.div`
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-top: 0rem;
-  padding-bottom: 2rem;
+  margin: 0rem 5rem 3rem 5rem;
+  padding: 1rem;
+  background-color: #1C1C1C;
+  @media(max-width: 768px) {
+    margin: 0rem 1rem 3rem 1rem;
+  }
 `
 const LeftQuoteMark = s.p`
   font-size: 4rem;
   margin-bottom: -3rem;
-  padding-top: 1rem;
   ${DM_SERIF_DISPLAY_BOLD};
   color: ${({ color }) => color};
 `
 
 const LeftQuoteText = s.p`
-  font-size: min(1.4rem, 2.6vw);
+  font-size: 1.1rem;
   margin-bottom: 0rem;
   white-space: pre-line;
-  ${DM_SERIF_DISPLAY_BOLD};
+  ${MARTEL_LIGHT};
   color: ${({ color }) => color};
 `
 
 const LeftQuotePerson = s.p`
-  font-size: min(1.2rem, 2.4vw);
+font-size: 1rem;
   margin-bottom: 0rem;
-  ${DM_SERIF_DISPLAY_BOLD};
+  ${MARTEL_LIGHT};
   color: ${({ color }) => color};
 `
 

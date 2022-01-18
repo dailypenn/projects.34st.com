@@ -12,8 +12,8 @@ const Text = s.p`
   margin: 0;
   padding: 1rem 3rem 1rem 3rem;
   text-align: left;
-  font-size: 1.3rem;
-  line-height 1.6rem;
+  font-size: 1.2rem;
+  line-height 1.4rem;
   color: #FFF;
   white-space: pre-line;
   ${LORA_REGULAR}

@@ -5,12 +5,12 @@ import { LORA_REGULAR, LORA_MEDIUM, LORA_BOLD } from '../../../styles/font'
 const Container = s.div`
   width: 100vw;
   background-color: ${({ color }) => color};
-  padding: 3rem 0 3rem 0;
+  padding: 2rem 0 2rem 0;
 `
 
 const Circle = s.div` 
-  height: 20px;
-  width: 20px;
+  height: 16px;
+  width: 16px;
   background-color: ${({ color }) => color};
   border-radius: 50%;
   display: inline-block;

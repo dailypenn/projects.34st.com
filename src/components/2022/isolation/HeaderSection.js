@@ -6,6 +6,7 @@ const Container = s.div`
   width: 100%;
   padding: 3rem 0 2rem 0;
   background-color: #A38611;
+  overflow: hidden;
 `
 
 const HeadingWrapper = s.div`
@@ -13,8 +14,8 @@ const HeadingWrapper = s.div`
   padding: 1rem 3rem 0.4rem 3rem;
   margin: 0 0 1rem 0;
   text-align: left;
-  font-size: 5rem;
-  line-height 5rem;
+  font-size: min(10vw, 5rem);
+  line-height: min(10vw, 5rem);
   color: #942918;
   ${LORA_MEDIUM}
 `
@@ -24,8 +25,8 @@ const SubheadingWrapper = s.div`
   padding: 0rem 3rem 0 3rem;
   margin: 0.5rem 0 1rem 0;
   text-align: left;
-  font-size: 2rem;
-  line-height 2rem;
+  font-size: min(7vw, 2rem);
+  line-height: min(7vw, 2rem);
   color: #FFF;
   ${LORA_MEDIUM}
 `
@@ -47,10 +48,10 @@ const IsolationContainer = s.div`
   margin: 3rem 3rem 3rem 3rem;
   padding: 2rem 2rem 2rem 2rem;
   max-width: min(100%, 800px);
-  border-radius: 40px;
-  border-style: solid;
-  border-width: 3px;
-  border-color: white;
+  // border-radius: 40px;
+  // border-style: solid;
+  // border-width: 3px;
+  // border-color: white;
 `
 
 const IsolationHeader = s.div` 
@@ -65,8 +66,8 @@ const IsolationHeader = s.div`
 const IsolationDescription = s.div` 
   margin: 0.5rem 0 0.5rem 0;
   text-align: left;
-  font-size: 1.5rem;
-  line-height 2rem;
+  font-size: 1.3rem;
+  line-height 1.8rem;
   color: #FFF;
   ${LORA_REGULAR}
 `

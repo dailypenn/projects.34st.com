@@ -97,3 +97,8 @@ export const LORA_BOLD = `
   font-family: 'Lora', sans-serif;
   font-weight: 600;
 `
+
+export const MARTEL_LIGHT = `
+  font-family: 'Martel', sans-serif;
+  font-weight: 200;
+`

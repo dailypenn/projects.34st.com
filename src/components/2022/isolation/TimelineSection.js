@@ -4,6 +4,8 @@ import { LORA_REGULAR, LORA_MEDIUM, LORA_BOLD } from '../../../styles/font'
 import { Chrono } from "react-chrono";
 import { Col, Row } from 'react-bootstrap'
 
+import TimelineImg from '../../../content/images/2022/isolation/isolation_timeline.png'
+
 const Container = s.div`
   width: 100vw;
   padding: 3rem 0 2rem 0;
@@ -13,11 +15,11 @@ const Container = s.div`
 const HeadingWrapper = s.div`
   width: 100%;
   padding: 1rem 3rem 0.4rem 3rem;
-  margin: 0 0 1.6rem 0;
+  margin: 0 0.1rem 1.6rem 0;
   text-align: right;
   font-size: 5rem;
   line-height 5rem;
-  color: #35354B;
+  color: #942918;
   ${LORA_MEDIUM}
 `
 
@@ -25,11 +27,20 @@ const TimelineText = s.p`
   margin: 0;
   padding: 1rem 2rem 1rem 3rem;
   text-align: left;
-  font-size: 1.3rem;
-  line-height 1.6rem;
+  font-size: 1.2rem;
+  line-height 1.4rem;
   color: #FFF;
   white-space: pre-line;
   ${LORA_REGULAR}
+`
+
+const TimelineImage = s.img`
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
 `
 
 const items = [
@@ -106,7 +117,7 @@ const TimelineSection = ({ content }) => (
             <TimelineText>{content}</TimelineText>
         </Col>
         <Col sm={12} md={6} lg={6}>
-            <Chrono
+            {/* <Chrono
                 items={items}
                 mode="VERTICAL"
                 flipLayout={true}
@@ -119,7 +130,8 @@ const TimelineSection = ({ content }) => (
                     cardBgColor: "#35354B",
                     cardForeColor: "#FFF"
                 }}
-            />
+            /> */}
+            <TimelineImage src={TimelineImg}/>
         </Col>
     </Row>
   </Container>

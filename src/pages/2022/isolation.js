@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import { Footer, NavBar, BackgroundWrapper, Spacer } from '../../components/shared'
 import CoverImg from '../../content/images/2022/isolation/isolation_header.jpg'
+import BuildingsImg from '../../content/images/2022/isolation/buildings_block.png'
 
 import HeaderSection from '../../components/2022/isolation/HeaderSection'
 import TimelineSection from '../../components/2022/isolation/TimelineSection'
@@ -11,6 +12,8 @@ import TextSection from '../../components/2022/isolation/TextSection'
 import ContentSection1 from '../../components/2022/isolation/ContentSection1'
 import ContentSection2 from '../../components/2022/isolation/ContentSection2'
 import Divider from '../../components/2022/isolation/Divider'
+import DividerLine from '../../components/2022/isolation/DividerLine'
+import BottomEmbeds from '../../components/2022/isolation/BottomEmbeds'
 
 const NAVBAR_TITLES = {
   left: [],
@@ -120,6 +123,7 @@ const Index = () => {
         fontColor="#FFFFFF"
         img="/img/2021/parrot/watermark.png"
       />
+      
       <div>
         <img
           src={CoverImg}
@@ -131,27 +135,32 @@ const Index = () => {
 
       <TimelineSection content={timelineContent.content}/>
 
+      <div style={{backgroundColor:"#35354B", padding: '0rem 0 2rem 0'}}>
+        <img
+          src={BuildingsImg}
+          style={{ width: '100%', boxShadow: '0px 5px 6px #00000029' }}
+        />
+      </div>
+
       <TextSection content={content1.content} backgroundColor="#35354B"/>
-
-      <Divider color="#fff" backgroundColor="#35354B"/>
-
-      <ContentSection1 items={quotes.items.slice(0,5)}></ContentSection1>
 
       <Divider color="#fff" backgroundColor="#35354B"/>
 
       <TextSection content={content2.content} backgroundColor="#35354B"/>
 
-      <ContentSection2 items={quotes.items.slice(5,8)}></ContentSection2>
-
-      <Divider color="#333" backgroundColor="#A38611"/>
+      <ContentSection1 items={quotes.items.slice(0,5)}></ContentSection1>
 
       <TextSection content={content3.content} backgroundColor="#A38611"/>
 
-      <TextSection content={content4.content} backgroundColor="#35354B"/>
+      <Divider color="#333" backgroundColor="#A38611"/>
 
-      <TextSection content={content5.content} backgroundColor="#A38611"/>
+      <TextSection content={content4.content} backgroundColor="#A38611"/>
 
-      {/* <Spacer height="3rem"/> */}
+      <ContentSection2 items={quotes.items.slice(5,8)}></ContentSection2>
+
+      <TextSection content={content5.content} backgroundColor="#35354B"/>
+
+      <BottomEmbeds/>
 
       <Footer emoji="😷" bgColor="#13131B" fontColor="#fff" year="2022"/>
 

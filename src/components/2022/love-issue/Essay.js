@@ -14,7 +14,7 @@ export const Badge = s.span`
   border-radius: 10px;
   width: 3rem;
   color: black;
-  font-size: 70%;
+  font-size: 80%;
   margin-right: 1rem;
   text-align: center;
   display: inline-block;
@@ -42,7 +42,7 @@ const responsive = {
 const EssayCarousel = ({ articles, deviceType, headerColor="#FDB6B0" }) => (
   <>
     <div style={{ margin: '0 2rem' }}>
-      <LoveHeading color={headerColor}>ESSAY WINNERS</LoveHeading>
+      <LoveHeading color={headerColor}>Essay Winners</LoveHeading>
     </div>
     <Carousel
       draggable={false}
@@ -63,11 +63,11 @@ const EssayCarousel = ({ articles, deviceType, headerColor="#FDB6B0" }) => (
     >
       {articles &&
         articles.map(article => (
-          <StyledAnchor link={article.link}>
+          <StyledAnchor link={article.published_link}>
             <Container>
               <Tag>
-                <Badge backgroundColor={article.color}>{article.place}</Badge>
-                <p style={{ marginBottom: '0.2rem' }}>{article.title}</p>
+                <Badge backgroundColor={article.color}>{article.award_tag}</Badge>
+                <p style={{ marginTop: '0.2rem', marginBottom: '0.2rem', fontSize: '1.1rem' }}>{article.title}</p>
                 <Author>BY {article.author}</Author>
               </Tag>
               <Img fluid={article.img.childImageSharp.fluid} />

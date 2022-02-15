@@ -102,3 +102,8 @@ export const MARTEL_LIGHT = `
   font-family: 'Martel', sans-serif;
   font-weight: 200;
 `
+
+export const COOPER_NOUVEAU = `
+  font-family: 'Cooper-Nouveau', sans-serif;
+  font-weight: 400;
+`

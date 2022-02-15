@@ -3,12 +3,13 @@ import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-import { Footer, NavBar } from '../../components/shared/'
-import Feature from '../../components/2021/love-issue/Feature.js'
-import Video from '../../components/2021/love-issue/Video.js'
-import Love from '../../components/2021/love-issue/Love.js'
-import EssayCarousel from '../../components/2021/love-issue/Essay.js'
-import Multimedia from '../../components/2021/love-issue/Multimedia.js'
+import { Footer, NavBar, BackgroundWrapper } from '../../components/shared/'
+import Feature from '../../components/2022/love-issue/Feature.js'
+import Love from '../../components/2022/love-issue/Love.js'
+import EssayCarousel from '../../components/2022/love-issue/Essay.js'
+import Multimedia from '../../components/2022/love-issue/Multimedia.js'
+
+import cover_img from '../../content/images/2022/love-issue/cover_img.jpeg'
 
 const NAVBAR_TITLES = {
   left: [
@@ -17,76 +18,32 @@ const NAVBAR_TITLES = {
     { text: 'MULTIMEDIA', link: 'multimedia' },
   ],
   right: [
-    { text: 'LOVE, IRL.', link: 'irl' },
-    { text: 'LOVE, 4 U.', link: 'for-you' },
-    { text: 'LOVE, ONLINE.', link: 'online' },
+    { text: 'LOVE, INTROSPECTIVELY', link: 'introspectively' },
+    { text: 'LOVE, AESTHETICALLY', link: 'aesthetically' },
+    { text: 'LOVE, PLATONICALLY', link: 'platonically' },
   ],
 }
 
 const Index = () => {
   const data = useStaticQuery(graphql`
     query {
-      allFile(filter: { relativePath: { eq: "love-issue.json" } }) {
+      allFile(filter: { relativePath: { eq: "love-issue-2022.json" } }) {
         edges {
           node {
-            childrenLoveIssueJson {
-              cover_img {
-                childImageSharp {
-                  fluid(quality: 100,maxWidth: 1000, maxHeight: 523) {
-                    ...GatsbyImageSharpFluid
-                    src
-                  }
-                }
+            childrenLoveIssue2022Json {
+              feature {
+                title
+                subhead
+                author
+                published_link
+                image_link
               }
-              essay_winner {
-                place
+              essay_winners {
+                title
+                award_tag
+                author
+                published_link
                 color
-                author
-                link
-                subhead
-                title
-                img {
-                  childImageSharp {
-                    fluid(quality: 100,maxWidth: 1000, maxHeight: 650) {
-                      ...GatsbyImageSharpFluid
-                      src
-                    }
-                  }
-                }
-              }
-              love_4_u {
-                author
-                link
-                subhead
-                title
-                img {
-                  childImageSharp {
-                    fluid(quality: 100,maxWidth: 1000, maxHeight: 650) {
-                      ...GatsbyImageSharpFluid
-                      src
-                    }
-                  }
-                }
-              }
-              love_irl {
-                author
-                link
-                subhead
-                title
-                img {
-                  childImageSharp {
-                    fluid(quality: 100,maxWidth: 1000, maxHeight: 650) {
-                      ...GatsbyImageSharpFluid
-                      src
-                    }
-                  }
-                }
-              }
-              love_online {
-                author
-                link
-                subhead
-                title
                 img {
                   childImageSharp {
                     fluid(quality: 100,maxWidth: 1000, maxHeight: 650) {
@@ -97,12 +54,55 @@ const Index = () => {
                 }
               }
               multimedia {
+                title
+                subhead
                 author
                 link
-                title
                 img {
                   childImageSharp {
-                    fluid(quality: 100, maxWidth: 1000) {
+                    fluid(quality: 100,maxWidth: 1000, maxHeight: 650) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
+              }
+              love_introspectively {
+                title
+                subhead
+                author
+                published_link
+                image {
+                  childImageSharp {
+                    fluid(quality: 100,maxWidth: 1000, maxHeight: 650) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
+              }
+              love_aesthetically {
+                title
+                subhead
+                author
+                published_link
+                image {
+                  childImageSharp {
+                    fluid(quality: 100,maxWidth: 1000, maxHeight: 650) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
+              }
+              love_platonically {
+                title
+                subhead
+                author
+                published_link
+                image {
+                  childImageSharp {
+                    fluid(quality: 100,maxWidth: 1000, maxHeight: 650) {
                       ...GatsbyImageSharpFluid
                       src
                     }
@@ -117,16 +117,18 @@ const Index = () => {
   `)
 
   const {
-    node: { childrenLoveIssueJson: sections },
+    node: { childrenLoveIssue2022Json: sections },
   } = data.allFile.edges[0]
 
+  console.log(sections)
+
   const {
-    cover_img,
-    essay_winner,
+    feature,
+    essay_winners,
     multimedia,
-    love_irl,
-    love_4_u,
-    love_online,
+    love_introspectively,
+    love_aesthetically,
+    love_platonically,
   } = sections[0]
 
   return (
@@ -136,7 +138,7 @@ const Index = () => {
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Love Issue" />
-        <title>Love Issue | 34th Street</title>
+        <title>Love, Actually | 34th Street</title>
         <link
           rel="stylesheet"
           type="text/css"
@@ -145,32 +147,32 @@ const Index = () => {
 
         <meta
           property="og:title"
-          content="TTYL, XOXO: Street’s Quarantined Love Issue"
+          content="Love, Actually: Street’s Love Issue 2022"
         />
         <meta
           property="og:image"
-          content="https://snworksceo.imgix.net/dpn-34s/8cf07f0e-d79c-445a-994d-da4dae0b1c9b.sized-1000x1000.png"
+          content="https://snworksceo.imgix.net/dpn-34s/9412cc1b-4336-4deb-92f9-0b3ca08fb79a.sized-1000x1000.png?"
         />
-        <meta property="og:description" content="From Zoom dates to long walks around our blocks, here’s how Penn found love under lockdown" />
+        <meta property="og:description" content="Love, Actually: Street’s Love Issue 2022" />
         <meta property="og:type" content="article" />
         <meta
           property="og:url"
-          content="https://projects.34st.com/2021/love-issue"
+          content="https://projects.34st.com/2022/love-issue"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="TTYL, XOXO: Street’s Quarantined Love Issue"
+          content="Love, Actually: Street’s Love Issue 2022"
         />
         <meta
           name="twitter:image"
-          content="https://snworksceo.imgix.net/dpn-34s/8cf07f0e-d79c-445a-994d-da4dae0b1c9b.sized-1000x1000.png"
+          content="https://snworksceo.imgix.net/dpn-34s/9412cc1b-4336-4deb-92f9-0b3ca08fb79a.sized-1000x1000.png?"
         />
-        <meta name="twitter:description" content="From Zoom dates to long walks around our blocks, here’s how Penn found love under lockdown" />
+        <meta name="twitter:description" content="Love, Actually: Street’s Love Issue 2022" />
         <meta
           name="twitter:url"
-          content="https://projects.34st.com/2021/love-issue"
+          content="https://projects.34st.com/2022/love-issue"
         />
         <meta name="twitter:site" content="@dailypenn"/>
 
@@ -191,6 +193,8 @@ const Index = () => {
         ></script>
       </Helmet>
 
+      <BackgroundWrapper color="#FCB9B2">
+
       <NavBar
         titles={NAVBAR_TITLES}
         bgColor="#FFFFFF"
@@ -198,29 +202,32 @@ const Index = () => {
         img="/img/34st-navbar-logo-white.png"
       />
 
-      <Img
-        fluid={cover_img.childImageSharp.fluid}
-        imgStyle={{ objectFit: 'contain' }}
-      />
+      <div>
+        <img
+          src={cover_img}
+          style={{ width: '100%', boxShadow: '0px 5px 6px #00000029' }}
+        />
+      </div>
 
       <div id="feature" />
-      <Feature />
+      <Feature feature={feature[0]}/>
 
       <div id="essay-winners" />
-      <EssayCarousel articles={essay_winner} />
+      <EssayCarousel articles={essay_winners} headerColor="#8C2F39"/>
 
       <div id="multimedia" />
       <Multimedia multimedia={multimedia} />
-      <Video />
 
-      <div id="irl" />
-      <Love articles={love_irl} color="#73A992" section="LOVE, IRL." />
-      <div id="for-you" />
-      <Love articles={love_4_u} color="#B7C4EB" section="LOVE, 4 U." />
-      <div id="online" />
-      <Love articles={love_online} color="#FD9B7B" section="LOVE, ONLINE." />
+      <div id="introspectively" />
+      <Love articles={love_introspectively} color="#8C2F39" section="Love, Introspectively." />
+      <div id="aesthetically" />
+      <Love articles={love_aesthetically} color="#61192C" section="Love, Aesthetically." />
+      <div id="platonically" />
+      <Love articles={love_platonically} color="#3E1437" section="Love, Platonically." />
 
-      <Footer emoji="💖" bgColor="#000000" fontColor="#FFFFFF" year="2021" />
+      <Footer emoji="💖" bgColor="#3E1437" fontColor="#FFFFFF" year="2022" />
+
+      </BackgroundWrapper>
     </>
   )
 }

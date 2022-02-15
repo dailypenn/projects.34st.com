@@ -1,6 +1,17 @@
 {
   "featured": [
     {
+      "title": "Love, Actually",
+      "author": "Dev: Raunaq Singh | Design: Tyler Kliem",
+      "section": "projects",
+      "date": "February 2022",
+      "description": "Street’s Love Issue 2022",
+      "sponsored": false,
+      "link": "/2022/love-issue",
+      "image": "https://snworksceo.imgix.net/dpn-34s/9412cc1b-4336-4deb-92f9-0b3ca08fb79a.sized-1000x1000.png?",
+      "alt": "love actually"
+    },
+    {
       "title": "Dispatches from Isolation",
       "author": "Dev: Raunaq Singh | Design: Tyler Kliem",
       "section": "article",

@@ -1,0 +1,155 @@
+[
+    {
+        "feature": [
+            {
+                "placement": "center",
+                "title": "Leading with Love",
+                "subhead": "With warmth and care, these grassroots organizations show how their work for social justice is a labor of love.",
+                "author": "Jean Paik",
+                "published_link": "https://www.34st.com/article/2022/02/love-philadelphia-grassroots-community-organizations-work-social-justice",
+                "image_link": "../../../content/images/2022/love-issue/feature_img.jpeg"
+            }
+        ],
+        "essay_winners": [
+            {
+                "placement": "Top Right",
+                "title": "How to Fall in Love Again",
+                "award_tag": "1st",
+                "author": "Sudeep Bhargava",
+                "published_link": "https://www.34st.com/article/2022/02/love-issue-essay-contest-winner-first-place-relationships-memories",
+                "img": "../../../images/2022/love-issue/essay_1.jpeg",
+                "color": "#FFB193"
+            },
+            {
+                "placement": "Top Middle",
+                "title": "Hey, Batter, Batter, Swing",
+                "award_tag": "2nd",
+                "author": "Kathryn Xu",
+                "published_link": "https://www.34st.com/article/2022/02/love-issue-essay-contest-winner-second-place-friendship-long-distance",
+                "img": "../../../images/2022/love-issue/essay_2.jpeg",
+                "color": "white"
+            },
+            {
+                "placement": "Top Left",
+                "title": "Three Maybes and a Definitely",
+                "award_tag": "3rd",
+                "author": "Erika Acosta",
+                "published_link": "https://www.34st.com/article/2022/02/love-issue-essay-contest-winner-third-place-friendship-long-distance",
+                "img": "../../../images/2022/love-issue/essay_3.jpeg",
+                "color": "white"
+            }
+        ],
+        "multimedia": [
+            {
+                "placement": "left",
+                "title": "Philadelphia: The City of Non\u2013\u2060Romantic Love",
+                "subhead": "A glimpse into the platonic relationships cultivated in our city. ",
+                "author": "Kate Ratner and Andrew Yang",
+                "link": "https://www.34st.com/article/2022/02/philly-platonic-love-non-romantic-friends",
+                "img": "../../../images/2022/love-issue/multimedia.jpeg"
+            }
+        ],
+        "love_introspectively": [
+            {
+                "placement": "Top Left",
+                "title": "Letter from the 'Love, Actually' Editor",
+                "subhead": "On self\u2013growth, love languages, and love, actually",
+                "author": "Arielle Stanger",
+                "published_link": "https://www.34st.com/article/2022/02/letter-from-the-special-issues-editor-love-actually-languages-self-platonic-family-friends-full-heart",
+                "image": "../../../images/2022/love-issue/intro_1.jpeg"
+            },
+            {
+                "placement": "Top Right",
+                "title": "Love Lessons",
+                "subhead": "On grammar, semantics, and love",
+                "author": "Meg Gladieux",
+                "published_link": "https://www.34st.com/article/2022/02/love-actually-poem-grammar-verb-noun-adjective-poetry",
+                "image": "../../../images/2022/love-issue/intro_2.jpg"
+            },
+            {
+                "placement": "Bottom Left",
+                "title": "Tarot Tuesdays: Your Valentine's Day Horoscope for Feb. 15. ",
+                "subhead": "Love is in the air\u2014even the universe says so.",
+                "author": "W. Anthony P\u00e9rez",
+                "published_link": "https://www.34st.com/article/2022/02/street-scopes-valentines-love-issue-astrology",
+                "image": "../../../images/2022/love-issue/intro_3.jpeg"
+            },
+            {
+                "placement": "Bottom Right",
+                "title": "TikTok's Take on Love",
+                "subhead": "TikTok can easily promote a fake lifestyle of endless smiles and perfectionism. Can its take on love be more authentic?",
+                "author": "Gabi Galchen",
+                "published_link": "https://www.34st.com/article/2022/02/tiktok-love-trend-viral-relationship-social-media-happiness",
+                "image": "../../../images/2022/love-issue/intro_4.jpg"
+            }
+        ],
+        "love_aesthetically": [
+            {
+                "placement": "Top Left",
+                "title": "The Greeks Had Six Words for Love\u2014Here\u2019s a Book for Each One. ",
+                "subhead": "According to the ancient Greeks, love isn't just romantic. Check out these six books to learn why. ",
+                "author": "Shelby Abayie",
+                "published_link": "https://www.34st.com/article/2022/02/philia-eros-ludus-agape-pragma-philautia-greek-love-valentines-day-books-friendship-family-charity",
+                "image": "../../../images/2022/love-issue/aesth_1.jpg"
+            },
+            {
+                "placement": "Top Right",
+                "title": "In Defense of Che Diaz",
+                "subhead": "Yes, Che Diaz sucks. But the most controversial character in 'And Just Like That...' also brought the \u201csex\u201d back into the city.",
+                "author": "Jacob A. Pollack",
+                "published_link": "https://www.34st.com/article/2022/02/sex-and-the-city-che-diaz-miranda-nonbinary-representation-carrie-samantha-friendship-sexuality",
+                "image": "../../../images/2022/love-issue/aesth_2.jpeg"
+            },
+            {
+                "placement": "Bottom Left",
+                "title": "Taylor Swift and Moses Sumney: Studies in 'Aromanticism'",
+                "subhead": "On two of their respective albums, these seemingly disparate artists explore a love that exists beyond sex, relationships, and marriage. ",
+                "author": "Evan Qiang",
+                "published_link": "https://www.34st.com/article/2022/02/taylor-swift-love-story-speak-now-moses-sumney-aromanticism-romance",
+                "image": "../../../images/2022/love-issue/aesth_3.jpg"
+            },
+            {
+                "placement": "Bottom Right",
+                "title": "Give These Romantic Tropes A Second Chance",
+                "subhead": "Revisiting some of the most perfectly executed romantic tropes in film",
+                "author": "Cindy Zhang",
+                "published_link": "https://www.34st.com/article/2022/02/romantic-tropes-love-fake-relationship-right-person-wrong-time-soulmates-belated-love-epiphany-rom-coms",
+                "image": "../../../images/2022/love-issue/aesth_4.jpeg"
+            }
+        ],
+        "love_platonically": [
+            {
+                "placement": "Top Left",
+                "title": "Treat Yourself This Valentine\u2019s Day to These Five Philly Stores",
+                "subhead": "From candle\u2013making to do\u2013it\u2013yourself pottery, spend your Valentine's Day at these five Philly stores that celebrate self\u2013love.",
+                "author": "Naima Small",
+                "published_link": "https://www.34st.com/article/2022/02/self-care-love-valentines-day-loomen-labs-yay-clay-skin-house-facial-bar-duross-langel-harriets-bookshop",
+                "image": "../../../images/2022/love-issue/plat_1.jpg"
+            },
+            {
+                "placement": "Top Right",
+                "title": "Why Do We Learn About Love?",
+                "subhead": "Two Penn professors give their takes on what love is, why it's important, and how we can approach it.",
+                "author": "Alana Bess",
+                "published_link": "https://www.34st.com/article/2022/02/academic-interest-in-love-sukaina-hirji-jean-michel-rabate",
+                "image": "../../../images/2022/love-issue/plat_2.jpeg"
+            },
+            {
+                "placement": "Bottom Left",
+                "title": "Philia: A Playlist of Platonic Love",
+                "subhead": "Looking for a playlist to blast on Pal-entine\u2019s Day? We\u2019ve got you covered.",
+                "author": "Julia Esposito",
+                "published_link": "https://www.34st.com/article/2022/02/valentines-platonic-friendship-playlist-spotify-ohwonder-laszewo",
+                "image": "../../../images/2022/love-issue/plat_3.jpeg"
+            },
+            {
+                "placement": "Bottom Right",
+                "title": "Significant Others: The Evolutionary Impact of Friendships",
+                "subhead": "How the often\u2013underestimated power of platonic love makes us who we are today",
+                "author": "Anjali Kishore",
+                "published_link": "https://www.34st.com/article/2022/02/platonic-love-evolution-valentines-day-friendship-technology-innovation",
+                "image": "../../../images/2022/love-issue/plat_4.jpeg"
+            }
+        ]
+    }
+]

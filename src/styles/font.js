@@ -107,3 +107,13 @@ export const COOPER_NOUVEAU = `
   font-family: 'Cooper-Nouveau', sans-serif;
   font-weight: 400;
 `
+
+export const PEACHY_KEEN = `
+  font-family: 'peachy-keen-jf', sans-serif;
+  font-weight: 400;
+`
+
+export const QUASIMODA = `
+  font-family: 'quasimoda', sans-serif;
+  font-weight: 400;
+`

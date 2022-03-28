@@ -65,6 +65,8 @@
 /* Martel font */
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Martel:wght@200&display=swap');
 
+/* Peachy Keen / Quasimoda Fonts */
+@import url("https://use.typekit.net/crb6ksc.css");
 
 html {
   scroll-behavior: smooth;

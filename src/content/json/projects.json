@@ -1,6 +1,17 @@
 {
   "featured": [
     {
+      "title": "Dining Guide Spring 2022: Street's Cheap Eats",
+      "author": "Dev: Raunaq Singh | Design: Tyler Kliem",
+      "section": "guides",
+      "date": "March 2022",
+      "description": "More restaurants, more impact, and more of Philly, all for under $15.",
+      "sponsored": false,
+      "link": "/2022/dining-guide-spring",
+      "image": "https://s3.amazonaws.com/snwceomedia/dpn-34s/bdb0f621-28f3-407d-a22e-6ac6e1a39b41.original.png",
+      "alt": "dining guide spring 2022"
+    },
+    {
       "title": "Love, Actually",
       "author": "Dev: Raunaq Singh | Design: Tyler Kliem",
       "section": "projects",

@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 import { Footer, NavBar, BackgroundWrapper, Spacer } from '../../components/shared'
-import CoverImg from '../../content/images/2021/dining-guide-fall/cover_img.png'
+import CoverImg from '../../content/images/2022/dining-guide-spring/cover_img.png'
 import Feature from '../../components/2022/dining-guide-spring/Feature'
 import InstagramSection from '../../components/2021/dining-guide-fall/InstagramSection'
 import ArticleGrid from '../../components/2022/dining-guide-spring/ArticleGrid'
@@ -123,16 +123,16 @@ const Index = () => {
         />
         <meta
           property="og:image"
-          content="https://snworksceo.imgix.net/dpn/aacde8d3-c7b2-4c05-9860-856d1cbe9c52.sized-1000x1000.png?"
+          content="https://s3.amazonaws.com/snwceomedia/dpn-34s/bdb0f621-28f3-407d-a22e-6ac6e1a39b41.original.png"
         />
         <meta
           property="og:description"
-          content="COVID-19 shut down Philly’s restaurant scene for months. Now, our favorite eateries are back — but the menu looks different."
+          content="Street's Cheap Eats: more restaurants, more impact, and more of Philly, all for under $15."
         />
         <meta property="og:type" content="article" />
         <meta
           property="og:url"
-          content="https://projects.34st.com/2021/dining-guide-fall"
+          content="https://projects.34st.com/2022/dining-guide-spring"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -142,15 +142,15 @@ const Index = () => {
         />
         <meta
           name="twitter:image"
-          content="https://snworksceo.imgix.net/dpn/aacde8d3-c7b2-4c05-9860-856d1cbe9c52.sized-1000x1000.png?"
+          content="https://s3.amazonaws.com/snwceomedia/dpn-34s/bdb0f621-28f3-407d-a22e-6ac6e1a39b41.original.png"
         />
         <meta
           name="twitter:description"
-          content="COVID-19 shut down Philly’s restaurant scene for months. Now, our favorite eateries are back — but the menu looks different."
+          content="Street's Cheap Eats: more restaurants, more impact, and more of Philly, all for under $15."
         />
         <meta
           name="twitter:url"
-          content="https://projects.34st.com/2021/dining-guide-fall"
+          content="https://projects.34st.com/2022/dining-guide-spring"
         />
         <meta name="twitter:site" content="@dailypenn" />
 

@@ -43,14 +43,14 @@ export const Title = s.div`
 	height: auto;
 	color: #FFFFFF;
 	font-size: max(2vw, 20px);
-  line-height: max(2vw, 20px);
+  line-height: max(2.4vw, 25px);
 	${PEACHY_KEEN}
 	padding-left: 1rem;
 	padding-top: 0.5rem;
 	padding-right: 1rem;
   @media (max-width: 768px) {
-		font-size: 2rem;
-    line-height: 2.2rem;
+		font-size: max(3vw, 1.25rem);
+    line-height: max(3.4vw, 1.45rem);
 	}
 `
 

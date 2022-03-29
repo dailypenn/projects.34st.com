@@ -51,7 +51,7 @@ const Multimedia = ({ multimedia }) => (
     {/* <BoldText>By </BoldText> */}
     <VidFormat>
       <InstagramEmbed
-        url="https://www.instagram.com/tv/CLFpqaej4jH/?utm_source=ig_web_copy_link"
+        url={multimedia.link}
         clientAccessToken="947756802416627|a36b8dffc1596399ee685a4677ebc2a2"
         maxWidth={658}
         hideCaption={false}

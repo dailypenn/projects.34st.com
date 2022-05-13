@@ -68,6 +68,9 @@
 /* Peachy Keen / Quasimoda Fonts */
 @import url("https://use.typekit.net/crb6ksc.css");
 
+/* Origin Super Condensed */
+@import url("https://use.typekit.net/wyg4dni.css");
+
 html {
   scroll-behavior: smooth;
 }

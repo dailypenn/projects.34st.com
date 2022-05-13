@@ -117,3 +117,13 @@ export const QUASIMODA = `
   font-family: 'quasimoda', sans-serif;
   font-weight: 400;
 `
+
+export const ORIGIN_SUPER = `
+  font-family: 'origin-super-condensed', sans-serif;
+  font-weight: 400;
+`
+
+export const BOOKMANIA = `
+  font-family: 'bookmania', sans-serif;
+  font-weight: 400;
+`

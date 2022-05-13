@@ -1,6 +1,17 @@
 {
   "featured": [
     {
+      "title": "Penn 10: Class of 2022",
+      "author": "Dev: Raunaq Singh | Design: Tyler Kliem",
+      "section": "penn 10",
+      "date": "May 2022",
+      "description": "This year's class is keeping it local–meet ten Penn seniors who are living and working in Philly after crossing the stage.",
+      "sponsored": false,
+      "link": "/2022/penn-10",
+      "image": "https://snworksceo.imgix.net/dpn-34s/d0949736-14a3-43cd-ba46-77d3bc8c9c5a.sized-1000x1000.png",
+      "alt": "penn 10 2022"
+    },
+    {
       "title": "Dining Guide Spring 2022: Street's Cheap Eats",
       "author": "Dev: Raunaq Singh | Design: Tyler Kliem",
       "section": "guides",
